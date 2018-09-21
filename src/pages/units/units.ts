@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 
+import { UnitService } from '../../services/unit.service';
+
 @Component({
 	selector: 'page-units',
 	templateUrl: 'units.html'
@@ -8,22 +10,48 @@ import { NavController, NavParams } from 'ionic-angular';
 export class UnitsPage {
 
 
-	icons: string[];
-	items: Array<{ name: string, activated: string }>;
 
-	constructor(public navCtrl: NavController, public navParams: NavParams) {
-		// If we navigated to this page, we will have an item available as a nav param
+	constructor(
+		public navCtrl: NavController,
+		public navParams: NavParams,
+		private unitSvc: UnitService,
+	) { }
 
-		// Let's populate this page with some filler content for funzies
-		this.icons = ['flask', 'wifi', 'beer', 'football', 'basketball', 'paper-plane',
-			'american-football', 'boat', 'bluetooth', 'build'];
+	ngOnInit() {
+		try {
+			this.unitSvc.getUnitJSon().subscribe(result => {
+				for (var index = 0; index < result.length; ++index) {
+					console.log(result[index].command_ability, 'result')
 
-		this.items = [];
-		for (let i = 1; i < this.icons.length; i++) {
-			this.items.push({
-				name: 'Item ' + i,
-				activated: 'This is item #' + i,
+				}
+				// if (result.comms)
+				// for (var index = 0; index < result.length; ++index) {
+				// 	if (result[index].command_abilities !== 0) {
+				// 		this.commandAbilitiesList.push(result[index].command_abilities);
+				// 	}
+				// 	for (var i = 0; i < result[index].abilities.length; ++i) {
+				// 		if (result[index].abilities[i].phase === 'hero') {
+				// 			this.heroList.push(result[index].abilities[i]);
+				// 		} else if (result[index].abilities[i].phase === 'movement') {
+				// 			this.movementList.push(result[index].abilities[i]);
+				// 		} else if (result[index].abilities[i].phase === 'shooting') {
+				// 			this.shootingList.push(result[index].abilities[i]);
+				// 		} else if (result[index].abilities[i].phase === 'charge') {
+				// 			this.chargeList.push(result[index].abilities[i]);
+				// 		} else if (result[index].abilities[i].phase === 'combat') {
+				// 			this.combatList.push(result[index].abilities[i]);
+				// 		} else if (result[index].abilities[i].phase === 'battleshock') {
+				// 			this.battleshockList.push(result[index].abilities[i]);
+				// 		} else if (result[index].abilities[i].phase === 'shooting/combat') {
+				// 			this.shootingList.push(result[index].abilities[i]);
+				// 			this.combatList.push(result[index].abilities[i]);
+				// 		}
+				// 	}
+				// }
 			});
+
+		} catch (e) {
+			console.log("Profile" + e);
 		}
 	}
 

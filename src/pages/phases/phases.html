@@ -8,5 +8,16 @@
 </ion-header>
 
 <ion-content padding>
+  <ion-grid>
+    <div *ngFor="let phase of phases;">
+      <ion-row>
+        <ion-col padding>
+          <button ion-button clear>{{ phase }}</button>
+          <div *ngIf="">
 
+          </div>
+        </ion-col>
+      </ion-row>
+    </div>
+  </ion-grid>
 </ion-content>
