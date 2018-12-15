@@ -13,11 +13,14 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 // services
 import { UnitService } from '../services/unit.service';
 
+import { UnitModalPage } from '../modals/unit-modal/unit-modal';
+
 @NgModule({
 	declarations: [
 		MyApp,
 		PhasesPage,
-		UnitsPage
+		UnitsPage,
+		UnitModalPage,
 	],
 	imports: [
 		BrowserModule,
@@ -28,7 +31,8 @@ import { UnitService } from '../services/unit.service';
 	entryComponents: [
 		MyApp,
 		PhasesPage,
-		UnitsPage
+		UnitsPage,
+		UnitModalPage,
 	],
 	providers: [
 		StatusBar,

@@ -11,6 +11,8 @@ export class PhasesPage {
 
 	phases = ['Hero Phase', 'Movement Phase', 'Shooting Phase', 'Charge Phase', 'Combat Phase', 'Battleshock Phase'];
 
+	commandAbilitiesList = [];
+
 	constructor(
 		public navCtrl: NavController,
 		private unitSvc: UnitService,
@@ -21,9 +23,18 @@ export class PhasesPage {
 		try {
 			this.unitSvc.getUnitJSon().subscribe(result => {
 				for (var index = 0; index < result.length; ++index) {
-					console.log(result[index], 'result')
-
+					console.log(result[index].command_ability, 'result[index].command_ability')
+					if (result[index].commmand_ability) {
+						this.commandAbilitiesList.push(result[index].commmand_ability);
+					}
 				}
+				// for (var index = 0; index < result.length; ++index) {
+				// 	// console.log(result[index], 'result')
+				// 	if (result[index].command_ability) {
+				// 		this.commandAbilitiesList.push(result[index].command_ability);
+				// 		console.log(this.commandAbilitiesList, 'commandAbilitiesList')
+				// 	}
+				// }
 				// if (result.comms)
 				// for (var index = 0; index < result.length; ++index) {
 				// 	if (result[index].command_abilities !== 0) {

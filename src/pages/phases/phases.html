@@ -7,17 +7,10 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  <ion-grid>
-    <div *ngFor="let phase of phases;">
-      <ion-row>
-        <ion-col padding>
-          <button ion-button clear>{{ phase }}</button>
-          <div *ngIf="">
-
-          </div>
-        </ion-col>
-      </ion-row>
-    </div>
-  </ion-grid>
+<ion-content padding text-center>
+  <div margin-top *ngFor="let phase of phases">
+    <button mt-2 ion-button round large color="blue" (click)="itemTapped(phase)">
+      {{ phase }}
+    </button>
+  </div>
 </ion-content>

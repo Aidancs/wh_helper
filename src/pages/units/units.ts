@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
-import { NavController, NavParams } from 'ionic-angular';
+import { ModalController, NavController, NavParams, ViewController } from 'ionic-angular';
 
+import { UnitModalPage } from '../../modals/unit-modal/unit-modal';
 import { UnitService } from '../../services/unit.service';
 
 @Component({
@@ -9,45 +10,33 @@ import { UnitService } from '../../services/unit.service';
 })
 export class UnitsPage {
 
+	units: any;
+	unit: any;
+	clicked: boolean = false;
+	type: string;
+	stats: boolean = false;
+	displayImage: true;
+	move: number;
+	wounds: number;
+	save: number;
+	bravery: number;
+	totalWounds: number;
 
+	images = ['alarielle.jpg', 'tla.jpg', 'durthu.jpeg', 'treelord.jpg', 'drycha.jpeg', 'hunters.jpeg', 'branchwraith.jpeg', 'branchwych.jpeg', 'dryads.jpeg', 'tree_revenants.jpeg', 'spite_revenants.jpeg'];
 
 	constructor(
+		public modalCtrl: ModalController,
 		public navCtrl: NavController,
 		public navParams: NavParams,
 		private unitSvc: UnitService,
+		private viewCtrl: ViewController,
 	) { }
 
 	ngOnInit() {
 		try {
 			this.unitSvc.getUnitJSon().subscribe(result => {
-				for (var index = 0; index < result.length; ++index) {
-					console.log(result[index].command_ability, 'result')
-
-				}
-				// if (result.comms)
-				// for (var index = 0; index < result.length; ++index) {
-				// 	if (result[index].command_abilities !== 0) {
-				// 		this.commandAbilitiesList.push(result[index].command_abilities);
-				// 	}
-				// 	for (var i = 0; i < result[index].abilities.length; ++i) {
-				// 		if (result[index].abilities[i].phase === 'hero') {
-				// 			this.heroList.push(result[index].abilities[i]);
-				// 		} else if (result[index].abilities[i].phase === 'movement') {
-				// 			this.movementList.push(result[index].abilities[i]);
-				// 		} else if (result[index].abilities[i].phase === 'shooting') {
-				// 			this.shootingList.push(result[index].abilities[i]);
-				// 		} else if (result[index].abilities[i].phase === 'charge') {
-				// 			this.chargeList.push(result[index].abilities[i]);
-				// 		} else if (result[index].abilities[i].phase === 'combat') {
-				// 			this.combatList.push(result[index].abilities[i]);
-				// 		} else if (result[index].abilities[i].phase === 'battleshock') {
-				// 			this.battleshockList.push(result[index].abilities[i]);
-				// 		} else if (result[index].abilities[i].phase === 'shooting/combat') {
-				// 			this.shootingList.push(result[index].abilities[i]);
-				// 			this.combatList.push(result[index].abilities[i]);
-				// 		}
-				// 	}
-				// }
+				this.units = result;
+				console.log(this.units, 'this.units in UnitsPage')
 			});
 
 		} catch (e) {
@@ -55,7 +44,33 @@ export class UnitsPage {
 		}
 	}
 
-	itemTapped(event, item) {
-		// here is where when it's tapped it can be enabled or disabled
+	itemTapped(unit, type) {
+		this.clicked = true;
+		this.unit = unit;
+		this.type = type;
+		let modal = this.modalCtrl.create(UnitModalPage, {
+			unit: this.unit,
+			type: this.type,
+		}, {},
+		);
+		modal.onDidDismiss((refresh) => {
+			if (refresh) {
+				console.log('inside onDidDismiss')
+			}
+		});
+		modal.present();
+	}
+
+	cancel() {
+		this.viewCtrl.dismiss();
+	}
+
+	dead(unit) {
+		this.unit = unit;
+		this.unit.dead = true;
+	}
+
+	openStats() {
+		this.stats = !this.stats;
 	}
 }

@@ -1,0 +1,62 @@
+<ion-header>
+  <ion-navbar>
+    <ion-buttons end>
+      <button ion-button (click)="closeModal()">Close</button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding text-center>
+  <div [hidden]="!abilities">
+    <div *ngFor="let ability of unit.abilities">
+      <ion-card>
+        <ion-card-content>
+          {{ ability.name }}
+        </ion-card-content>
+        <ion-card-content>
+          Phase: {{ ability.phase }}
+        </ion-card-content>
+        <ion-card-content>
+          Description: {{ ability.description }}
+        </ion-card-content>
+      </ion-card>
+    </div>
+  </div>
+  <div [hidden]="!command_abilities">
+    <div *ngFor="let command_ability of unit.command_ability">
+      <ion-card>
+        <ion-card-content>
+          {{ command_ability.name }}
+        </ion-card-content>
+        <ion-card-content>
+          Phase: {{ command_ability.phase }}
+        </ion-card-content>
+        <ion-card-content>
+          Description: {{ command_ability.description }}
+        </ion-card-content>
+      </ion-card>
+    </div>
+  </div>
+  <div [hidden]="!magic">
+    <div *ngFor="let spell of unit.magic">
+      <ion-card>
+        <ion-card-content>
+          {{ spell.name }}
+        </ion-card-content>
+        <ion-card-content>
+          Phase: {{ spell.phase }}
+        </ion-card-content>
+        <ion-card-content>
+          Description: {{ spell.description }}
+        </ion-card-content>
+      </ion-card>
+    </div>
+  </div>
+  <div [hidden]="!melee_weapons">
+
+  </div>
+  <div [hidden]="!missle_weapons">
+
+  </div>
+</ion-content>

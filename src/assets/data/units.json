@@ -1,187 +1,647 @@
-[{
-	"id": "1",
-	"name": "Alarielle the Everqueen",
-	"abilities": [{
-			"name": "Talon of the Dwindling",
-			"phase": "combat",
-			"description": "At the end of the combat phase, roll two dice for each model that suffered wounds from the Talon of the Dwindling but was not slain. If the result exceeds the model’s Wounds characteristic, or if you roll two sixes, the model is slain."
+[
+	{
+		"id": "1",
+		"name": "Alarielle the Everqueen",
+		"stats": {
+			"move": 16,
+			"wounds": 16,
+			"bravery": 10,
+			"save": 3
+		},
+		"abilities": [
+			{
+				"name": "Talon of the Dwindling",
+				"phase": "combat",
+				"description": "At the end of the combat phase, roll two dice for each model that suffered wounds from the Talon of the Dwindling but was not slain. If the result exceeds the model’s Wounds characteristic, or if you roll two sixes, the model is slain."
 			},
-		{
-			"name": "Lifebloom",
-			"phase": "Hero",
-			"description": "In each of your hero phases, Alarielle heals D3 wounds."
+			{
+				"name": "Lifebloom",
+				"phase": "Hero",
+				"description": "In each of your hero phases, Alarielle heals D3 wounds."
 			},
-		{
-			"name": "Sweeping Blows",
-			"phase": "combat",
-			"description": " When the Wardroth Beetle attacks with its Great Antlers, you can add 1 to the hit rolls if the target unit has five or more models."
+			{
+				"name": "Sweeping Blows",
+				"phase": "combat",
+				"description": " When the Wardroth Beetle attacks with its Great Antlers, you can add 1 to the hit rolls if the target unit has five or more models."
 			},
-		{
-			"name": "Living Battering Ram",
-			"phase": "charge",
-			"description": "If this model ends a charge move within 1\" of a terrain feature, each other unit within or on that terrain feature suffers D3 mortal wounds."
+			{
+				"name": "Living Battering Ram",
+				"phase": "charge",
+				"description": "If this model ends a charge move within 1\" of a terrain feature, each other unit within or on that terrain feature suffers D3 mortal wounds."
 			},
-		{
-			"name": "Soul Amphorae",
-			"phase": "hero",
-			"description": "In your hero phase, you can heal D3 wounds allocated to each Sylvaneth model within 30\" of this model. Once per battle, in your hero phase, instead of using this ability to heal, you can summon 1 unit from the list below to the battlefield, and add it to your army. The summoned unit must be set up wholly within 9\" of this model and more than 9\" from any enemy units. That unit cannot move in the following movement phase. Choose a unit from the following list: 20 Dryads, 10 Tree-Revenants, 10 Spite-Revenants, 3 Kurnoth Hunters, 1 Branchwych, 1 Treelord"
-			},
-		{
-			"name": "Metamorphosis (Spell)",
-			"phase": "hero",
-			"description": "Metamorphosis has a casting value of 5. If successfully cast, pick an enemy unit within 16\" and roll a number of dice equal to the result of the casting roll (e.g. if the casting roll was 6, roll 6 dice). For each result of 4 or more, the unit suffers a mortal wound. If the last model in the unit is slain, you can set up a Sylvaneth Wyldwood in its place. None of the woods can be set up within 1\" of any other models or terrain features. "
+			{
+				"name": "Soul Amphorae",
+				"phase": "hero",
+				"description": "In your hero phase, you can heal D3 wounds allocated to each Sylvaneth model within 30\" of this model. Once per battle, in your hero phase, instead of using this ability to heal, you can summon 1 unit from the list below to the battlefield, and add it to your army. The summoned unit must be set up wholly within 9\" of this model and more than 9\" from any enemy units. That unit cannot move in the following movement phase. Choose a unit from the following list: 20 Dryads, 10 Tree-Revenants, 10 Spite-Revenants, 3 Kurnoth Hunters, 1 Branchwych, 1 Treelord"
 			}
 		],
-	"command_ability": {
-		"name": "Ghyran's Wrath",
-		"phase": "combat",
-		"description": "Alarielle can use this ability once per battle. When she does so, you can re-roll all failed wound rolls made for friendly Sylvaneth models until your next hero phase."
-	}
-}, {
-	"id": "2",
-	"name": "Treelord Ancient",
-	"abilities": [{
-			"name": "Groundshaking Stomp",
-			"phase": "combat",
-			"description": "At the start of the combat phase, the Spirit of Durthu stomps the ground; roll a dice for each enemy unit within 3\" of this model. On a roll of 4 or more, that unit is knocked off their feet by the impact and must subtract 1 from all hit rolls in that combat phase as they regain their footing."
-			},
-		{
-			"name": "Impale",
-			"phase": "combat",
-			"description": "If the Treelord Ancient’s Massive Impaling Talons inflict a wound on an enemy model, roll a dice. If the result exceeds the number of wounds the enemy model has remaining, it is slain.You can re-roll hit and wound rolls of 1 for Brokk Grungsson if those attacks are directed against a Hero or Monster.If the Spirit of Durthu’s Massive Impaling Talons inflict a wound on an enemy model, roll a dice. If the result exceeds the number of wounds the enemy model has remaining, it is slain."
-			},
-		{
-			"name": "Spirit Paths",
-			"phase": "movement",
-			"description": "If a Treelord Ancient is within 3\" of a Sylvaneth Wyldwood at the start of your movement phase, he can travel along the spirit paths. If he does so, remove the Spirit of Durthu from the battlefield, and then set him up within 3\" of a different Sylvaneth Wyldwood, more than 9\" from any enemy models. This is his move for the movement phase"
-			},
-		{
-			"name": "Silent Communion",
-			"phase": "hero",
-			"description": "In your hero phase, you can pick 1 friendly Treelord Ancient and roll a dice. On a 4+, you can set up 1 Sylvaneth Wyldwood terrain feature wholly within 24\" of that Treelord Ancient, and more than 3\" from any other models or terrain features."
-			},
-		{
-			"name": "Awakening the Wood (Spell)",
-			"phase": "hero",
-			"description": "Awakening the Wood has a casting value of 6. If successfully cast, pick a Sylvaneth Wyldwood that is within 24\" of the caster. Each enemy unit within 3\" of this Sylvaneth Wyldwood suffers D3 mortal wounds."
-  			}
+		"command_ability": [
+			{
+				"name": "Ghyran's Wrath",
+				"phase": "hero",
+				"description": "Alarielle can use this ability once per battle. When she does so, you can re-roll all failed wound rolls made for friendly Sylvaneth models until your next hero phase."
+			}
 		],
-	"command_ability": {
-		"name": "Heed the Spirit Song",
-		"phase": "combat/shooting",
-		"description": "The Treelord Ancient speaks to its kin through the spirit-song, warning them of approaching dangers. Until your next hero phase, you can re-roll save rolls of 1 for Sylvaneth units if they are within 10\" of the Treelord Ancient. "
-	}
-}, {
-	"id": "3",
-	"name": "Treelord",
-	"abilities": [{
-			"name": "Groundshaking Stomp",
-			"phase": "combat",
-			"description": "At the start of the combat phase, the Spirit of Durthu stomps the ground; roll a dice for each enemy unit within 3\" of this model. On a roll of 4 or more, that unit is knocked off their feet by the impact and must subtract 1 from all hit rolls in that combat phase as they regain their footing."
-			},
-		{
-			"name": "Impale",
-			"phase": "combat",
-			"description": "If the Treelord Ancient’s Massive Impaling Talons inflict a wound on an enemy model, roll a dice. If the result exceeds the number of wounds the enemy model has remaining, it is slain.You can re-roll hit and wound rolls of 1 for Brokk Grungsson if those attacks are directed against a Hero or Monster.If the Spirit of Durthu’s Massive Impaling Talons inflict a wound on an enemy model, roll a dice. If the result exceeds the number of wounds the enemy model has remaining, it is slain."
-  			},
-		{
-			"name": "Spirit Paths",
-			"phase": "movement",
-			"description": "If a Treelord Ancient is within 3\" of a Sylvaneth Wyldwood at the start of your movement phase, he can travel along the spirit paths. If he does so, remove the Spirit of Durthu from the battlefield, and then set him up within 3\" of a different Sylvaneth Wyldwood, more than 9\" from any enemy models. This is his move for the movement phase"
-  			}
+		"missle_weapon": [
+			{}
 		],
-	"command_ability": {}
-}, {
-	"id": "4",
-	"name": "Branchwraith",
-	"abilities": [{
-			"name": "Blessings of the Forest",
+		"melee_weapon": [
+			{}
+		],
+		"magic": [
+			{
+				"name": "Metamorphosis",
+				"phase": "hero",
+				"description": "Metamorphosis has a casting value of 5. If successfully cast, pick an enemy unit within 16\" and roll a number of dice equal to the result of the casting roll (e.g. if the casting roll was 6, roll 6 dice). For each result of 4 or more, the unit suffers a mortal wound. If the last model in the unit is slain, you can set up a Sylvaneth Wyldwood in its place. None of the woods can be set up within 1\" of any other models or terrain features. "
+			}
+		],
+		"image": "alarielle.JPG",
+		"dead": false,
+		"woundsLeft": 10,
+		"command_ability_check": true,
+		"missle_weapon_check": true,
+		"magic_check": true
+	},
+	{
+		"id": "2",
+		"name": "Treelord Ancient",
+		"stats": [
+			{
+				"move": 10,
+				"wounds": 10,
+				"bravery": 10,
+				"save": 10
+			}
+		],
+		"abilities": [
+			{
+				"name": "Groundshaking Stomp",
+				"phase": "combat",
+				"description": "At the start of the combat phase, the Spirit of Durthu stomps the ground; roll a dice for each enemy unit within 3\" of this model. On a roll of 4 or more, that unit is knocked off their feet by the impact and must subtract 1 from all hit rolls in that combat phase as they regain their footing."
+			},
+			{
+				"name": "Impale",
+				"phase": "combat",
+				"description": "If the Treelord Ancient’s Massive Impaling Talons inflict a wound on an enemy model, roll a dice. If the result exceeds the number of wounds the enemy model has remaining, it is slain.You can re-roll hit and wound rolls of 1 for Brokk Grungsson if those attacks are directed against a Hero or Monster.If the Spirit of Durthu’s Massive Impaling Talons inflict a wound on an enemy model, roll a dice. If the result exceeds the number of wounds the enemy model has remaining, it is slain."
+			},
+			{
+				"name": "Spirit Paths",
+				"phase": "movement",
+				"description": "If a Treelord Ancient is within 3\" of a Sylvaneth Wyldwood at the start of your movement phase, he can travel along the spirit paths. If he does so, remove the Spirit of Durthu from the battlefield, and then set him up within 3\" of a different Sylvaneth Wyldwood, more than 9\" from any enemy models. This is his move for the movement phase"
+			},
+			{
+				"name": "Silent Communion",
+				"phase": "hero",
+				"description": "In your hero phase, you can pick 1 friendly Treelord Ancient and roll a dice. On a 4+, you can set up 1 Sylvaneth Wyldwood terrain feature wholly within 24\" of that Treelord Ancient, and more than 3\" from any other models or terrain features."
+			},
+			{
+				"name": "Awakening the Wood (Spell)",
+				"phase": "hero",
+				"description": "Awakening the Wood has a casting value of 6. If successfully cast, pick a Sylvaneth Wyldwood that is within 24\" of the caster. Each enemy unit within 3\" of this Sylvaneth Wyldwood suffers D3 mortal wounds."
+			}
+		],
+		"command_ability": {
+			"name": "Heed the Spirit Song",
 			"phase": "combat/shooting",
-			"description": "Subtract 1 from all hit rolls made against this unit if it is w/n 3\" of a Wyldwood"
-			},
-		{
-			"name": "Roused to Wrath (Spell)",
-			"phase": "hero",
-			"description": " Roused to Wrath has a casting value of 7. If successfully cast, you can summon a unit of 10 Dryads and add it to your army. The summoned unit must be set up more than 9\" from any enemy units, and wholly on or within a Sylvaneth Wyldwood that is within 12\" of the caster. The summoned unit cannot move in the following movement phase."
+			"description": "The Treelord Ancient speaks to its kin through the spirit-song, warning them of approaching dangers. Until your next hero phase, you can re-roll save rolls of 1 for Sylvaneth units if they are within 10\" of the Treelord Ancient. "
+		},
+		"missle_weapon": [
+			{}
+		],
+		"melee_weapon": [
+			{}
+		],
+		"magic": [
+			{}
+		],
+		"image": "tla.jpg",
+		"dead": false,
+		"woundsLeft": 10,
+		"command_ability_check": true,
+		"missle_weapon_check": true,
+		"magic_check": true
+	},
+	{
+		"id": "3",
+		"name": "Spirit of Durthu",
+		"stats": [
+			{
+				"move": 10,
+				"wounds": 10,
+				"bravery": 10,
+				"save": 10
 			}
 		],
-	"command_ability": {}
-}, {
-	"id": "6",
-	"name": "Branchwych",
-	"abilities": [{
-			"name": "The Lord-Magnate Moves",
-			"phase": "charge",
-			"description": "If Brokk Grungsson ends a charge move within ½\" of any enemy units, pick one of those units and roll a dice. On a roll of 2 or more, that unit suffers D3 mortal wounds from the crushing impact of the Lord-Magnate’s charge."
+		"abilities": [
+			{
+				"name": "Talon of the Dwindling",
+				"phase": "combat",
+				"description": "At the end of the combat phase, roll two dice for each model that suffered wounds from the Talon of the Dwindling but was not slain. If the result exceeds the model’s Wounds characteristic, or if you roll two sixes, the model is slain."
 			},
-		{
-			"name": "Champion of Barak-Nar",
-			"phase": "shooting/combat",
-			"description": "You can re-roll hit and wound rolls of 1 for Brokk Grungsson if those attacks are directed against a Hero or Monster."
+			{
+				"name": "Lifebloom",
+				"phase": "Hero",
+				"description": "In each of your hero phases, Alarielle heals D3 wounds."
 			},
-		{
-			"name": "Supercharged Harness",
-			"phase": "combat",
-			"description": "Brokk Grungsson can supercharge his harness in the combat phase to give himself extra strength, but doing so can be hazardous. If Brokk Grungsson uses this ability, roll a dice. On a roll of 1, he suffers a mortal wound. On a roll of 3 or more, the Damage characteristic of his Aethermatic Saw is 3 rather than D3 until the end of the phase."
+			{
+				"name": "Sweeping Blows",
+				"phase": "combat",
+				"description": " When the Wardroth Beetle attacks with its Great Antlers, you can add 1 to the hit rolls if the target unit has five or more models."
 			},
-		{
-			"name": "High Hitcher",
-			"phase": "movement",
-			"description": "Brokk Grungsson does not count towards the maximum number of Skyfarers that can be embarked on a Skyvessel, and is not counted for the Overburdened rule."
+			{
+				"name": "Living Battering Ram",
+				"phase": "charge",
+				"description": "If this model ends a charge move within 1\" of a terrain feature, each other unit within or on that terrain feature suffers D3 mortal wounds."
 			},
-		{
-			"name": "battleshock Test",
-			"phase": "battleshock",
-			"description": "If Brokk Grungsson ends a charge move within ½\" of any enemy units, pick one of those units and roll a dice. On a roll of 2 or more, that unit suffers D3 mortal wounds from the crushing impact of the Lord-Magnate’s charge."
+			{
+				"name": "Soul Amphorae",
+				"phase": "hero",
+				"description": "In your hero phase, you can heal D3 wounds allocated to each Sylvaneth model within 30\" of this model. Once per battle, in your hero phase, instead of using this ability to heal, you can summon 1 unit from the list below to the battlefield, and add it to your army. The summoned unit must be set up wholly within 9\" of this model and more than 9\" from any enemy units. That unit cannot move in the following movement phase. Choose a unit from the following list: 20 Dryads, 10 Tree-Revenants, 10 Spite-Revenants, 3 Kurnoth Hunters, 1 Branchwych, 1 Treelord"
 			},
-		{
-			"name": "shooting test",
-			"phase": "shooting",
-			"description": "If Brokk Grungsson ends a charge move within ½\" of any enemy units, pick one of those units and roll a dice. On a roll of 2 or more, that unit suffers D3 mortal wounds from the crushing impact of the Lord-Magnate’s charge."
+			{
+				"name": "Metamorphosis (Spell)",
+				"phase": "hero",
+				"description": "Metamorphosis has a casting value of 5. If successfully cast, pick an enemy unit within 16\" and roll a number of dice equal to the result of the casting roll (e.g. if the casting roll was 6, roll 6 dice). For each result of 4 or more, the unit suffers a mortal wound. If the last model in the unit is slain, you can set up a Sylvaneth Wyldwood in its place. None of the woods can be set up within 1\" of any other models or terrain features. "
 			}
 		],
-	"command_ability": {
-		"name": "First Rule of Grungsson",
-		"phase": "charge",
-		"description": "If Brokk Grungsson uses this ability, he invokes his first and most significant commentary on the Code – ‘to the victor, the spoils’. Until your next hero phase, friendly Kharadron Overlords units within 18\" can charge even if they ran in the same turn."
+		"command_ability": [
+			{}
+		],
+		"missle_weapon": [
+			{}
+		],
+		"melee_weapon": [
+			{}
+		],
+		"magic": [
+			{}
+		],
+		"image": "durthu.jpeg",
+		"dead": false,
+		"woundsLeft": 10,
+		"command_ability_check": false,
+		"missle_weapon_check": true,
+		"magic_check": false
+	},
+	{
+		"id": "4",
+		"name": "Treelord",
+		"stats": [
+			{
+				"move": 10,
+				"wounds": 10,
+				"bravery": 10,
+				"save": 10
+			}
+		],
+		"abilities": [
+			{
+				"name": "Groundshaking Stomp",
+				"phase": "combat",
+				"description": "At the start of the combat phase, the Spirit of Durthu stomps the ground; roll a dice for each enemy unit within 3\" of this model. On a roll of 4 or more, that unit is knocked off their feet by the impact and must subtract 1 from all hit rolls in that combat phase as they regain their footing."
+			},
+			{
+				"name": "Impale",
+				"phase": "combat",
+				"description": "If the Treelord Ancient’s Massive Impaling Talons inflict a wound on an enemy model, roll a dice. If the result exceeds the number of wounds the enemy model has remaining, it is slain.You can re-roll hit and wound rolls of 1 for Brokk Grungsson if those attacks are directed against a Hero or Monster.If the Spirit of Durthu’s Massive Impaling Talons inflict a wound on an enemy model, roll a dice. If the result exceeds the number of wounds the enemy model has remaining, it is slain."
+			},
+			{
+				"name": "Spirit Paths",
+				"phase": "movement",
+				"description": "If a Treelord Ancient is within 3\" of a Sylvaneth Wyldwood at the start of your movement phase, he can travel along the spirit paths. If he does so, remove the Spirit of Durthu from the battlefield, and then set him up within 3\" of a different Sylvaneth Wyldwood, more than 9\" from any enemy models. This is his move for the movement phase"
+			}
+		],
+		"command_ability": [
+			{}
+		],
+		"missle_weapon": [
+			{}
+		],
+		"melee_weapon": [
+			{}
+		],
+		"magic": [
+			{}
+		],
+		"image": "treelord.jpg",
+		"dead": false,
+		"woundsLeft": 10,
+		"command_ability_check": false,
+		"missle_weapon_check": true,
+		"magic_check": false
+	},
+	{
+		"id": "5",
+		"name": "Drycha",
+		"stats": [
+			{
+				"move": 10,
+				"wounds": 10,
+				"bravery": 10,
+				"save": 10
+			}
+		],
+		"abilities": [
+			{
+				"name": "Talon of the Dwindling",
+				"phase": "combat",
+				"description": "At the end of the combat phase, roll two dice for each model that suffered wounds from the Talon of the Dwindling but was not slain. If the result exceeds the model’s Wounds characteristic, or if you roll two sixes, the model is slain."
+			},
+			{
+				"name": "Lifebloom",
+				"phase": "Hero",
+				"description": "In each of your hero phases, Alarielle heals D3 wounds."
+			},
+			{
+				"name": "Sweeping Blows",
+				"phase": "combat",
+				"description": " When the Wardroth Beetle attacks with its Great Antlers, you can add 1 to the hit rolls if the target unit has five or more models."
+			},
+			{
+				"name": "Living Battering Ram",
+				"phase": "charge",
+				"description": "If this model ends a charge move within 1\" of a terrain feature, each other unit within or on that terrain feature suffers D3 mortal wounds."
+			},
+			{
+				"name": "Soul Amphorae",
+				"phase": "hero",
+				"description": "In your hero phase, you can heal D3 wounds allocated to each Sylvaneth model within 30\" of this model. Once per battle, in your hero phase, instead of using this ability to heal, you can summon 1 unit from the list below to the battlefield, and add it to your army. The summoned unit must be set up wholly within 9\" of this model and more than 9\" from any enemy units. That unit cannot move in the following movement phase. Choose a unit from the following list: 20 Dryads, 10 Tree-Revenants, 10 Spite-Revenants, 3 Kurnoth Hunters, 1 Branchwych, 1 Treelord"
+			},
+			{
+				"name": "Metamorphosis (Spell)",
+				"phase": "hero",
+				"description": "Metamorphosis has a casting value of 5. If successfully cast, pick an enemy unit within 16\" and roll a number of dice equal to the result of the casting roll (e.g. if the casting roll was 6, roll 6 dice). For each result of 4 or more, the unit suffers a mortal wound. If the last model in the unit is slain, you can set up a Sylvaneth Wyldwood in its place. None of the woods can be set up within 1\" of any other models or terrain features. "
+			}
+		],
+		"command_ability": [
+			{}
+		],
+		"missle_weapon": [
+			{}
+		],
+		"melee_weapon": [
+			{}
+		],
+		"magic": [
+			{}
+		],
+		"image": "drycha.jpeg",
+		"dead": false,
+		"woundsLeft": 10,
+		"command_ability_check": false,
+		"missle_weapon_check": true,
+		"magic_check": true
+	},
+	{
+		"id": "6",
+		"name": "Branchwraith",
+		"stats": [
+			{
+				"move": 10,
+				"wounds": 10,
+				"bravery": 10,
+				"save": 10
+			}
+		],
+		"abilities": [
+			{
+				"name": "Blessings of the Forest",
+				"phase": "combat/shooting",
+				"description": "Subtract 1 from all hit rolls made against this unit if it is w/n 3\" of a Wyldwood"
+			},
+			{
+				"name": "Roused to Wrath (Spell)",
+				"phase": "hero",
+				"description": " Roused to Wrath has a casting value of 7. If successfully cast, you can summon a unit of 10 Dryads and add it to your army. The summoned unit must be set up more than 9\" from any enemy units, and wholly on or within a Sylvaneth Wyldwood that is within 12\" of the caster. The summoned unit cannot move in the following movement phase."
+			}
+		],
+		"command_ability": [
+			{}
+		],
+		"missle_weapon": [
+			{}
+		],
+		"melee_weapon": [
+			{}
+		],
+		"magic": [
+			{}
+		],
+		"image": "branchwraith.jpeg",
+		"dead": false,
+		"woundsLeft": 10,
+		"command_ability_check": false,
+		"missle_weapon_check": false,
+		"magic_check": true
+	},
+	{
+		"id": "7",
+		"name": "Branchwych",
+		"stats": [
+			{
+				"move": 10,
+				"wounds": 10,
+				"bravery": 10,
+				"save": 10
+			}
+		],
+		"abilities": [
+			{
+				"name": "The Lord-Magnate Moves",
+				"phase": "charge",
+				"description": "If Brokk Grungsson ends a charge move within ½\" of any enemy units, pick one of those units and roll a dice. On a roll of 2 or more, that unit suffers D3 mortal wounds from the crushing impact of the Lord-Magnate’s charge."
+			},
+			{
+				"name": "Champion of Barak-Nar",
+				"phase": "shooting/combat",
+				"description": "You can re-roll hit and wound rolls of 1 for Brokk Grungsson if those attacks are directed against a Hero or Monster."
+			},
+			{
+				"name": "Supercharged Harness",
+				"phase": "combat",
+				"description": "Brokk Grungsson can supercharge his harness in the combat phase to give himself extra strength, but doing so can be hazardous. If Brokk Grungsson uses this ability, roll a dice. On a roll of 1, he suffers a mortal wound. On a roll of 3 or more, the Damage characteristic of his Aethermatic Saw is 3 rather than D3 until the end of the phase."
+			},
+			{
+				"name": "High Hitcher",
+				"phase": "movement",
+				"description": "Brokk Grungsson does not count towards the maximum number of Skyfarers that can be embarked on a Skyvessel, and is not counted for the Overburdened rule."
+			},
+			{
+				"name": "battleshock Test",
+				"phase": "battleshock",
+				"description": "If Brokk Grungsson ends a charge move within ½\" of any enemy units, pick one of those units and roll a dice. On a roll of 2 or more, that unit suffers D3 mortal wounds from the crushing impact of the Lord-Magnate’s charge."
+			},
+			{
+				"name": "shooting test",
+				"phase": "shooting",
+				"description": "If Brokk Grungsson ends a charge move within ½\" of any enemy units, pick one of those units and roll a dice. On a roll of 2 or more, that unit suffers D3 mortal wounds from the crushing impact of the Lord-Magnate’s charge."
+			}
+		],
+		"command_ability": [
+			{}
+		],
+		"missle_weapon": [
+			{}
+		],
+		"melee_weapon": [
+			{}
+		],
+		"magic": [
+			{}
+		],
+		"image": "branchwych.jpeg",
+		"dead": false,
+		"woundsLeft": 10,
+		"command_ability_check": false,
+		"missle_weapon_check": false,
+		"magic_check": true
+	},
+	{
+		"id": "8",
+		"name": "Kurnoth Hunters",
+		"stats": [
+			{
+				"move": 10,
+				"wounds": 10,
+				"bravery": 10,
+				"save": 10
+			}
+		],
+		"abilities": [
+			{
+				"name": "Talon of the Dwindling",
+				"phase": "combat",
+				"description": "At the end of the combat phase, roll two dice for each model that suffered wounds from the Talon of the Dwindling but was not slain. If the result exceeds the model’s Wounds characteristic, or if you roll two sixes, the model is slain."
+			},
+			{
+				"name": "Lifebloom",
+				"phase": "Hero",
+				"description": "In each of your hero phases, Alarielle heals D3 wounds."
+			},
+			{
+				"name": "Sweeping Blows",
+				"phase": "combat",
+				"description": " When the Wardroth Beetle attacks with its Great Antlers, you can add 1 to the hit rolls if the target unit has five or more models."
+			},
+			{
+				"name": "Living Battering Ram",
+				"phase": "charge",
+				"description": "If this model ends a charge move within 1\" of a terrain feature, each other unit within or on that terrain feature suffers D3 mortal wounds."
+			},
+			{
+				"name": "Soul Amphorae",
+				"phase": "hero",
+				"description": "In your hero phase, you can heal D3 wounds allocated to each Sylvaneth model within 30\" of this model. Once per battle, in your hero phase, instead of using this ability to heal, you can summon 1 unit from the list below to the battlefield, and add it to your army. The summoned unit must be set up wholly within 9\" of this model and more than 9\" from any enemy units. That unit cannot move in the following movement phase. Choose a unit from the following list: 20 Dryads, 10 Tree-Revenants, 10 Spite-Revenants, 3 Kurnoth Hunters, 1 Branchwych, 1 Treelord"
+			},
+			{
+				"name": "Metamorphosis (Spell)",
+				"phase": "hero",
+				"description": "Metamorphosis has a casting value of 5. If successfully cast, pick an enemy unit within 16\" and roll a number of dice equal to the result of the casting roll (e.g. if the casting roll was 6, roll 6 dice). For each result of 4 or more, the unit suffers a mortal wound. If the last model in the unit is slain, you can set up a Sylvaneth Wyldwood in its place. None of the woods can be set up within 1\" of any other models or terrain features. "
+			}
+		],
+		"command_ability": [
+			{}
+		],
+		"missle_weapon": [
+			{}
+		],
+		"melee_weapon": [
+			{}
+		],
+		"magic": [
+			{}
+		],
+		"image": "hunters.jpeg",
+		"dead": false,
+		"woundsLeft": 10,
+		"command_ability_check": false,
+		"missle_weapon_check": false,
+		"magic_check": false
+	},
+	{
+		"id": "9",
+		"name": "Dryads",
+		"stats": [
+			{
+				"move": 10,
+				"wounds": 10,
+				"bravery": 10,
+				"save": 10
+			}
+		],
+		"abilities": [
+			{
+				"name": "The Lord-Magnate Moves",
+				"phase": "charge",
+				"description": "If Brokk Grungsson ends a charge move within ½\" of any enemy units, pick one of those units and roll a dice. On a roll of 2 or more, that unit suffers D3 mortal wounds from the crushing impact of the Lord-Magnate’s charge."
+			},
+			{
+				"name": "Champion of Barak-Nar",
+				"phase": "shooting/combat",
+				"description": "You can re-roll hit and wound rolls of 1 for Brokk Grungsson if those attacks are directed against a Hero or Monster."
+			},
+			{
+				"name": "Supercharged Harness",
+				"phase": "combat",
+				"description": "Brokk Grungsson can supercharge his harness in the combat phase to give himself extra strength, but doing so can be hazardous. If Brokk Grungsson uses this ability, roll a dice. On a roll of 1, he suffers a mortal wound. On a roll of 3 or more, the Damage characteristic of his Aethermatic Saw is 3 rather than D3 until the end of the phase."
+			},
+			{
+				"name": "High Hitcher",
+				"phase": "movement",
+				"description": "Brokk Grungsson does not count towards the maximum number of Skyfarers that can be embarked on a Skyvessel, and is not counted for the Overburdened rule."
+			},
+			{
+				"name": "battleshock Test",
+				"phase": "battleshock",
+				"description": "If Brokk Grungsson ends a charge move within ½\" of any enemy units, pick one of those units and roll a dice. On a roll of 2 or more, that unit suffers D3 mortal wounds from the crushing impact of the Lord-Magnate’s charge."
+			},
+			{
+				"name": "shooting test",
+				"phase": "shooting",
+				"description": "If Brokk Grungsson ends a charge move within ½\" of any enemy units, pick one of those units and roll a dice. On a roll of 2 or more, that unit suffers D3 mortal wounds from the crushing impact of the Lord-Magnate’s charge."
+			}
+		],
+		"command_ability": [
+			{}
+		],
+		"missle_weapon": [
+			{}
+		],
+		"melee_weapon": [
+			{}
+		],
+		"magic": [
+			{}
+		],
+		"image": "dryads.jpeg",
+		"dead": false,
+		"woundsLeft": 10,
+		"command_ability_check": false,
+		"missle_weapon_check": false,
+		"magic_check": false
+	},
+	{
+		"id": "10",
+		"name": "Tree Revenants",
+		"stats": [
+			{
+				"move": 10,
+				"wounds": 10,
+				"bravery": 10,
+				"save": 10
+			}
+		],
+		"abilities": [
+			{
+				"name": "Talon of the Dwindling",
+				"phase": "combat",
+				"description": "At the end of the combat phase, roll two dice for each model that suffered wounds from the Talon of the Dwindling but was not slain. If the result exceeds the model’s Wounds characteristic, or if you roll two sixes, the model is slain."
+			},
+			{
+				"name": "Lifebloom",
+				"phase": "Hero",
+				"description": "In each of your hero phases, Alarielle heals D3 wounds."
+			},
+			{
+				"name": "Sweeping Blows",
+				"phase": "combat",
+				"description": " When the Wardroth Beetle attacks with its Great Antlers, you can add 1 to the hit rolls if the target unit has five or more models."
+			},
+			{
+				"name": "Living Battering Ram",
+				"phase": "charge",
+				"description": "If this model ends a charge move within 1\" of a terrain feature, each other unit within or on that terrain feature suffers D3 mortal wounds."
+			},
+			{
+				"name": "Soul Amphorae",
+				"phase": "hero",
+				"description": "In your hero phase, you can heal D3 wounds allocated to each Sylvaneth model within 30\" of this model. Once per battle, in your hero phase, instead of using this ability to heal, you can summon 1 unit from the list below to the battlefield, and add it to your army. The summoned unit must be set up wholly within 9\" of this model and more than 9\" from any enemy units. That unit cannot move in the following movement phase. Choose a unit from the following list: 20 Dryads, 10 Tree-Revenants, 10 Spite-Revenants, 3 Kurnoth Hunters, 1 Branchwych, 1 Treelord"
+			},
+			{
+				"name": "Metamorphosis (Spell)",
+				"phase": "hero",
+				"description": "Metamorphosis has a casting value of 5. If successfully cast, pick an enemy unit within 16\" and roll a number of dice equal to the result of the casting roll (e.g. if the casting roll was 6, roll 6 dice). For each result of 4 or more, the unit suffers a mortal wound. If the last model in the unit is slain, you can set up a Sylvaneth Wyldwood in its place. None of the woods can be set up within 1\" of any other models or terrain features. "
+			}
+		],
+		"command_ability": [
+			{}
+		],
+		"missle_weapon": [
+			{}
+		],
+		"melee_weapon": [
+			{}
+		],
+		"magic": [
+			{}
+		],
+		"image": "tree_revenants.jpeg",
+		"dead": false,
+		"woundsLeft": 10,
+		"command_ability_check": false,
+		"missle_weapon_check": false,
+		"magic_check": false
+	},
+	{
+		"id": "11",
+		"name": "Spite Revenants",
+		"stats": [
+			{
+				"move": 10,
+				"wounds": 10,
+				"bravery": 10,
+				"save": 10
+			}
+		],
+		"abilities": [
+			{
+				"name": "Talon of the Dwindling",
+				"phase": "combat",
+				"description": "At the end of the combat phase, roll two dice for each model that suffered wounds from the Talon of the Dwindling but was not slain. If the result exceeds the model’s Wounds characteristic, or if you roll two sixes, the model is slain."
+			},
+			{
+				"name": "Lifebloom",
+				"phase": "Hero",
+				"description": "In each of your hero phases, Alarielle heals D3 wounds."
+			},
+			{
+				"name": "Sweeping Blows",
+				"phase": "combat",
+				"description": " When the Wardroth Beetle attacks with its Great Antlers, you can add 1 to the hit rolls if the target unit has five or more models."
+			},
+			{
+				"name": "Living Battering Ram",
+				"phase": "charge",
+				"description": "If this model ends a charge move within 1\" of a terrain feature, each other unit within or on that terrain feature suffers D3 mortal wounds."
+			},
+			{
+				"name": "Soul Amphorae",
+				"phase": "hero",
+				"description": "In your hero phase, you can heal D3 wounds allocated to each Sylvaneth model within 30\" of this model. Once per battle, in your hero phase, instead of using this ability to heal, you can summon 1 unit from the list below to the battlefield, and add it to your army. The summoned unit must be set up wholly within 9\" of this model and more than 9\" from any enemy units. That unit cannot move in the following movement phase. Choose a unit from the following list: 20 Dryads, 10 Tree-Revenants, 10 Spite-Revenants, 3 Kurnoth Hunters, 1 Branchwych, 1 Treelord"
+			},
+			{
+				"name": "Metamorphosis (Spell)",
+				"phase": "hero",
+				"description": "Metamorphosis has a casting value of 5. If successfully cast, pick an enemy unit within 16\" and roll a number of dice equal to the result of the casting roll (e.g. if the casting roll was 6, roll 6 dice). For each result of 4 or more, the unit suffers a mortal wound. If the last model in the unit is slain, you can set up a Sylvaneth Wyldwood in its place. None of the woods can be set up within 1\" of any other models or terrain features. "
+			}
+		],
+		"command_ability": [
+			{}
+		],
+		"missle_weapon": [
+			{}
+		],
+		"melee_weapon": [
+			{}
+		],
+		"magic": [
+			{}
+		],
+		"image": "spite_revenants.jpeg",
+		"dead": false,
+		"woundsLeft": 10,
+		"command_ability_check": false,
+		"missle_weapon_check": false,
+		"magic_check": false
 	}
-}, {
-	"id": "9",
-	"name": "Dryads",
-	"abilities": [{
-			"name": "The Lord-Magnate Moves",
-			"phase": "charge",
-			"description": "If Brokk Grungsson ends a charge move within ½\" of any enemy units, pick one of those units and roll a dice. On a roll of 2 or more, that unit suffers D3 mortal wounds from the crushing impact of the Lord-Magnate’s charge."
-			},
-		{
-			"name": "Champion of Barak-Nar",
-			"phase": "shooting/combat",
-			"description": "You can re-roll hit and wound rolls of 1 for Brokk Grungsson if those attacks are directed against a Hero or Monster."
-			},
-		{
-			"name": "Supercharged Harness",
-			"phase": "combat",
-			"description": "Brokk Grungsson can supercharge his harness in the combat phase to give himself extra strength, but doing so can be hazardous. If Brokk Grungsson uses this ability, roll a dice. On a roll of 1, he suffers a mortal wound. On a roll of 3 or more, the Damage characteristic of his Aethermatic Saw is 3 rather than D3 until the end of the phase."
-			},
-		{
-			"name": "High Hitcher",
-			"phase": "movement",
-			"description": "Brokk Grungsson does not count towards the maximum number of Skyfarers that can be embarked on a Skyvessel, and is not counted for the Overburdened rule."
-			},
-		{
-			"name": "battleshock Test",
-			"phase": "battleshock",
-			"description": "If Brokk Grungsson ends a charge move within ½\" of any enemy units, pick one of those units and roll a dice. On a roll of 2 or more, that unit suffers D3 mortal wounds from the crushing impact of the Lord-Magnate’s charge."
-			},
-		{
-			"name": "shooting test",
-			"phase": "shooting",
-			"description": "If Brokk Grungsson ends a charge move within ½\" of any enemy units, pick one of those units and roll a dice. On a roll of 2 or more, that unit suffers D3 mortal wounds from the crushing impact of the Lord-Magnate’s charge."
-			}
-		],
-	"command_ability": {
-		"name": "First Rule of Grungsson",
-		"phase": "charge",
-		"description": "If Brokk Grungsson uses this ability, he invokes his first and most significant commentary on the Code – ‘to the victor, the spoils’. Until your next hero phase, friendly Kharadron Overlords units within 18\" can charge even if they ran in the same turn."
-	}
-}]
+]
