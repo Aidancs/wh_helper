@@ -29,19 +29,19 @@ export class UnitModalPage {
 		console.log(this.type, 'type')
 		console.log(this.unit.command_ability, 'this.unit')
 		if (this.type === 'abilities') {
-			this.abilities = this.unit.abilities;
+			this.abilities = true;
 		}
 		else if (this.type === 'command_abilities') {
-			this.command_abilities = this.unit.command_ability;
+			this.command_abilities = true;
 		}
 		else if (this.type === 'magic') {
-			this.magic = this.unit.magic;
+			this.magic = true;
 		}
 		else if (this.type === 'melee_weapons') {
-			this.melee_weapons = this.unit.melee_weapons;
+			this.melee_weapons = true;
 		}
 		else if (this.type === 'missle_weapons') {
-			this.missle_weapons = this.unit.missle_weapons;
+			this.missle_weapons = true;
 		}
 	}
 
