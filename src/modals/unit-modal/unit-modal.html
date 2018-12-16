@@ -6,13 +6,12 @@
   </ion-navbar>
 </ion-header>
 
-
 <ion-content padding text-center>
   <div [hidden]="!abilities">
     <div *ngFor="let ability of unit.abilities">
       <ion-card>
         <ion-card-content>
-          {{ ability.name }}
+          Name: {{ ability.name }}
         </ion-card-content>
         <ion-card-content>
           Phase: {{ ability.phase }}
@@ -27,7 +26,7 @@
     <div *ngFor="let command_ability of unit.command_ability">
       <ion-card>
         <ion-card-content>
-          {{ command_ability.name }}
+          Name: {{ command_ability.name }}
         </ion-card-content>
         <ion-card-content>
           Phase: {{ command_ability.phase }}
@@ -42,10 +41,13 @@
     <div *ngFor="let spell of unit.magic">
       <ion-card>
         <ion-card-content>
-          {{ spell.name }}
+          Name: {{ spell.name }}
         </ion-card-content>
         <ion-card-content>
           Phase: {{ spell.phase }}
+        </ion-card-content>
+        <ion-card-content>
+          Casts On: {{ spell.casting_value }}
         </ion-card-content>
         <ion-card-content>
           Description: {{ spell.description }}
@@ -54,9 +56,57 @@
     </div>
   </div>
   <div [hidden]="!melee_weapons">
-
+    <div *ngFor="let weapon of unit.melee_weapon">
+      <ion-card>
+        <ion-card-content>
+          Name: {{ weapon.name }}
+        </ion-card-content>
+        <ion-card-content>
+          Range: {{ weapon.range }}
+        </ion-card-content>
+        <ion-card-content>
+          Attacks: {{ weapon.attacks }}
+        </ion-card-content>
+        <ion-card-content>
+          To Hit: {{ weapon.to_hit }}
+        </ion-card-content>
+        <ion-card-content>
+          To Wound: {{ weapon.to_wound }}
+        </ion-card-content>
+        <ion-card-content>
+          Rend: {{ weapon.rend }}
+        </ion-card-content>
+        <ion-card-content>
+          Damage: {{ weapon.damage }}
+        </ion-card-content>
+      </ion-card>
+    </div>
   </div>
-  <div [hidden]="!missle_weapons">
-
+  <div [hidden]="!missile_weapons">
+    <div *ngFor="let weapon of unit.missile_weapons">
+      <ion-card>
+        <ion-card-content>
+          Name: {{ weapon.name }}
+        </ion-card-content>
+        <ion-card-content>
+          Range: {{ weapon.range }}
+        </ion-card-content>
+        <ion-card-content>
+          Attacks: {{ weapon.attacks }}
+        </ion-card-content>
+        <ion-card-content>
+          To Hit: {{ weapon.to_hit }}
+        </ion-card-content>
+        <ion-card-content>
+          To Wound: {{ weapon.to_wound }}
+        </ion-card-content>
+        <ion-card-content>
+          Rend: {{ weapon.rend }}
+        </ion-card-content>
+        <ion-card-content>
+          Damage: {{ weapon.damage }}
+        </ion-card-content>
+      </ion-card>
+    </div>
   </div>
 </ion-content>

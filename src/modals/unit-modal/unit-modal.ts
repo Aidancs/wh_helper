@@ -13,8 +13,7 @@ export class UnitModalPage {
 	abilities: boolean = false;
 	magic: boolean = false;
 	melee_weapons: boolean = false;
-	missle_weapons: boolean = false;
-
+	missile_weapons: boolean = false;
 
 	constructor(
 		public navCtrl: NavController,
@@ -26,8 +25,7 @@ export class UnitModalPage {
 	ngOnInit() {
 		this.unit = this.navParams.get('unit');
 		this.type = this.navParams.get('type');
-		console.log(this.type, 'type')
-		console.log(this.unit.command_ability, 'this.unit')
+
 		if (this.type === 'abilities') {
 			this.abilities = true;
 		}
@@ -40,8 +38,8 @@ export class UnitModalPage {
 		else if (this.type === 'melee_weapons') {
 			this.melee_weapons = true;
 		}
-		else if (this.type === 'missle_weapons') {
-			this.missle_weapons = true;
+		else if (this.type === 'missile_weapons') {
+			this.missile_weapons = true;
 		}
 	}
 

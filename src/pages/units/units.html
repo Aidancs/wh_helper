@@ -11,8 +11,7 @@
   <div margin-top *ngFor="let unit of units">
     <ion-card [hidden]="unit.dead">
       <ion-card-content>
-        <ion-img src="assets/imgs/{{ unit.image }}" width="150" height="150">
-        </ion-img>
+        <img src="assets/imgs/{{ unit.image }}" />
         <ion-card-title>
           <div>
             {{ unit.name }}
@@ -35,7 +34,7 @@
           </ion-card>
         </ion-card-content>
         <ion-list>
-          <button ion-button (click)="openStats()">
+          <button ion-button (click)="openStats(unit)">
             Stats
           </button>
           <button ion-button [hidden]="!unit.command_ability_check" (click)="itemTapped(unit, 'command_abilities')">
@@ -47,8 +46,8 @@
           <button ion-button [hidden]="!unit.magic_check" (click)="itemTapped(unit, 'magic')">
             Magic
           </button>
-          <button ion-button [hidden]="!unit.missle_weapon_check" (click)="itemTapped(unit, 'missle_weapons')">
-            Missle Weapons
+          <button ion-button [hidden]="!unit.missile_weapon_check" (click)="itemTapped(unit, 'missile_weapons')">
+            missile Weapons
           </button>
           <button ion-button (click)="itemTapped(unit, 'melee_weapons')">
             Melee Weapons
@@ -73,3 +72,450 @@
     </ion-card>
   </div>
 </ion-content>
+
+<!-- alarielle -->
+<!-- <div [hidden]="!alarielle && (!tla || !treelord || !drycha || !durthu)">
+              <ion-grid>
+                <ion-row>
+                  <ion-col>
+                    Wds
+                  </ion-col>
+                  <ion-col>
+                    Move
+                  </ion-col>
+                  <ion-col>
+                    Spear
+                  </ion-col>
+                  <ion-col>
+                    Antlers
+                  </ion-col>
+                </ion-row>
+                <ion-row>
+                  <ion-col>
+                    0 - 4
+                  </ion-col>
+                  <ion-col>
+                    16"
+                  </ion-col>
+                  <ion-col>
+                    30"
+                  </ion-col>
+                  <ion-col>
+                    5
+                  </ion-col>
+                </ion-row>
+                <ion-row>
+                  <ion-col>
+                    15 - 7
+                  </ion-col>
+                  <ion-col>
+                    14"
+                  </ion-col>
+                  <ion-col>
+                    25"
+                  </ion-col>
+                  <ion-col>
+                    4
+                  </ion-col>
+                </ion-row>
+                <ion-row>
+                  <ion-col>
+                    8 - 10
+                  </ion-col>
+                  <ion-col>
+                    10"
+                  </ion-col>
+                  <ion-col>
+                    20"
+                  </ion-col>
+                  <ion-col>
+                    3
+                  </ion-col>
+                </ion-row>
+                <ion-row>
+                  <ion-col>
+                    11 - 13
+                  </ion-col>
+                  <ion-col>
+                    8"
+                  </ion-col>
+                  <ion-col>
+                    15"
+                  </ion-col>
+                  <ion-col>
+                    2
+                  </ion-col>
+                </ion-row>
+                <ion-row>
+                  <ion-col>
+                    14+
+                  </ion-col>
+                  <ion-col>
+                    6"
+                  </ion-col>
+                  <ion-col>
+                    10"
+                  </ion-col>
+                  <ion-col>
+                    1
+                  </ion-col>
+                </ion-row>
+              </ion-grid>
+            </div> -->
+<!-- tla -->
+<!-- <div [hidden]="!tla && (!alarielle && !treelord && !drycha && !durthu)">
+              <ion-grid>
+                <ion-row>
+                  <ion-col>
+                    sadfjklsjdfklj
+                  </ion-col>
+                  <ion-col>
+                    DTS
+                  </ion-col>
+                  <ion-col>
+                    Swep Blows
+                  </ion-col>
+                  <ion-col>
+                    Msve Impl
+                  </ion-col>
+                </ion-row>
+                <ion-row>
+                  <ion-col>
+                    0 - 2
+                  </ion-col>
+                  <ion-col>
+                    2+
+                  </ion-col>
+                  <ion-col>
+                    2
+                  </ion-col>
+                  <ion-col>
+                    2+
+                  </ion-col>
+                </ion-row>
+                <ion-row>
+                  <ion-col>
+                    3 - 4
+                  </ion-col>
+                  <ion-col>
+                    3+
+                  </ion-col>
+                  <ion-col>
+                    2
+                  </ion-col>
+                  <ion-col>
+                    2+
+                  </ion-col>
+                </ion-row>
+                <ion-row>
+                  <ion-col>
+                    5 - 7
+                  </ion-col>
+                  <ion-col>
+                    4+
+                  </ion-col>
+                  <ion-col>
+                    2
+                  </ion-col>
+                  <ion-col>
+                    3+
+                  </ion-col>
+                </ion-row>
+                <ion-row>
+                  <ion-col>
+                    8 - 9
+                  </ion-col>
+                  <ion-col>
+                    5+
+                  </ion-col>
+                  <ion-col>
+                    1
+                  </ion-col>
+                  <ion-col>
+                    3+
+                  </ion-col>
+                </ion-row>
+                <ion-row>
+                  <ion-col>
+                    10+
+                  </ion-col>
+                  <ion-col>
+                    6+
+                  </ion-col>
+                  <ion-col>
+                    1
+                  </ion-col>
+                  <ion-col>
+                    4+
+                  </ion-col>
+                </ion-row>
+              </ion-grid>
+            </div> -->
+
+<!-- durthu -->
+<!-- <div [hidden]="durthu && (!alarielle && !treelord && !drycha && !tla)">
+              <ion-grid>
+                <ion-row>
+                  <ion-col>
+                    sadfjklsjdfklj
+                  </ion-col>
+                  <ion-col>
+                    DTS
+                  </ion-col>
+                  <ion-col>
+                    Swep Blows
+                  </ion-col>
+                  <ion-col>
+                    Msve Impl
+                  </ion-col>
+                </ion-row>
+                <ion-row>
+                  <ion-col>
+                    0 - 2
+                  </ion-col>
+                  <ion-col>
+                    2+
+                  </ion-col>
+                  <ion-col>
+                    2
+                  </ion-col>
+                  <ion-col>
+                    2+
+                  </ion-col>
+                </ion-row>
+                <ion-row>
+                  <ion-col>
+                    3 - 4
+                  </ion-col>
+                  <ion-col>
+                    3+
+                  </ion-col>
+                  <ion-col>
+                    2
+                  </ion-col>
+                  <ion-col>
+                    2+
+                  </ion-col>
+                </ion-row>
+                <ion-row>
+                  <ion-col>
+                    5 - 7
+                  </ion-col>
+                  <ion-col>
+                    4+
+                  </ion-col>
+                  <ion-col>
+                    2
+                  </ion-col>
+                  <ion-col>
+                    3+
+                  </ion-col>
+                </ion-row>
+                <ion-row>
+                  <ion-col>
+                    8 - 9
+                  </ion-col>
+                  <ion-col>
+                    5+
+                  </ion-col>
+                  <ion-col>
+                    1
+                  </ion-col>
+                  <ion-col>
+                    3+
+                  </ion-col>
+                </ion-row>
+                <ion-row>
+                  <ion-col>
+                    10+
+                  </ion-col>
+                  <ion-col>
+                    6+
+                  </ion-col>
+                  <ion-col>
+                    1
+                  </ion-col>
+                  <ion-col>
+                    4+
+                  </ion-col>
+                </ion-row>
+              </ion-grid>
+            </div>  -->
+<!-- treelord -->
+<!-- <div>
+              <ion-grid>
+                <ion-row>
+                  <ion-col>
+                    sadfjklsjdfklj
+                  </ion-col>
+                  <ion-col>
+                    DTS
+                  </ion-col>
+                  <ion-col>
+                    Swep Blows
+                  </ion-col>
+                  <ion-col>
+                    Msve Impl
+                  </ion-col>
+                </ion-row>
+                <ion-row>
+                  <ion-col>
+                    0 - 2
+                  </ion-col>
+                  <ion-col>
+                    2+
+                  </ion-col>
+                  <ion-col>
+                    2
+                  </ion-col>
+                  <ion-col>
+                    2+
+                  </ion-col>
+                </ion-row>
+                <ion-row>
+                  <ion-col>
+                    3 - 4
+                  </ion-col>
+                  <ion-col>
+                    3+
+                  </ion-col>
+                  <ion-col>
+                    2
+                  </ion-col>
+                  <ion-col>
+                    2+
+                  </ion-col>
+                </ion-row>
+                <ion-row>
+                  <ion-col>
+                    5 - 7
+                  </ion-col>
+                  <ion-col>
+                    4+
+                  </ion-col>
+                  <ion-col>
+                    2
+                  </ion-col>
+                  <ion-col>
+                    3+
+                  </ion-col>
+                </ion-row>
+                <ion-row>
+                  <ion-col>
+                    8 - 9
+                  </ion-col>
+                  <ion-col>
+                    5+
+                  </ion-col>
+                  <ion-col>
+                    1
+                  </ion-col>
+                  <ion-col>
+                    3+
+                  </ion-col>
+                </ion-row>
+                <ion-row>
+                  <ion-col>
+                    10+
+                  </ion-col>
+                  <ion-col>
+                    6+
+                  </ion-col>
+                  <ion-col>
+                    1
+                  </ion-col>
+                  <ion-col>
+                    4+
+                  </ion-col>
+                </ion-row>
+              </ion-grid>
+            </div> -->
+<!-- drycha -->
+<!-- <div>
+              <ion-grid>
+                <ion-row>
+                  <ion-col>
+                    sadfjklsjdfklj
+                  </ion-col>
+                  <ion-col>
+                    DTS
+                  </ion-col>
+                  <ion-col>
+                    Swep Blows
+                  </ion-col>
+                  <ion-col>
+                    Msve Impl
+                  </ion-col>
+                </ion-row>
+                <ion-row>
+                  <ion-col>
+                    0 - 2
+                  </ion-col>
+                  <ion-col>
+                    2+
+                  </ion-col>
+                  <ion-col>
+                    2
+                  </ion-col>
+                  <ion-col>
+                    2+
+                  </ion-col>
+                </ion-row>
+                <ion-row>
+                  <ion-col>
+                    3 - 4
+                  </ion-col>
+                  <ion-col>
+                    3+
+                  </ion-col>
+                  <ion-col>
+                    2
+                  </ion-col>
+                  <ion-col>
+                    2+
+                  </ion-col>
+                </ion-row>
+                <ion-row>
+                  <ion-col>
+                    5 - 7
+                  </ion-col>
+                  <ion-col>
+                    4+
+                  </ion-col>
+                  <ion-col>
+                    2
+                  </ion-col>
+                  <ion-col>
+                    3+
+                  </ion-col>
+                </ion-row>
+                <ion-row>
+                  <ion-col>
+                    8 - 9
+                  </ion-col>
+                  <ion-col>
+                    5+
+                  </ion-col>
+                  <ion-col>
+                    1
+                  </ion-col>
+                  <ion-col>
+                    3+
+                  </ion-col>
+                </ion-row>
+                <ion-row>
+                  <ion-col>
+                    10+
+                  </ion-col>
+                  <ion-col>
+                    6+
+                  </ion-col>
+                  <ion-col>
+                    1
+                  </ion-col>
+                  <ion-col>
+                    4+
+                  </ion-col>
+                </ion-row>
+              </ion-grid>  -->
+<!-- </div> -->

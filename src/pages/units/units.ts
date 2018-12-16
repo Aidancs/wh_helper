@@ -21,6 +21,11 @@ export class UnitsPage {
 	save: number;
 	bravery: number;
 	totalWounds: number;
+	alarielle: boolean;
+	tla: boolean;
+	durthu: boolean;
+	treelord: boolean;
+	drycha: boolean;
 
 	images = ['alarielle.jpg', 'tla.jpg', 'durthu.jpeg', 'treelord.jpg', 'drycha.jpeg', 'hunters.jpeg', 'branchwraith.jpeg', 'branchwych.jpeg', 'dryads.jpeg', 'tree_revenants.jpeg', 'spite_revenants.jpeg'];
 
@@ -36,7 +41,7 @@ export class UnitsPage {
 		try {
 			this.unitSvc.getUnitJSon().subscribe(result => {
 				this.units = result;
-				console.log(this.units, 'this.units in UnitsPage')
+
 			});
 
 		} catch (e) {
@@ -70,7 +75,28 @@ export class UnitsPage {
 		this.unit.dead = true;
 	}
 
-	openStats() {
+	openStats(unit) {
+		this.reset();
+		console.log(unit.id, 'unit')
 		this.stats = !this.stats;
+		if (unit.id === 1) {
+			this.alarielle = true;
+		} else if (unit.id === 2) {
+			this.tla = true;
+		} else if (unit.id === 3) {
+			this.durthu = true;
+		} else if (unit.id === 4) {
+			this.treelord = true;
+		} else if (unit.id === 5) {
+			this.drycha = true;
+		}
+	}
+
+	reset() {
+		this.alarielle = false;
+		this.tla = false;
+		this.durthu = false;
+		this.treelord = false;
+		this.drycha = false;
 	}
 }
