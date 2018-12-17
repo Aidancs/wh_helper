@@ -12,7 +12,7 @@ import { UnitsPage } from '../pages/units/units';
 export class MyApp {
 	@ViewChild(Nav) nav: Nav;
 
-	rootPage: any = UnitsPage;
+	rootPage: any = PhasesPage;
 
 	pages: Array<{ title: string, component: any }>;
 

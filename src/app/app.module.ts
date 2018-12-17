@@ -11,8 +11,10 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
 // services
+import { PhaseService } from '../services/phase.service';
 import { UnitService } from '../services/unit.service';
 
+import { PhaseModalPage } from '../modals/phase-modal/phase-modal';
 import { UnitModalPage } from '../modals/unit-modal/unit-modal';
 
 @NgModule({
@@ -20,6 +22,7 @@ import { UnitModalPage } from '../modals/unit-modal/unit-modal';
 		MyApp,
 		PhasesPage,
 		UnitsPage,
+		PhaseModalPage,
 		UnitModalPage,
 	],
 	imports: [
@@ -32,11 +35,13 @@ import { UnitModalPage } from '../modals/unit-modal/unit-modal';
 		MyApp,
 		PhasesPage,
 		UnitsPage,
+		PhaseModalPage,
 		UnitModalPage,
 	],
 	providers: [
 		StatusBar,
 		SplashScreen,
+		PhaseService,
 		UnitService,
 		{ provide: ErrorHandler, useClass: IonicErrorHandler }
 	]

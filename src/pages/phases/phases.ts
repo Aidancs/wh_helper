@@ -1,7 +1,9 @@
 import { Component } from '@angular/core';
-import { NavController, NavParams } from 'ionic-angular';
+import { ModalController, NavController } from 'ionic-angular';
 
-import { UnitService } from '../../services/unit.service';
+import { PhaseModalPage } from '../../modals/phase-modal/phase-modal';
+import { PhaseService } from '../../services/phase.service';
+import { stringify } from '@angular/compiler/src/util';
 
 @Component({
 	selector: 'page-phases',
@@ -11,58 +13,80 @@ export class PhasesPage {
 
 	phases = ['Hero Phase', 'Movement Phase', 'Shooting Phase', 'Charge Phase', 'Combat Phase', 'Battleshock Phase'];
 
-	commandAbilitiesList = [];
+	hero_phase_list = [];
+	movement_phase_list = [];
+	shooting_phase_list = [];
+	charge_phase_list = [];
+	combat_phase_list = [];
+	battleshock_phase_list = [];
+
+	phaseList: any;
 
 	constructor(
+		private modalCtrl: ModalController,
 		public navCtrl: NavController,
-		private unitSvc: UnitService,
+		private phaseSvc: PhaseService,
 	) { }
 
 	ngOnInit() {
+		this.phaseSvc.getPhasesJSon().subscribe(result => {
+			this.phaseList = result;
 
-		try {
-			this.unitSvc.getUnitJSon().subscribe(result => {
-				for (var index = 0; index < result.length; ++index) {
-					console.log(result[index].command_ability, 'result[index].command_ability')
-					if (result[index].commmand_ability) {
-						this.commandAbilitiesList.push(result[index].commmand_ability);
-					}
+			for (let i = 0; i < this.phaseList.length; ++i) {
+				if (this.phaseList[i].phase === 'hero') {
+					this.hero_phase_list.push(this.phaseList[i]);
+				} else if (this.phaseList[i].phase === 'movement') {
+					this.movement_phase_list.push(this.phaseList[i]);
+				} else if (this.phaseList[i].phase === 'shooting') {
+					this.shooting_phase_list.push(this.phaseList[i]);
+				} else if (this.phaseList[i].phase === 'charge') {
+					this.charge_phase_list.push(this.phaseList[i]);
+				} else if (this.phaseList[i].phase === 'combat') {
+					this.combat_phase_list.push(this.phaseList[i]);
+				} else if (this.phaseList[i].phase === 'battleshock') {
+					this.battleshock_phase_list.push(this.phaseList[i]);
+				} else if (this.phaseList[i].phase === 'shooting/combat') {
+					this.shooting_phase_list.push(this.phaseList[i]);
+					this.combat_phase_list.push(this.phaseList[i]);
 				}
-				// for (var index = 0; index < result.length; ++index) {
-				// 	// console.log(result[index], 'result')
-				// 	if (result[index].command_ability) {
-				// 		this.commandAbilitiesList.push(result[index].command_ability);
-				// 		console.log(this.commandAbilitiesList, 'commandAbilitiesList')
-				// 	}
-				// }
-				// if (result.comms)
-				// for (var index = 0; index < result.length; ++index) {
-				// 	if (result[index].command_abilities !== 0) {
-				// 		this.commandAbilitiesList.push(result[index].command_abilities);
-				// 	}
-				// 	for (var i = 0; i < result[index].abilities.length; ++i) {
-				// 		if (result[index].abilities[i].phase === 'hero') {
-				// 			this.heroList.push(result[index].abilities[i]);
-				// 		} else if (result[index].abilities[i].phase === 'movement') {
-				// 			this.movementList.push(result[index].abilities[i]);
-				// 		} else if (result[index].abilities[i].phase === 'shooting') {
-				// 			this.shootingList.push(result[index].abilities[i]);
-				// 		} else if (result[index].abilities[i].phase === 'charge') {
-				// 			this.chargeList.push(result[index].abilities[i]);
-				// 		} else if (result[index].abilities[i].phase === 'combat') {
-				// 			this.combatList.push(result[index].abilities[i]);
-				// 		} else if (result[index].abilities[i].phase === 'battleshock') {
-				// 			this.battleshockList.push(result[index].abilities[i]);
-				// 		} else if (result[index].abilities[i].phase === 'shooting/combat') {
-				// 			this.shootingList.push(result[index].abilities[i]);
-				// 			this.combatList.push(result[index].abilities[i]);
-				// 		}
-				// 	}
-				// }
-			});
+			}
+		});
+	}
 
-		} catch (e) {
-			console.log("Profile" + e);
+	phaseTapped(phase) {
+		let list = [];
+		let phase_name: string;
+
+		if (phase === 'Hero Phase') {
+			list = this.hero_phase_list;
+			phase_name = 'hero';
+		} else if (phase === 'Movement Phase') {
+			list = this.movement_phase_list;
+			phase_name = 'movement';
+		} else if (phase === 'Shooting Phase') {
+			list = this.shooting_phase_list;
+			phase_name = 'shooting';
+		} else if (phase === 'Charge Phase') {
+			list = this.charge_phase_list;
+			phase_name = 'charge';
+		} else if (phase === 'Combat Phase') {
+			list = this.combat_phase_list;
+			phase_name = 'combat';
+		} else if (phase === 'Battleshock Phase') {
+			list = this.battleshock_phase_list;
+			phase_name = 'battleshock';
 		}
+
+		let modal = this.modalCtrl.create(PhaseModalPage, {
+			phase: list,
+			phase_name: phase_name
+		}, {},
+		);
+		modal.onDidDismiss((refresh) => {
+			if (refresh) {
+				console.log('inside onDidDismiss')
+			}
+		});
+		modal.present();
 	}
 }

@@ -1,0 +1,41 @@
+<ion-header>
+  <ion-navbar>
+    <ion-buttons end>
+      <button ion-button (click)="closeModal()">Close</button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <div *ngFor="let phase of phases" text-center>
+    <ion-card-content>
+      <ion-card>
+        <ion-card-title>
+          {{ phase.name }}
+        </ion-card-title>
+        <h2 *ngIf="phase.command_ability">
+          Command Ability
+        </h2>
+        <ion-card-content>
+          {{ phase.hero_name }}
+        </ion-card-content>
+        <ion-card-content>
+          {{ phase.phase }}
+        </ion-card-content>
+        <ion-card-content>
+          {{ phase.description }}
+        </ion-card-content>
+        <ion-card-content *ngIf="phase.magic_phase">
+          {{ phase.casting_value }}
+        </ion-card-content>
+      </ion-card>
+    </ion-card-content>
+  </div>
+</ion-content>
+
+<!-- hero_name
+name
+phase
+magic_phase
+description
+casting_value -->

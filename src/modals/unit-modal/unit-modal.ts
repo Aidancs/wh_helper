@@ -46,5 +46,4 @@ export class UnitModalPage {
 	closeModal() {
 		this.viewCtrl.dismiss();
 	}
-
 }
