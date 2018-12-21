@@ -32,7 +32,7 @@
 			{
 				"name": "Soul Amphorae",
 				"phase": "hero",
-				"description": "In your hero phase, you can heal D3 wounds allocated to each Sylvaneth model within 30\" of this model. Once per battle, in your hero phase, instead of using this ability to heal, you can summon 1 unit from the list below to the battlefield, and add it to your army. The summoned unit must be set up wholly within 9\" of this model and more than 9\" from any enemy units. That unit cannot move in the following movement phase. Choose a unit from the following list: 20 Dryads, 10 Tree-Revenants, 10 Spite-Revenants, 3 Kurnoth Hunters, 1 Branchwych, 1 Treelord"
+				"description": "In your hero phase, you can heal D3 wounds allocated to each Sylvaneth model within 30\" of this model. Once per battle, in your hero phase, instead of using this ability to heal, you can summon 1 unit from the list below to the battlefield, and add it to your army. The summoned unit must be set up wholly within 9\" of this model and more than 9\" from any enemy units. That unit cannot move in the following movement phase. Choose a unit from the following list: 20 Dryads, 10 Tree-Revenants, 10 Spite-Revenants, 3 Kurnoth Hunters, 1 Branchwych, 1 Treelord."
 			}
 		],
 		"command_ability": [
@@ -77,7 +77,7 @@
 			{
 				"name": "Metamorphosis",
 				"phase": "hero",
-				"description": "Metamorphosis has a casting value of 5. If successfully cast, pick an enemy unit within 16\" and roll a number of dice equal to the result of the casting roll (e.g. if the casting roll was 6, roll 6 dice). For each result of 4 or more, the unit suffers a mortal wound. If the last model in the unit is slain, you can set up a Sylvaneth Wyldwood in its place. None of the woods can be set up within 1\" of any other models or terrain features. ",
+				"description": "Metamorphosis has a casting value of 5. If successfully cast, pick an enemy unit within 16\" and roll a number of dice equal to the result of the casting roll (e.g. if the casting roll was 6, roll 6 dice). For each result of 4 or more, the unit suffers a mortal wound. If the last model in the unit is slain, you can set up a Sylvaneth Wyldwood in its place. None of the woods can be set up within 1\" of any other models or terrain features.",
 				"casting_value": 1
 			},
 			{
@@ -129,7 +129,7 @@
 			{
 				"name": "Heed the Spirit Song",
 				"phase": "hero",
-				"description": "The Treelord Ancient speaks to its kin through the spirit-song, warning them of approaching dangers. Until your next hero phase, you can re-roll save rolls of 1 for Sylvaneth units if they are within 10\" of the Treelord Ancient. "
+				"description": "The Treelord Ancient speaks to its kin through the spirit-song, warning them of approaching dangers. Until your next hero phase, you can re-roll save rolls of 1 for Sylvaneth units if they are within 10\" of the Treelord Ancient."
 			}
 		],
 		"missile_weapons": [
@@ -232,7 +232,7 @@
 			{
 				"name": "Spirit Paths",
 				"phase": "movement",
-				"description": "If a Treelord is within 3\" of a Sylvaneth Wyldwood at the start of your movement phase, he can travel along the spirit paths. If he does so, remove the Treelord from the battlefield, and then set him up within 3\" of a different Sylvaneth Wyldwood, more than 9\" from any enemy models. This is his move for the movement phase"
+				"description": "If a Treelord is within 3\" of a Sylvaneth Wyldwood at the start of your movement phase, he can travel along the spirit paths. If he does so, remove the Treelord from the battlefield, and then set him up within 3\" of a different Sylvaneth Wyldwood, more than 9\" from any enemy models. This is his move for the movement phase."
 			}
 		],
 		"command_ability": [
@@ -298,7 +298,7 @@
 			{
 				"name": "Blessings of the Forest",
 				"phase": "combat/shooting",
-				"description": "Subtract 1 from all hit rolls made against this unit if it is w/n 3\" of a Wyldwood"
+				"description": "Subtract 1 from all hit rolls made against this unit if it is w/n 3\" of a Wyldwood."
 			}
 		],
 		"command_ability": [
@@ -500,6 +500,192 @@
 			{}
 		],
 		"image": "spite_revenants.jpeg",
+		"dead": false,
+		"command_ability_check": false,
+		"missile_weapon_check": false,
+		"magic_check": false,
+		"fly": false
+	},
+	{
+		"id": 12,
+		"name": "Daemonettes",
+		"stats": {
+			"move": 10,
+			"wounds": 10,
+			"bravery": 10,
+			"save": 10
+		},
+		"abilities": [
+			{}
+		],
+		"command_ability": [
+			{}
+		],
+		"missile_weapons": [
+			{}
+		],
+		"melee_weapon": [
+			{}
+		],
+		"magic": [
+			{}
+		],
+		"image": "daemonettes.jpeg",
+		"dead": false,
+		"command_ability_check": false,
+		"missile_weapon_check": false,
+		"magic_check": false,
+		"fly": false
+	},
+	{
+		"id": 13,
+		"name": "Keeper of Secrets",
+		"stats": {
+			"move": 10,
+			"wounds": 10,
+			"bravery": 10,
+			"save": 10
+		},
+		"abilities": [
+			{}
+		],
+		"command_ability": [
+			{}
+		],
+		"missile_weapons": [
+			{}
+		],
+		"melee_weapon": [
+			{}
+		],
+		"magic": [
+			{}
+		],
+		"image": "keeper_of_secrets.jpeg",
+		"dead": false,
+		"command_ability_check": false,
+		"missile_weapon_check": false,
+		"magic_check": false,
+		"fly": false
+	},
+	{
+		"id": 14,
+		"name": "Seekers",
+		"stats": {
+			"move": 10,
+			"wounds": 10,
+			"bravery": 10,
+			"save": 10
+		},
+		"abilities": [
+			{}
+		],
+		"command_ability": [
+			{}
+		],
+		"missile_weapons": [
+			{}
+		],
+		"melee_weapon": [
+			{}
+		],
+		"magic": [
+			{}
+		],
+		"image": "seekers.jpeg",
+		"dead": false,
+		"command_ability_check": false,
+		"missile_weapon_check": false,
+		"magic_check": false,
+		"fly": false
+	},
+	{
+		"id": 15,
+		"name": "Daemon Prince",
+		"stats": {
+			"move": 10,
+			"wounds": 10,
+			"bravery": 10,
+			"save": 10
+		},
+		"abilities": [
+			{}
+		],
+		"command_ability": [
+			{}
+		],
+		"missile_weapons": [
+			{}
+		],
+		"melee_weapon": [
+			{}
+		],
+		"magic": [
+			{}
+		],
+		"image": "daemon_prince.jpeg",
+		"dead": false,
+		"command_ability_check": false,
+		"missile_weapon_check": false,
+		"magic_check": false,
+		"fly": false
+	},
+	{
+		"id": 16,
+		"name": "Fiends",
+		"stats": {
+			"move": 10,
+			"wounds": 10,
+			"bravery": 10,
+			"save": 10
+		},
+		"abilities": [
+			{}
+		],
+		"command_ability": [
+			{}
+		],
+		"missile_weapons": [
+			{}
+		],
+		"melee_weapon": [
+			{}
+		],
+		"magic": [
+			{}
+		],
+		"image": "fiends.jpeg",
+		"dead": false,
+		"command_ability_check": false,
+		"missile_weapon_check": false,
+		"magic_check": false,
+		"fly": false
+	},
+	{
+		"id": 17,
+		"name": "Infernal Enrapturess",
+		"stats": {
+			"move": 10,
+			"wounds": 10,
+			"bravery": 10,
+			"save": 10
+		},
+		"abilities": [
+			{}
+		],
+		"command_ability": [
+			{}
+		],
+		"missile_weapons": [
+			{}
+		],
+		"melee_weapon": [
+			{}
+		],
+		"magic": [
+			{}
+		],
+		"image": "infernal_enrapturess.jpeg",
 		"dead": false,
 		"command_ability_check": false,
 		"missile_weapon_check": false,
