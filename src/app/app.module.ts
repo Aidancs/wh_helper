@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { ErrorHandler, NgModule } from '@angular/core';
 import { HttpModule } from '@angular/http';
+import { NgxsModule } from '@ngxs/store';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 
 import { MyApp } from './app.component';
@@ -44,6 +45,13 @@ import { UnitModalPage } from '../modals/unit-modal/unit-modal';
 		PhaseService,
 		UnitService,
 		{ provide: ErrorHandler, useClass: IonicErrorHandler }
+	]
+})
+@NgModule({
+	imports: [
+		NgxsModule.forRoot([
+			// AlarielleState
+		])
 	]
 })
 export class AppModule { }

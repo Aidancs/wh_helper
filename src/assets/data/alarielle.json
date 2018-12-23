@@ -1,0 +1,95 @@
+{
+	"id": 1,
+	"name": "Alarielle the Everqueen",
+	"stats": {
+		"move": "16 (0-4), 14 (5-7), 10 (8-10), 8 (11-13), 6 (14+)",
+		"wounds": 16,
+		"bravery": 10,
+		"save": 3
+	},
+	"abilities": [
+		{
+			"name": "Talon of the Dwindling",
+			"phase": "combat",
+			"description": "At the end of the combat phase, roll two dice for each model that suffered wounds from the Talon of the Dwindling but was not slain. If the result exceeds the model’s Wounds characteristic, or if you roll two sixes, the model is slain."
+		},
+		{
+			"name": "Lifebloom",
+			"phase": "hero",
+			"description": "In each of your hero phases, Alarielle heals D3 wounds."
+		},
+		{
+			"name": "Sweeping Blows",
+			"phase": "combat",
+			"description": " When the Wardroth Beetle attacks with its Great Antlers, you can add 1 to the hit rolls if the target unit has five or more models."
+		},
+		{
+			"name": "Living Battering Ram",
+			"phase": "charge",
+			"description": "If this model ends a charge move within 1\" of a terrain feature, each other unit within or on that terrain feature suffers D3 mortal wounds."
+		},
+		{
+			"name": "Soul Amphorae",
+			"phase": "hero",
+			"description": "In your hero phase, you can heal D3 wounds allocated to each Sylvaneth model within 30\" of this model. Once per battle, in your hero phase, instead of using this ability to heal, you can summon 1 unit from the list below to the battlefield, and add it to your army. The summoned unit must be set up wholly within 9\" of this model and more than 9\" from any enemy units. That unit cannot move in the following movement phase. Choose a unit from the following list: 20 Dryads, 10 Tree-Revenants, 10 Spite-Revenants, 3 Kurnoth Hunters, 1 Branchwych, 1 Treelord."
+		}
+	],
+	"command_ability": [
+		{
+			"name": "Ghyran's Wrath",
+			"phase": "hero",
+			"description": "Alarielle can use this ability once per battle. When she does so, you can re-roll all failed wound rolls made for friendly Sylvaneth models until your next hero phase."
+		}
+	],
+	"missile_weapons": [
+		{
+			"name": "Spear of Kurnoth",
+			"range": "30\"(0-4), 25\"(5-7), 20\"(8-10), 15\"(11-13), 10\"(14+)",
+			"attacks": 1,
+			"to_hit": 3,
+			"to_wound": 2,
+			"rend": "-2",
+			"damage": "D6"
+		}
+	],
+	"melee_weapon": [
+		{
+			"name": "Talon of the Dwindling",
+			"range": "1\"",
+			"attacks": 4,
+			"to_hit": 3,
+			"to_wound": 4,
+			"rend": "-",
+			"damage": "1"
+		},
+		{
+			"name": "Wardroth Antlers",
+			"range": "2\"",
+			"attacks": 5,
+			"to_hit": 4,
+			"to_wound": 3,
+			"rend": "-2",
+			"damage": "5(0-4), 4(5-7), 3(8-10), 2(11-13), 1(14+)"
+		}
+	],
+	"magic": [
+		{
+			"name": "Metamorphosis",
+			"phase": "hero",
+			"description": "Metamorphosis has a casting value of 5. If successfully cast, pick an enemy unit within 16\" and roll a number of dice equal to the result of the casting roll (e.g. if the casting roll was 6, roll 6 dice). For each result of 4 or more, the unit suffers a mortal wound. If the last model in the unit is slain, you can set up a Sylvaneth Wyldwood in its place. None of the woods can be set up within 1\" of any other models or terrain features.",
+			"casting_value": 1
+		},
+		{
+			"name": "Regrowth",
+			"phase": "hero",
+			"description": "",
+			"casting_value": 1
+		}
+	],
+	"image": "alarielle.JPG",
+	"dead": false,
+	"command_ability_check": true,
+	"missile_weapon_check": true,
+	"magic_check": true,
+	"fly": true
+}
