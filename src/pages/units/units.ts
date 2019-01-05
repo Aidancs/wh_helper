@@ -41,7 +41,6 @@ export class UnitsPage {
 		try {
 			this.unitSvc.getUnitJSon().subscribe(result => {
 				this.units = result;
-
 			});
 
 		} catch (e) {
@@ -73,6 +72,7 @@ export class UnitsPage {
 	dead(unit) {
 		this.unit = unit;
 		this.unit.dead = true;
+		this.unitSvc.update(this.unit.id, this.unit);
 	}
 
 	openStats(unit) {

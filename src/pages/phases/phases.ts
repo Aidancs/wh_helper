@@ -19,8 +19,7 @@ export class PhasesPage {
 	charge_phase_list = [];
 	combat_phase_list = [];
 	battleshock_phase_list = [];
-
-	phaseList: any;
+	phaseList = [];
 
 	constructor(
 		private modalCtrl: ModalController,
@@ -30,9 +29,18 @@ export class PhasesPage {
 
 	ngOnInit() {
 		this.phaseSvc.getPhasesJSon().subscribe(result => {
-			this.phaseList = result;
+			// console.log(result[0].phase[0], 'result[0].phase[0]');
 
+			// for (let i = 0; i < result.length; ++i) {
+			// 	if (result[0].phase[0], 'result[0].phase[0]' === ) {
+
+			// 	}
+			// }
+
+			this.phaseList = result;
+			console.log(this.phaseList, 'phaseList')
 			for (let i = 0; i < this.phaseList.length; ++i) {
+				console.log(this.phaseList[i].phase, 'blurg')
 				if (this.phaseList[i].phase === 'hero') {
 					this.hero_phase_list.push(this.phaseList[i]);
 				} else if (this.phaseList[i].phase === 'movement') {
