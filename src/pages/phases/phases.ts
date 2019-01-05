@@ -38,26 +38,36 @@ export class PhasesPage {
 			// }
 
 			this.phaseList = result;
-			console.log(this.phaseList, 'phaseList')
-			for (let i = 0; i < this.phaseList.length; ++i) {
-				console.log(this.phaseList[i].phase, 'blurg')
-				if (this.phaseList[i].phase === 'hero') {
-					this.hero_phase_list.push(this.phaseList[i]);
-				} else if (this.phaseList[i].phase === 'movement') {
-					this.movement_phase_list.push(this.phaseList[i]);
-				} else if (this.phaseList[i].phase === 'shooting') {
-					this.shooting_phase_list.push(this.phaseList[i]);
-				} else if (this.phaseList[i].phase === 'charge') {
-					this.charge_phase_list.push(this.phaseList[i]);
-				} else if (this.phaseList[i].phase === 'combat') {
-					this.combat_phase_list.push(this.phaseList[i]);
-				} else if (this.phaseList[i].phase === 'battleshock') {
-					this.battleshock_phase_list.push(this.phaseList[i]);
-				} else if (this.phaseList[i].phase === 'shooting/combat') {
-					this.shooting_phase_list.push(this.phaseList[i]);
-					this.combat_phase_list.push(this.phaseList[i]);
-				}
+
+			for (var prop in this.phaseList) {
+				console.log(prop, 'prop')
+
 			}
+			// for (var key in this.phaseList) {
+			// 	if (this.phaseList.hasOwnProperty(key)) {
+			// 		console.log(key + " -> " + this.phaseList[key]);
+			// 	}
+			// }
+			// console.log(this.phaseList, 'phaseList')
+			// for (let i = 0; i < this.phaseList.length; ++i) {
+			// 	console.log(this.phaseList[i].phase, 'blurg')
+			// 	if (this.phaseList[i].phase === 'hero') {
+			// 		this.hero_phase_list.push(this.phaseList[i]);
+			// 	} else if (this.phaseList[i].phase === 'movement') {
+			// 		this.movement_phase_list.push(this.phaseList[i]);
+			// 	} else if (this.phaseList[i].phase === 'shooting') {
+			// 		this.shooting_phase_list.push(this.phaseList[i]);
+			// 	} else if (this.phaseList[i].phase === 'charge') {
+			// 		this.charge_phase_list.push(this.phaseList[i]);
+			// 	} else if (this.phaseList[i].phase === 'combat') {
+			// 		this.combat_phase_list.push(this.phaseList[i]);
+			// 	} else if (this.phaseList[i].phase === 'battleshock') {
+			// 		this.battleshock_phase_list.push(this.phaseList[i]);
+			// 	} else if (this.phaseList[i].phase === 'shooting/combat') {
+			// 		this.shooting_phase_list.push(this.phaseList[i]);
+			// 		this.combat_phase_list.push(this.phaseList[i]);
+			// 	}
+			// }
 		});
 	}
 

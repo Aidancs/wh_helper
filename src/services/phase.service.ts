@@ -7,7 +7,7 @@ import { tap } from 'rxjs/operators';
 
 @Injectable()
 export class PhaseService extends BaseHttpService {
-	data: [];
+	data: any;
 
 	constructor(private http: Http) {
 		super();
