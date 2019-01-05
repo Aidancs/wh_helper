@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { ModalController, NavController } from 'ionic-angular';
 
 import { PhaseModalPage } from '../../modals/phase-modal/phase-modal';
-import { PhaseService } from '../../services/phase.service';
+import { PhaseService } from '../../services/phases.service';
 import { stringify } from '@angular/compiler/src/util';
 
 @Component({

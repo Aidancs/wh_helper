@@ -1,7 +1,7 @@
 {
 	"alarielle": {
 		"id": 1,
-		"phase": [
+		"phases": [
 			{
 				"name": "Talon of the Dwindling",
 				"phase": "combat",
@@ -69,7 +69,7 @@
 	},
 	"tla": {
 		"id": 2,
-		"phase": [
+		"phases": [
 			{
 				"name": "Groundshaking Stomp",
 				"phase": "combat",
@@ -128,7 +128,7 @@
 	},
 	"durthu": {
 		"id": 3,
-		"phase": [
+		"phases": [
 			{
 				"name": "Groundshaking Stomp",
 				"phase": "combat",
@@ -196,7 +196,7 @@
 	},
 	"treelord": {
 		"id": 4,
-		"phase": [
+		"phases": [
 			{
 				"name": "Groundshaking Stomp",
 				"phase": "combat",
@@ -228,7 +228,7 @@
 	},
 	"drycha": {
 		"id": 5,
-		"phase": [
+		"phases": [
 			{
 				"name": "",
 				"phase": "",
@@ -278,7 +278,7 @@
 	},
 	"branchwraith": {
 		"id": 6,
-		"phase": [
+		"phases": [
 			{
 				"name": "",
 				"phase": "",
@@ -301,7 +301,7 @@
 	},
 	"branchwych": {
 		"id": 7,
-		"phase": [
+		"phases": [
 			{
 				"name": "",
 				"phase": "",
@@ -333,7 +333,7 @@
 	},
 	"hunters": {
 		"id": 8,
-		"phase": [
+		"phases": [
 			{
 				"name": "",
 				"phase": "",
@@ -365,7 +365,7 @@
 	},
 	"dryads": {
 		"id": 9,
-		"phase": [
+		"phases": [
 			{
 				"name": "",
 				"phase": "",
@@ -397,7 +397,7 @@
 	},
 	"tree_revenants": {
 		"id": 10,
-		"phase": [
+		"phases": [
 			{
 				"name": "",
 				"phase": "",
@@ -429,7 +429,7 @@
 	},
 	"spite_revenants": {
 		"id": 11,
-		"phase": [
+		"phases": [
 			{
 				"name": "",
 				"phase": "",
@@ -461,7 +461,7 @@
 	},
 	"daemonettes": {
 		"id": 12,
-		"phase": [
+		"phases": [
 			{
 				"name": "",
 				"phase": "",
@@ -493,7 +493,7 @@
 	},
 	"keeper": {
 		"id": 13,
-		"phase": [
+		"phases": [
 			{
 				"name": "",
 				"phase": "",
@@ -525,7 +525,7 @@
 	},
 	"seekers": {
 		"id": 14,
-		"phase": [
+		"phases": [
 			{
 				"name": "",
 				"phase": "",
@@ -557,7 +557,7 @@
 	},
 	"daemon_prince": {
 		"id": 15,
-		"phase": [
+		"phases": [
 			{
 				"name": "",
 				"phase": "",
@@ -589,7 +589,7 @@
 	},
 	"fiends": {
 		"id": 16,
-		"phase": [
+		"phases": [
 			{
 				"name": "",
 				"phase": "",
@@ -621,7 +621,7 @@
 	},
 	"harp_chick": {
 		"id": 17,
-		"phase": [
+		"phases": [
 			{
 				"name": "",
 				"phase": "",

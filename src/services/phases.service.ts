@@ -14,7 +14,7 @@ export class PhaseService extends BaseHttpService {
 	}
 
 	getPhasesJSon(): any {
-		return this.http.get('assets/data/phase.json')
+		return this.http.get('assets/data/phases.json')
 			.map(res => res.json())
 			.pipe(tap(res => { this.data = res }));
 	}
