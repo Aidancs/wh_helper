@@ -68,19 +68,19 @@ export class PhasesPage {
 				this.phaseArray = this.phaseList[key].phases;
 
 				for (let i = 0; i < this.phaseArray.length; ++i) {
-					if (this.phaseArray[i].phase === 'hero') {
+					if (this.phaseArray[i].phase === 'Hero') {
 						this.hero_phase_list.push(this.phaseArray[i]);
-					} else if (this.phaseArray[i].phase === 'movement') {
+					} else if (this.phaseArray[i].phase === 'Movement') {
 						this.movement_phase_list.push(this.phaseArray[i]);
-					} else if (this.phaseArray[i].phase === 'shooting') {
+					} else if (this.phaseArray[i].phase === 'Shooting') {
 						this.shooting_phase_list.push(this.phaseArray[i]);
-					} else if (this.phaseArray[i].phase === 'charge') {
+					} else if (this.phaseArray[i].phase === 'Charge') {
 						this.charge_phase_list.push(this.phaseArray[i]);
-					} else if (this.phaseArray[i].phase === 'combat') {
+					} else if (this.phaseArray[i].phase === 'Combat') {
 						this.combat_phase_list.push(this.phaseArray[i]);
-					} else if (this.phaseArray[i].phase === 'battleshock') {
+					} else if (this.phaseArray[i].phase === 'Battleshock') {
 						this.battleshock_phase_list.push(this.phaseArray[i]);
-					} else if (this.phaseArray[i].phase === 'shooting/combat') {
+					} else if (this.phaseArray[i].phase === 'Shooting/Combat') {
 						this.shooting_phase_list.push(this.phaseArray[i]);
 						this.combat_phase_list.push(this.phaseArray[i]);
 					}

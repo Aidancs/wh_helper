@@ -11,17 +11,17 @@
     <ion-card-content>
       <ion-card color="light">
         <ion-card-title>
+          {{ phase.unit_name }}
+        </ion-card-title>
+        <ion-card-title>
           {{ phase.name }}
         </ion-card-title>
         <h2 *ngIf="phase.command_ability">
           Command Ability
         </h2>
-        <ion-card-content>
-          {{ phase.name }}
-        </ion-card-content>
-        <ion-card-content>
+        <ion-card-title>
           {{ phase.phase }}
-        </ion-card-content>
+        </ion-card-title>
         <ion-card-content>
           {{ phase.description }}
         </ion-card-content>
