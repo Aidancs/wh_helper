@@ -1,0 +1,144 @@
+{
+	"alarielle": {
+		"id": 1,
+		"melee_weapons": [
+			{
+				"name": "Talon of the Dwindling",
+				"range": "1\"",
+				"attacks": 4,
+				"to_hit": 3,
+				"to_wound": 4,
+				"rend": "-",
+				"damage": "1"
+			},
+			{
+				"name": "Wardroth Antlers",
+				"range": "2\"",
+				"attacks": 5,
+				"to_hit": 4,
+				"to_wound": 3,
+				"rend": "-2",
+				"damage": "5(0-4), 4(5-7), 3(8-10), 2(11-13), 1(14+)"
+			}
+		]
+	},
+	"tla": {
+		"id": 2,
+		"melee_weapons": [
+			{
+				"name": "Sweeping Blows",
+				"range": "3\"",
+				"attacks": "3(0-2), 2(3-4), 2(5-7), 1(8-9), 1(10+)",
+				"to_hit": 3,
+				"to_wound": 3,
+				"rend": "-1",
+				"damage": "D6"
+			},
+			{
+				"name": "Massive Impaling Talons",
+				"range": "1\"",
+				"attacks": 1,
+				"to_hit": 3,
+				"to_wound": "2+(0-2), 2+(3-4), 3+(5-7), 3+(8-9), 4+(10+)",
+				"rend": "-2",
+				"damage": 1
+			}
+		]
+	},
+	"durthu": {
+		"id": 3,
+		"melee_weapons": [
+			{}
+		]
+	},
+	"treelord": {
+		"id": 4,
+		"melee_weapons": [
+			{}
+		]
+	},
+	"drycha": {
+		"id": 5,
+		"melee_weapons": [
+			{}
+		]
+	},
+	"branchwraith": {
+		"id": 6,
+		"melee_weapons": [
+			{}
+		]
+	},
+	"branchwych": {
+		"id": 7,
+		"melee_weapons": [
+			{}
+		]
+	},
+	"hunters": {
+		"id": 8,
+		"melee_weapons": [
+			{
+				"name": "Kurnoth Scythe",
+				"range": "2\"",
+				"attacks": 3,
+				"to_hit": 3,
+				"to_wound": 3,
+				"rend": "-2",
+				"damage": "D3"
+			}
+		]
+	},
+	"dryads": {
+		"id": 9,
+		"melee_weapons": {}
+	},
+	"tree_revenants": {
+		"id": 10,
+		"melee_weapons": [
+			{}
+		]
+	},
+	"spite_revenants": {
+		"id": 11,
+		"melee_weapons": [
+			{}
+		]
+	},
+	"daemonettes": {
+		"id": 12,
+		"melee_weapons": [
+			{}
+		]
+	},
+	"keeper": {
+		"id": 13,
+		"melee_weapons": [
+			{}
+		]
+	},
+	"seekers": {
+		"id": 14,
+		"melee_weapons": [
+			{}
+		]
+	},
+	"daemon_prince": {
+		"id": 15,
+		"melee_weapons": [
+			{}
+		]
+	},
+	"fiends": {
+		"id": 16,
+		"melee_weapons": [
+			{}
+		]
+	},
+	"harp_chick": {
+		"id": 17,
+		"melee_weapons": [
+			{}
+		]
+	}
+}

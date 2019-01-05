@@ -1,0 +1,163 @@
+{
+	"alarielle": {
+		"id": 1,
+		"abilities": [
+			{
+				"name": "Talon of the Dwindling",
+				"phase": "combat",
+				"description": "At the end of the combat phase, roll two dice for each model that suffered wounds from the Talon of the Dwindling but was not slain. If the result exceeds the model’s Wounds characteristic, or if you roll two sixes, the model is slain."
+			},
+			{
+				"name": "Lifebloom",
+				"phase": "hero",
+				"description": "In each of your hero phases, Alarielle heals D3 wounds."
+			},
+			{
+				"name": "Sweeping Blows",
+				"phase": "combat",
+				"description": " When the Wardroth Beetle attacks with its Great Antlers, you can add 1 to the hit rolls if the target unit has five or more models."
+			},
+			{
+				"name": "Living Battering Ram",
+				"phase": "charge",
+				"description": "If this model ends a charge move within 1\" of a terrain feature, each other unit within or on that terrain feature suffers D3 mortal wounds."
+			},
+			{
+				"name": "Soul Amphorae",
+				"phase": "hero",
+				"description": "In your hero phase, you can heal D3 wounds allocated to each Sylvaneth model within 30\" of this model. Once per battle, in your hero phase, instead of using this ability to heal, you can summon 1 unit from the list below to the battlefield, and add it to your army. The summoned unit must be set up wholly within 9\" of this model and more than 9\" from any enemy units. That unit cannot move in the following movement phase. Choose a unit from the following list: 20 Dryads, 10 Tree-Revenants, 10 Spite-Revenants, 3 Kurnoth Hunters, 1 Branchwych, 1 Treelord."
+			}
+		]
+	},
+	"tla": {
+		"id": 2,
+		"abilities": [
+			{
+				"name": "Groundshaking Stomp",
+				"phase": "combat",
+				"description": "At the start of the combat phase, the Spirit of Durthu stomps the ground; roll a dice for each enemy unit within 3\" of this model. On a roll of 4 or more, that unit is knocked off their feet by the impact and must subtract 1 from all hit rolls in that combat phase as they regain their footing."
+			},
+			{
+				"name": "Impale",
+				"phase": "combat",
+				"description": "If the Treelord Ancient’s Massive Impaling Talons inflict a wound on an enemy model, roll a dice. If the result exceeds the number of wounds the enemy model has remaining, it is slain.You can re-roll hit and wound rolls of 1 for Brokk Grungsson if those attacks are directed against a Hero or Monster.If the Spirit of Durthu’s Massive Impaling Talons inflict a wound on an enemy model, roll a dice. If the result exceeds the number of wounds the enemy model has remaining, it is slain."
+			},
+			{
+				"name": "Spirit Paths",
+				"phase": "movement",
+				"description": "If a Treelord Ancient is within 3\" of a Sylvaneth Wyldwood at the start of your movement phase, he can travel along the spirit paths. If he does so, remove the Spirit of Durthu from the battlefield, and then set him up within 3\" of a different Sylvaneth Wyldwood, more than 9\" from any enemy models. This is his move for the movement phase"
+			},
+			{
+				"name": "Silent Communion",
+				"phase": "hero",
+				"description": "In your hero phase, you can pick 1 friendly Treelord Ancient and roll a dice. On a 4+, you can set up 1 Sylvaneth Wyldwood terrain feature wholly within 24\" of that Treelord Ancient, and more than 3\" from any other models or terrain features."
+			}
+		]
+	},
+	"durthu": {
+		"id": 3,
+		"abilities": [
+			{}
+		]
+	},
+	"treelord": {
+		"id": 4,
+		"abilities": [
+			{
+				"name": "Groundshaking Stomp",
+				"phase": "combat",
+				"description": "At the start of the combat phase, the Treelord stomps the ground; roll a dice for each enemy unit within 3\" of this model. On a roll of 4 or more, that unit is knocked off their feet by the impact and must subtract 1 from all hit rolls in that combat phase as they regain their footing."
+			},
+			{
+				"name": "Impale",
+				"phase": "combat",
+				"description": "If the Treelords Massive Impaling Talons inflict a wound on an enemy model, roll a dice. If the result exceeds the number of wounds the enemy model has remaining, it is slain."
+			},
+			{
+				"name": "Spirit Paths",
+				"phase": "movement",
+				"description": "If a Treelord is within 3\" of a Sylvaneth Wyldwood at the start of your movement phase, he can travel along the spirit paths. If he does so, remove the Treelord from the battlefield, and then set him up within 3\" of a different Sylvaneth Wyldwood, more than 9\" from any enemy models. This is his move for the movement phase."
+			}
+		]
+	},
+	"drycha": {
+		"id": 5,
+		"abilities": [
+			{}
+		]
+	},
+	"branchwraith": {
+		"id": 6,
+		"abilities": [
+			{
+				"name": "Blessings of the Forest",
+				"phase": "combat/shooting",
+				"description": "Subtract 1 from all hit rolls made against this unit if it is w/n 3\" of a Wyldwood."
+			}
+		]
+	},
+	"branchwych": {
+		"id": 7,
+		"abilities": [
+			{}
+		]
+	},
+	"hunters": {
+		"id": 8,
+		"abilities": [
+			{}
+		]
+	},
+	"dryads": {
+		"id": 9,
+		"abilities": [
+			{}
+		]
+	},
+	"tree_revenants": {
+		"abilities": [
+			{}
+		]
+	},
+	"spite_revenants": {
+		"abilities": [
+			{}
+		]
+	},
+	"daemonettes": {
+		"abilities": [
+			{}
+		]
+	},
+	"keeper": {
+		"id": 13,
+		"abilities": [
+			{}
+		]
+	},
+	"seekers": {
+		"id": 14,
+		"abilities": [
+			{}
+		]
+	},
+	"daemon_prince": {
+		"id": 15,
+		"name": "Daemon Prince",
+		"abilities": [
+			{}
+		]
+	},
+	"fiends": {
+		"id": 16,
+		"abilities": [
+			{}
+		]
+	},
+	"harp_chick": {
+		"id": 17,
+		"abilities": [
+			{}
+		]
+	}
+}

@@ -1,0 +1,122 @@
+{
+	"alarielle": {
+		"id": 1,
+		"magic": [
+			{
+				"name": "Metamorphosis",
+				"phase": "hero",
+				"description": "Metamorphosis has a casting value of 5. If successfully cast, pick an enemy unit within 16\" and roll a number of dice equal to the result of the casting roll (e.g. if the casting roll was 6, roll 6 dice). For each result of 4 or more, the unit suffers a mortal wound. If the last model in the unit is slain, you can set up a Sylvaneth Wyldwood in its place. None of the woods can be set up within 1\" of any other models or terrain features.",
+				"casting_value": 1
+			},
+			{
+				"name": "Regrowth",
+				"phase": "hero",
+				"description": "",
+				"casting_value": 1
+			}
+		]
+	},
+	"tla": {
+		"id": 2,
+		"magic": [
+			{
+				"name": "Awakening the Wood",
+				"phase": "hero",
+				"description": "Awakening the Wood has a casting value of 6. If successfully cast, pick a Sylvaneth Wyldwood that is within 24\" of the caster. Each enemy unit within 3\" of this Sylvaneth Wyldwood suffers D3 mortal wounds.",
+				"casting_value": 1
+			}
+		]
+	},
+	"durthu": {
+		"id": 3,
+		"magic": [
+			{}
+		]
+	},
+	"treelord": {
+		"id": 4,
+		"magic": [
+			{}
+		]
+	},
+	"drycha": {
+		"id": 5,
+		"magic": [
+			{}
+		]
+	},
+	"branchwraith": {
+		"id": 6,
+		"magic": [
+			{
+				"name": "Roused to Wrath (Spell)",
+				"phase": "hero",
+				"description": " Roused to Wrath has a casting value of 7. If successfully cast, you can summon a unit of 10 Dryads and add it to your army. The summoned unit must be set up more than 9\" from any enemy units, and wholly on or within a Sylvaneth Wyldwood that is within 12\" of the caster. The summoned unit cannot move in the following movement phase."
+			}
+		]
+	},
+	"branchwych": {
+		"id": 7,
+		"magic": [
+			{}
+		]
+	},
+	"hunters": {
+		"id": 8,
+		"magic": [
+			{}
+		]
+	},
+	"dryads": {
+		"id": 9,
+		"magic": {}
+	},
+	"tree_revenants": {
+		"id": 10,
+		"magic": [
+			{}
+		]
+	},
+	"spite_revenants": {
+		"id": 11,
+		"magic": [
+			{}
+		]
+	},
+	"daemonettes": {
+		"id": 12,
+		"magic": [
+			{}
+		]
+	},
+	"keeper": {
+		"id": 13,
+		"magic": [
+			{}
+		]
+	},
+	"seekers": {
+		"id": 14,
+		"magic": [
+			{}
+		]
+	},
+	"daemon_prince": {
+		"id": 15,
+		"magic": [
+			{}
+		]
+	},
+	"fiends": {
+		"id": 16,
+		"magic": [
+			{}
+		]
+	},
+	"harp_chick": {
+		"id": 17,
+		"magic": [
+			{}
+		]
+	}
+}
