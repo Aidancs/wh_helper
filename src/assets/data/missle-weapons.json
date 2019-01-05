@@ -1,6 +1,6 @@
 {
 	"alarielle": {
-		"id": 1,
+		"user_id": 1,
 		"missle_weapons": [
 			{
 				"name": "Spear of Kurnoth",
@@ -14,7 +14,7 @@
 		]
 	},
 	"tla": {
-		"id": 2,
+		"user_id": 2,
 		"missle_weapons": [
 			{
 				"name": "Doom Tendril Staff",
@@ -28,89 +28,89 @@
 		]
 	},
 	"durthu": {
-		"id": 3,
+		"user_id": 3,
 		"missle_weapons": [
 			{}
 		]
 	},
 	"treelord": {
-		"id": 4,
+		"user_id": 4,
 		"missle_weapons": [
 			{}
 		]
 	},
 	"drycha": {
-		"id": 5,
+		"user_id": 5,
 		"missle_weapons": [
 			{}
 		]
 	},
 	"branchwraith": {
-		"id": 6,
+		"user_id": 6,
 		"missle_weapons": [
 			{}
 		]
 	},
 	"branchwych": {
-		"id": 7,
+		"user_id": 7,
 		"missle_weapons": [
 			{}
 		]
 	},
 	"hunters": {
-		"id": 8,
+		"user_id": 8,
 		"missle_weapons": [
 			{}
 		]
 	},
 	"dryads": {
-		"id": 9,
+		"user_id": 9,
 		"missle_weapons": {}
 	},
 	"tree_revenants": {
-		"id": 10,
+		"user_id": 10,
 		"missle_weapons": [
 			{}
 		]
 	},
 	"spite_revenants": {
-		"id": 11,
+		"user_id": 11,
 		"missle_weapons": [
 			{}
 		]
 	},
 	"daemonettes": {
-		"id": 12,
+		"user_id": 12,
 		"missle_weapons": [
 			{}
 		]
 	},
 	"keeper": {
-		"id": 13,
+		"user_id": 13,
 		"missle_weapons": [
 			{}
 		]
 	},
 	"seekers": {
-		"id": 14,
+		"user_id": 14,
 		"missle_weapons": [
 			{}
 		]
 	},
 	"daemon_prince": {
-		"id": 15,
+		"user_id": 15,
 		"missle_weapons": [
 			{}
 		]
 	},
 	"fiends": {
-		"id": 16,
+		"user_id": 16,
 		"missle_weapons": [
 			{}
 		]
 	},
 	"harp_chick": {
-		"id": 17,
+		"user_id": 17,
 		"missle_weapons": [
 			{}
 		]

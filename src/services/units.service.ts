@@ -6,14 +6,14 @@ import { tap } from 'rxjs/operators';
 import { BaseHttpService } from './base-http.service';
 
 @Injectable()
-export class UnitService extends BaseHttpService {
+export class UnitsService extends BaseHttpService {
 	units = [];
 
 	constructor(private http: Http) {
 		super();
 	}
 
-	getUnitJSon(): any {
+	getUnitsJSon(): any {
 		return this.http.get('assets/data/units.json')
 			.map(res => res.json())
 			.pipe(tap(res => { this.units = res }));
@@ -23,5 +23,9 @@ export class UnitService extends BaseHttpService {
 		const d = Object.assign({}, this.units[id - 1], updates);
 		this.units[id - 1] = d;
 		return this.units;
+	}
+
+	alive(id): boolean {
+		return this.units[id].dead;
 	}
 }

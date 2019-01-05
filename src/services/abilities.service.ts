@@ -14,7 +14,7 @@ export class AbilitiesService extends BaseHttpService {
 	}
 
 	getAbilitiesJSon(): any {
-		return this.http.get('assets/data/command-abilites.json')
+		return this.http.get('assets/data/abilities.json')
 			.map(res => res.json())
 			.pipe(tap(res => { this.data = res }));
 	}

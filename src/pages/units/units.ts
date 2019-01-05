@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { ModalController, NavController, NavParams, ViewController } from 'ionic-angular';
 
 import { UnitModalPage } from '../../modals/unit-modal/unit-modal';
-import { UnitService } from '../../services/unit.service';
+import { UnitsService } from '../../services/units.service';
 
 @Component({
 	selector: 'page-units',
@@ -33,13 +33,13 @@ export class UnitsPage {
 		public modalCtrl: ModalController,
 		public navCtrl: NavController,
 		public navParams: NavParams,
-		private unitSvc: UnitService,
+		private unitsSvc: UnitsService,
 		private viewCtrl: ViewController,
 	) { }
 
 	ngOnInit() {
 		try {
-			this.unitSvc.getUnitJSon().subscribe(result => {
+			this.unitsSvc.getUnitsJSon().subscribe(result => {
 				this.units = result;
 			});
 
@@ -72,7 +72,7 @@ export class UnitsPage {
 	dead(unit) {
 		this.unit = unit;
 		this.unit.dead = true;
-		this.unitSvc.update(this.unit.id, this.unit);
+		this.unitsSvc.update(this.unit.id, this.unit);
 	}
 
 	openStats(unit) {

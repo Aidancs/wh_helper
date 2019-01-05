@@ -1,6 +1,6 @@
 {
 	"alarielle": {
-		"id": 1,
+		"user_id": 1,
 		"melee_weapons": [
 			{
 				"name": "Talon of the Dwindling",
@@ -23,7 +23,7 @@
 		]
 	},
 	"tla": {
-		"id": 2,
+		"user_id": 2,
 		"melee_weapons": [
 			{
 				"name": "Sweeping Blows",
@@ -46,37 +46,37 @@
 		]
 	},
 	"durthu": {
-		"id": 3,
+		"user_id": 3,
 		"melee_weapons": [
 			{}
 		]
 	},
 	"treelord": {
-		"id": 4,
+		"user_id": 4,
 		"melee_weapons": [
 			{}
 		]
 	},
 	"drycha": {
-		"id": 5,
+		"user_id": 5,
 		"melee_weapons": [
 			{}
 		]
 	},
 	"branchwraith": {
-		"id": 6,
+		"user_id": 6,
 		"melee_weapons": [
 			{}
 		]
 	},
 	"branchwych": {
-		"id": 7,
+		"user_id": 7,
 		"melee_weapons": [
 			{}
 		]
 	},
 	"hunters": {
-		"id": 8,
+		"user_id": 8,
 		"melee_weapons": [
 			{
 				"name": "Kurnoth Scythe",
@@ -90,53 +90,53 @@
 		]
 	},
 	"dryads": {
-		"id": 9,
+		"user_id": 9,
 		"melee_weapons": {}
 	},
 	"tree_revenants": {
-		"id": 10,
+		"user_id": 10,
 		"melee_weapons": [
 			{}
 		]
 	},
 	"spite_revenants": {
-		"id": 11,
+		"user_id": 11,
 		"melee_weapons": [
 			{}
 		]
 	},
 	"daemonettes": {
-		"id": 12,
+		"user_id": 12,
 		"melee_weapons": [
 			{}
 		]
 	},
 	"keeper": {
-		"id": 13,
+		"user_id": 13,
 		"melee_weapons": [
 			{}
 		]
 	},
 	"seekers": {
-		"id": 14,
+		"user_id": 14,
 		"melee_weapons": [
 			{}
 		]
 	},
 	"daemon_prince": {
-		"id": 15,
+		"user_id": 15,
 		"melee_weapons": [
 			{}
 		]
 	},
 	"fiends": {
-		"id": 16,
+		"user_id": 16,
 		"melee_weapons": [
 			{}
 		]
 	},
 	"harp_chick": {
-		"id": 17,
+		"user_id": 17,
 		"melee_weapons": [
 			{}
 		]

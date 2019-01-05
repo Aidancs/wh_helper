@@ -1,6 +1,6 @@
 {
 	"alarielle": {
-		"id": 1,
+		"user_id": 1,
 		"phases": [
 			{
 				"name": "Talon of the Dwindling",
@@ -68,7 +68,7 @@
 		]
 	},
 	"tla": {
-		"id": 2,
+		"user_id": 2,
 		"phases": [
 			{
 				"name": "Groundshaking Stomp",
@@ -127,7 +127,7 @@
 		]
 	},
 	"durthu": {
-		"id": 3,
+		"user_id": 3,
 		"phases": [
 			{
 				"name": "Groundshaking Stomp",
@@ -195,7 +195,7 @@
 		]
 	},
 	"treelord": {
-		"id": 4,
+		"user_id": 4,
 		"phases": [
 			{
 				"name": "Groundshaking Stomp",
@@ -227,7 +227,7 @@
 		]
 	},
 	"drycha": {
-		"id": 5,
+		"user_id": 5,
 		"phases": [
 			{
 				"name": "",
@@ -277,7 +277,7 @@
 		]
 	},
 	"branchwraith": {
-		"id": 6,
+		"user_id": 6,
 		"phases": [
 			{
 				"name": "",
@@ -300,7 +300,7 @@
 		]
 	},
 	"branchwych": {
-		"id": 7,
+		"user_id": 7,
 		"phases": [
 			{
 				"name": "",
@@ -332,7 +332,7 @@
 		]
 	},
 	"hunters": {
-		"id": 8,
+		"user_id": 8,
 		"phases": [
 			{
 				"name": "",
@@ -364,7 +364,7 @@
 		]
 	},
 	"dryads": {
-		"id": 9,
+		"user_id": 9,
 		"phases": [
 			{
 				"name": "",
@@ -396,7 +396,7 @@
 		]
 	},
 	"tree_revenants": {
-		"id": 10,
+		"user_id": 10,
 		"phases": [
 			{
 				"name": "",
@@ -428,7 +428,7 @@
 		]
 	},
 	"spite_revenants": {
-		"id": 11,
+		"user_id": 11,
 		"phases": [
 			{
 				"name": "",
@@ -460,7 +460,7 @@
 		]
 	},
 	"daemonettes": {
-		"id": 12,
+		"user_id": 12,
 		"phases": [
 			{
 				"name": "",
@@ -492,7 +492,7 @@
 		]
 	},
 	"keeper": {
-		"id": 13,
+		"user_id": 13,
 		"phases": [
 			{
 				"name": "",
@@ -524,7 +524,7 @@
 		]
 	},
 	"seekers": {
-		"id": 14,
+		"user_id": 14,
 		"phases": [
 			{
 				"name": "",
@@ -556,7 +556,7 @@
 		]
 	},
 	"daemon_prince": {
-		"id": 15,
+		"user_id": 15,
 		"phases": [
 			{
 				"name": "",
@@ -588,7 +588,7 @@
 		]
 	},
 	"fiends": {
-		"id": 16,
+		"user_id": 16,
 		"phases": [
 			{
 				"name": "",
@@ -620,7 +620,7 @@
 		]
 	},
 	"harp_chick": {
-		"id": 17,
+		"user_id": 17,
 		"phases": [
 			{
 				"name": "",

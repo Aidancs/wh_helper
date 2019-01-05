@@ -6,7 +6,7 @@ import { BaseHttpService } from './base-http.service';
 import { tap } from 'rxjs/operators';
 
 @Injectable()
-export class PhaseService extends BaseHttpService {
+export class PhasesService extends BaseHttpService {
 	data: any;
 
 	constructor(private http: Http) {

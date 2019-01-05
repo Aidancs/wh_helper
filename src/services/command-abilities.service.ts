@@ -13,8 +13,8 @@ export class CommandAbilitiesService extends BaseHttpService {
 		super();
 	}
 
-	getAbilitiesJSon(): any {
-		return this.http.get('assets/data/command-abilites.json')
+	getCommandAbilitiesJSon(): any {
+		return this.http.get('assets/data/command-abilities.json')
 			.map(res => res.json())
 			.pipe(tap(res => { this.data = res }));
 	}

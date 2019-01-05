@@ -1,6 +1,6 @@
 {
 	"alarielle": {
-		"id": 1,
+		"user_id": 1,
 		"abilities": [
 			{
 				"name": "Talon of the Dwindling",
@@ -30,7 +30,7 @@
 		]
 	},
 	"tla": {
-		"id": 2,
+		"user_id": 2,
 		"abilities": [
 			{
 				"name": "Groundshaking Stomp",
@@ -55,13 +55,13 @@
 		]
 	},
 	"durthu": {
-		"id": 3,
+		"user_id": 3,
 		"abilities": [
 			{}
 		]
 	},
 	"treelord": {
-		"id": 4,
+		"user_id": 4,
 		"abilities": [
 			{
 				"name": "Groundshaking Stomp",
@@ -81,13 +81,13 @@
 		]
 	},
 	"drycha": {
-		"id": 5,
+		"user_id": 5,
 		"abilities": [
 			{}
 		]
 	},
 	"branchwraith": {
-		"id": 6,
+		"user_id": 6,
 		"abilities": [
 			{
 				"name": "Blessings of the Forest",
@@ -97,19 +97,19 @@
 		]
 	},
 	"branchwych": {
-		"id": 7,
+		"user_id": 7,
 		"abilities": [
 			{}
 		]
 	},
 	"hunters": {
-		"id": 8,
+		"user_id": 8,
 		"abilities": [
 			{}
 		]
 	},
 	"dryads": {
-		"id": 9,
+		"user_id": 9,
 		"abilities": [
 			{}
 		]
@@ -130,32 +130,32 @@
 		]
 	},
 	"keeper": {
-		"id": 13,
+		"user_id": 13,
 		"abilities": [
 			{}
 		]
 	},
 	"seekers": {
-		"id": 14,
+		"user_id": 14,
 		"abilities": [
 			{}
 		]
 	},
 	"daemon_prince": {
-		"id": 15,
+		"user_id": 15,
 		"name": "Daemon Prince",
 		"abilities": [
 			{}
 		]
 	},
 	"fiends": {
-		"id": 16,
+		"user_id": 16,
 		"abilities": [
 			{}
 		]
 	},
 	"harp_chick": {
-		"id": 17,
+		"user_id": 17,
 		"abilities": [
 			{}
 		]
