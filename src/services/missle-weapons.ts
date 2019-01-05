@@ -6,15 +6,15 @@ import { BaseHttpService } from './base-http.service';
 import { tap } from 'rxjs/operators';
 
 @Injectable()
-export class PhaseService extends BaseHttpService {
+export class MissleWeaponsService extends BaseHttpService {
 	data: any;
 
 	constructor(private http: Http) {
 		super();
 	}
 
-	getPhasesJSon(): any {
-		return this.http.get('assets/data/phase.json')
+	getMissleWeaponsJSon(): any {
+		return this.http.get('assets/data/missle-weapons.json')
 			.map(res => res.json())
 			.pipe(tap(res => { this.data = res }));
 	}
