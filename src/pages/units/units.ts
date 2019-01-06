@@ -11,6 +11,7 @@ import { UnitsService } from '../../services/units.service';
 export class UnitsPage {
 
 	units: any;
+	unitsArray = [] as number[];
 	unit: any;
 	clicked: boolean = false;
 	type: string;
@@ -21,11 +22,6 @@ export class UnitsPage {
 	save: number;
 	bravery: number;
 	totalWounds: number;
-	alarielle: boolean;
-	tla: boolean;
-	durthu: boolean;
-	treelord: boolean;
-	drycha: boolean;
 
 	images = ['alarielle.jpg', 'tla.jpg', 'durthu.jpeg', 'treelord.jpg', 'drycha.jpeg', 'hunters.jpeg', 'branchwraith.jpeg', 'branchwych.jpeg', 'dryads.jpeg', 'tree_revenants.jpeg', 'spite_revenants.jpeg'];
 
@@ -38,14 +34,12 @@ export class UnitsPage {
 	) { }
 
 	ngOnInit() {
-		try {
-			this.unitsSvc.getUnitsJSon().subscribe(result => {
-				this.units = result;
-			});
-
-		} catch (e) {
-			console.log("Profile" + e);
-		}
+		this.unitsSvc.getUnitsJSon().subscribe(result => {
+			for (const key of Object.keys(result)) {
+				this.unitsArray.push(result[key]);
+			}
+			console.log(this.unitsArray, 'unitsarray')
+		});
 	}
 
 	itemTapped(unit, type) {
@@ -73,30 +67,5 @@ export class UnitsPage {
 		this.unit = unit;
 		this.unit.dead = true;
 		this.unitsSvc.update(this.unit.id, this.unit);
-	}
-
-	openStats(unit) {
-		this.reset();
-		console.log(unit.id, 'unit')
-		this.stats = !this.stats;
-		if (unit.id === 1) {
-			this.alarielle = true;
-		} else if (unit.id === 2) {
-			this.tla = true;
-		} else if (unit.id === 3) {
-			this.durthu = true;
-		} else if (unit.id === 4) {
-			this.treelord = true;
-		} else if (unit.id === 5) {
-			this.drycha = true;
-		}
-	}
-
-	reset() {
-		this.alarielle = false;
-		this.tla = false;
-		this.durthu = false;
-		this.treelord = false;
-		this.drycha = false;
 	}
 }

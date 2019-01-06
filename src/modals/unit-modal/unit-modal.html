@@ -8,7 +8,7 @@
 
 <ion-content class="bg" padding text-center>
   <div [hidden]="!abilities">
-    <div *ngFor="let ability of unit.abilities">
+    <div *ngFor="let ability of unitModalArray">
       <ion-card>
         <ion-card-content>
           Name: {{ ability.name }}

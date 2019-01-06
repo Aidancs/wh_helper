@@ -2,11 +2,6 @@ import { Component } from '@angular/core';
 import { ModalController, NavController } from 'ionic-angular';
 
 import { PhaseModalPage } from '../../modals/phase-modal/phase-modal';
-import { AbilitiesService } from '../../services/abilities.service';
-import { CommandAbilitiesService } from '../../services/command-abilities.service';
-import { MagicService } from '../../services/magic.service';
-import { MeleeWeaponsService } from '../../services/melee-weapons.service';
-import { MissleWeaponsService } from '../../services/missle-weapons.service';
 import { PhasesService } from '../../services/phases.service';
 import { UnitsService } from '../../services/units.service';
 
@@ -32,37 +27,15 @@ export class PhasesPage {
 		private modalCtrl: ModalController,
 		public navCtrl: NavController,
 		private phasesSvc: PhasesService,
-		private abilitiesSvc: AbilitiesService,
-		private commandAbilitiesSvc: CommandAbilitiesService,
-		private magicSvc: MagicService,
-		private meleeWeaponsSvc: MeleeWeaponsService,
-		private missleWeaponsSvc: MissleWeaponsService,
 		private unitsSvc: UnitsService,
 	) { }
 
 	ngOnInit() {
-		// this.abilitiesSvc.getAbilitiesJSon().subscribe(result => {
-		// 	console.log(result, 'abilitiesList')
-		// });
-		// this.commandAbilitiesSvc.getCommandAbilitiesJSon().subscribe(result => {
-		// 	console.log(result, 'commandAbilitiesList')
-		// });
-		// this.magicSvc.getMagicJSon().subscribe(result => {
-		// 	console.log(result, 'magicList')
-		// });
-		// this.missleWeaponsSvc.getMissleWeaponsJSon().subscribe(result => {
-		// 	console.log(result, 'missleWeaponsList')
-		// });
-		// this.meleeWeaponsSvc.getMeleeWeaponsJSon().subscribe(result => {
-		// 	console.log(result, 'meleeWeaponsList')
-		// });
+		this.unitsSvc.getUnitsJSon().subscribe(result => {
+			this.units = result;
+		});
 		this.phasesSvc.getPhasesJSon().subscribe(result => {
 			this.phaseList = result;
-
-			this.unitsSvc.getUnitsJSon().subscribe(result => {
-				this.units = result;
-				console.log(result, 'units')
-			});
 
 			for (const key of Object.keys(this.phaseList)) {
 				this.phaseArray = this.phaseList[key].phases;

@@ -1,6 +1,7 @@
 {
 	"alarielle": {
 		"user_id": 1,
+		"dead": false,
 		"phases": [
 			{
 				"unit_name": "Alarielle the Everqueen",
@@ -8,7 +9,6 @@
 				"phase": "Combat",
 				"magic_phase": false,
 				"command_ability": false,
-				"dead": false,
 				"description": "At the end of the combat phase, roll two dice for each model that suffered wounds from the Talon of the Dwindling but was not slain. If the result exceeds the model’s Wounds characteristic, or if you roll two sixes, the model is slain.",
 				"casting_value": 0
 			},
@@ -18,7 +18,6 @@
 				"phase": "Hero",
 				"magic_phase": false,
 				"command_ability": false,
-				"dead": false,
 				"description": "In each of your hero phases, Alarielle heals D3 wounds.",
 				"casting_value": 0
 			},
@@ -28,7 +27,6 @@
 				"phase": "Combat",
 				"magic_phase": false,
 				"command_ability": false,
-				"dead": false,
 				"description": "When the Wardroth Beetle attacks with its Great Antlers, you can add 1 to the hit rolls if the target unit has five or more models.",
 				"casting_value": 0
 			},
@@ -38,7 +36,6 @@
 				"phase": "Charge",
 				"magic_phase": false,
 				"command_ability": false,
-				"dead": false,
 				"description": "If this model ends a charge move within 1\" of a terrain feature, each other unit within or on that terrain feature suffers D3 mortal wounds.",
 				"casting_value": 0
 			},
@@ -48,7 +45,6 @@
 				"phase": "Hero",
 				"magic_phase": false,
 				"command_ability": false,
-				"dead": false,
 				"description": "In your hero phase, you can heal D3 wounds allocated to each Sylvaneth model within 30\" of this model. Once per battle, in your hero phase, instead of using this ability to heal, you can summon 1 unit from the list below to the battlefield, and add it to your army. The summoned unit must be set up wholly within 9\" of this model and more than 9\" from any enemy units. That unit cannot move in the following movement phase. Choose a unit from the following list: 20 Dryads, 10 Tree-Revenants, 10 Spite-Revenants, 3 Kurnoth Hunters, 1 Branchwych, 1 Treelord",
 				"casting_value": 0
 			},
@@ -58,7 +54,6 @@
 				"phase": "Hero",
 				"magic_phase": false,
 				"command_ability": true,
-				"dead": false,
 				"description": "Alarielle can use this ability once per battle. When she does so, you can re-roll all failed wound rolls made for friendly Sylvaneth models until your next hero phase.",
 				"casting_value": 0
 			},
@@ -68,7 +63,6 @@
 				"phase": "Hero",
 				"magic_phase": true,
 				"command_ability": false,
-				"dead": false,
 				"description": "Metamorphosis has a casting value of 5. If successfully cast, pick an enemy unit within 16\" and roll a number of dice equal to the result of the casting roll (e.g. if the casting roll was 6, roll 6 dice). For each result of 4 or more, the unit suffers a mortal wound. If the last model in the unit is slain, you can set up a Sylvaneth Wyldwood in its place. None of the woods can be set up within 1\" of any other models or terrain features. ",
 				"casting_value": 5
 			}
@@ -76,6 +70,7 @@
 	},
 	"tla": {
 		"user_id": 2,
+		"dead": false,
 		"phases": [
 			{
 				"unit_name": "Treelord Ancient",
@@ -83,7 +78,6 @@
 				"phase": "Combat",
 				"magic_phase": false,
 				"command_ability": false,
-				"dead": false,
 				"description": "At the start of the combat phase, roll a dice for each enemy unit within 3\" of any models with this abuluty. On a roll of 4 or more, that unit is knocked off their feet by the impact and must subtract 1 from all their hit rolls in that combat phase as they regain their footing.",
 				"casting_value": 0
 			},
@@ -93,7 +87,6 @@
 				"phase": "Combat",
 				"magic_phase": false,
 				"command_ability": false,
-				"dead": false,
 				"description": "If the Treelord Ancient’s Massive Impaling Talons inflict a wound on an enemy model, roll a dice. If the result exceeds the number of wounds the enemy model has remaining, it is slain.",
 				"casting_value": 0
 			},
@@ -103,7 +96,6 @@
 				"phase": "Movement",
 				"magic_phase": false,
 				"command_ability": false,
-				"dead": false,
 				"description": "If a Treelord Ancient is within 3\" of a Sylvaneth Wyldwood at the start of your movement phase, he can travel along the spirit paths. If they do so, remove the Treelord Ancient from the battlefield, and then set him up within 3\" of a different Sylvaneth Wyldwood, more than 9\" from any enemy models. This is their move for the movement phase",
 				"casting_value": 0
 			},
@@ -113,7 +105,6 @@
 				"phase": "Hero",
 				"magic_phase": false,
 				"command_ability": false,
-				"dead": false,
 				"description": "In your hero phase, you can pick 1 friendly Treelord Ancient and roll a dice. On a 4+, you can set up 1 Sylvaneth Wyldwood terrain feature wholly within 24\" of that Treelord Ancient, and more than 3\" from any other models or terrain features.",
 				"casting_value": 0
 			},
@@ -123,7 +114,6 @@
 				"phase": "Hero",
 				"magic_phase": false,
 				"command_ability": true,
-				"dead": false,
 				"description": "The Treelord Ancient speaks to its kin through the spirit-song, warning them of approaching dangers. Until your next hero phase, you can re-roll save rolls of 1 for Sylvaneth units if they are within 10\" of the Treelord Ancient.",
 				"casting_value": 0
 			},
@@ -133,7 +123,6 @@
 				"phase": "Hero",
 				"magic_phase": true,
 				"command_ability": false,
-				"dead": false,
 				"description": "Awakening the Wood has a casting value of 6. If successfully cast, pick a Sylvaneth Wyldwood that is within 24\" of the caster. Each enemy unit within 3\" of this Sylvaneth Wyldwood suffers D3 mortal wounds.",
 				"casting_value": 6
 			}
@@ -141,6 +130,7 @@
 	},
 	"durthu": {
 		"user_id": 3,
+		"dead": false,
 		"phases": [
 			{
 				"unit_name": "Spirit of Durthu",
@@ -148,7 +138,6 @@
 				"phase": "Combat",
 				"magic_phase": false,
 				"command_ability": false,
-				"dead": false,
 				"description": "At the start of the combat phase, roll a dice for each enemy unit within 3\" of any models with this abuluty. On a roll of 4 or more, that unit is knocked off their feet by the impact and must subtract 1 from all their hit rolls in that combat phase as they regain their footing.",
 				"casting_value": 0
 			},
@@ -158,7 +147,6 @@
 				"phase": "Combat",
 				"magic_phase": false,
 				"command_ability": false,
-				"dead": false,
 				"description": "If the Spirit of Durthu’s Massive Impaling Talons inflict a wound on an enemy model, roll a dice. If the result exceeds the number of wounds the enemy model has remaining, it is slain.",
 				"casting_value": 0
 			},
@@ -168,7 +156,6 @@
 				"phase": "Movement",
 				"magic_phase": false,
 				"command_ability": false,
-				"dead": false,
 				"description": "If a Spirit of Durthu is within 3\" of a Sylvaneth Wyldwood at the start of your movement phase, he can travel along the spirit paths. If they do so, remove the Spirit of Durthu from the battlefield, and then set him up within 3\" of a different Sylvaneth Wyldwood, more than 9\" from any enemy models. This is their move for the movement phase",
 				"casting_value": 0
 			},
@@ -178,7 +165,6 @@
 				"phase": "Combat",
 				"magic_phase": false,
 				"command_ability": false,
-				"dead": false,
 				"description": "Make and extra D3 attacks with the Guardian Sword if he is within 3\" of a Sylvaneth Wyldwood when he attacks in the combat phase.",
 				"casting_value": 0
 			},
@@ -188,7 +174,6 @@
 				"phase": "Bravery",
 				"magic_phase": false,
 				"command_ability": false,
-				"dead": false,
 				"description": "Spirit of Durthu instil courage in the Everqueen's children. All friendly Sylvaneth units that are within 8\" of any Spirits of Durthu in the battleshock phase add 1 to their bravery",
 				"casting_value": 0
 			},
@@ -198,7 +183,6 @@
 				"phase": "Shooting",
 				"magic_phase": false,
 				"command_ability": false,
-				"dead": false,
 				"description": "When a Spirit of Durthu attacks with a Verdant Blast, you can declare that he will channel his life force to intensify its power. Add 2 to the weapon's Attacks for the rest of the turn. If the Spirit of Durthu uses this Ability, he suffers D3 mortal wounds at the end of the shooting phase.",
 				"casting_value": 0
 			},
@@ -208,7 +192,6 @@
 				"phase": "Shooting/Combat",
 				"magic_phase": false,
 				"command_ability": false,
-				"dead": false,
 				"description": "If an attack that targets a friendly Sylvaneth Hero within 6\" of a Spirit of Durthu causes a wound, roll a dice. On a result of 4 or more the wound is inflicted on the Spirit of Durthu instead(You can make a save roll as normal).",
 				"casting_value": 0
 			}
@@ -216,6 +199,7 @@
 	},
 	"treelord": {
 		"user_id": 4,
+		"dead": false,
 		"phases": [
 			{
 				"unit_name": "Treelord",
@@ -223,7 +207,6 @@
 				"phase": "Combat",
 				"magic_phase": false,
 				"command_ability": false,
-				"dead": false,
 				"description": "At the start of the combat phase, the Treelord stomps the ground; roll a dice for each enemy unit within 3\" of this model. On a roll of 4 or more, that unit is knocked off their feet by the impact and must subtract 1 from all hit rolls in that combat phase as they regain their footing.",
 				"casting_value": 0
 			},
@@ -233,7 +216,6 @@
 				"phase": "Combat",
 				"magic_phase": false,
 				"command_ability": false,
-				"dead": false,
 				"description": "If the Treelord’s Massive Impaling Talons inflict a wound on an enemy model, roll a dice. If the result exceeds the number of wounds the enemy model has remaining, it is slain.",
 				"casting_value": 0
 			},
@@ -243,7 +225,6 @@
 				"phase": "Movement",
 				"magic_phase": false,
 				"command_ability": false,
-				"dead": false,
 				"description": "If a Treelord is within 3\" of a Sylvaneth Wyldwood at the start of your movement phase, he can travel along the spirit paths. If he does so, remove the Spirit of Durthu from the battlefield, and then set him up within 3\" of a different Sylvaneth Wyldwood, more than 9\" from any enemy models. This is his move for the movement phase",
 				"casting_value": 0
 			}
@@ -251,6 +232,7 @@
 	},
 	"drycha": {
 		"user_id": 5,
+		"dead": false,
 		"phases": [
 			{
 				"unit_name": "Drycha",
@@ -258,7 +240,6 @@
 				"phase": "",
 				"magic_phase": false,
 				"command_ability": false,
-				"dead": false,
 				"description": "",
 				"casting_value": 0
 			},
@@ -268,7 +249,6 @@
 				"phase": "",
 				"magic_phase": false,
 				"command_ability": false,
-				"dead": false,
 				"description": "",
 				"casting_value": 0
 			},
@@ -278,7 +258,6 @@
 				"phase": "",
 				"magic_phase": false,
 				"command_ability": false,
-				"dead": false,
 				"description": "",
 				"casting_value": 0
 			},
@@ -288,7 +267,6 @@
 				"phase": "",
 				"magic_phase": false,
 				"command_ability": false,
-				"dead": false,
 				"description": "",
 				"casting_value": 0
 			},
@@ -298,7 +276,6 @@
 				"phase": "",
 				"magic_phase": false,
 				"command_ability": false,
-				"dead": false,
 				"description": "",
 				"casting_value": 0
 			}
@@ -306,6 +283,7 @@
 	},
 	"branchwraith": {
 		"user_id": 6,
+		"dead": false,
 		"phases": [
 			{
 				"unit_name": "",
@@ -313,7 +291,6 @@
 				"phase": "",
 				"magic_phase": false,
 				"command_ability": false,
-				"dead": false,
 				"description": "",
 				"casting_value": 0
 			},
@@ -323,7 +300,6 @@
 				"phase": "",
 				"magic_phase": false,
 				"command_ability": false,
-				"dead": false,
 				"description": "",
 				"casting_value": 0
 			}
@@ -331,6 +307,7 @@
 	},
 	"branchwych": {
 		"user_id": 7,
+		"dead": false,
 		"phases": [
 			{
 				"unit_name": "",
@@ -338,7 +315,6 @@
 				"phase": "",
 				"magic_phase": true,
 				"command_ability": false,
-				"dead": false,
 				"description": "",
 				"casting_value": 0
 			},
@@ -348,7 +324,6 @@
 				"phase": "",
 				"magic_phase": true,
 				"command_ability": false,
-				"dead": false,
 				"description": "",
 				"casting_value": 0
 			},
@@ -358,7 +333,6 @@
 				"phase": "",
 				"magic_phase": true,
 				"command_ability": false,
-				"dead": false,
 				"description": "",
 				"casting_value": 5
 			}
@@ -366,6 +340,7 @@
 	},
 	"hunters": {
 		"user_id": 8,
+		"dead": false,
 		"phases": [
 			{
 				"unit_name": "",
@@ -373,7 +348,6 @@
 				"phase": "",
 				"magic_phase": true,
 				"command_ability": false,
-				"dead": false,
 				"description": "",
 				"casting_value": 0
 			},
@@ -383,7 +357,6 @@
 				"phase": "",
 				"magic_phase": true,
 				"command_ability": false,
-				"dead": false,
 				"description": "",
 				"casting_value": 0
 			},
@@ -393,7 +366,6 @@
 				"phase": "",
 				"magic_phase": true,
 				"command_ability": false,
-				"dead": false,
 				"description": "",
 				"casting_value": 0
 			}
@@ -401,6 +373,7 @@
 	},
 	"dryads": {
 		"user_id": 9,
+		"dead": false,
 		"phases": [
 			{
 				"unit_name": "",
@@ -408,7 +381,6 @@
 				"phase": "",
 				"magic_phase": true,
 				"command_ability": false,
-				"dead": false,
 				"description": "",
 				"casting_value": 0
 			},
@@ -418,7 +390,6 @@
 				"phase": "",
 				"magic_phase": true,
 				"command_ability": false,
-				"dead": false,
 				"description": "",
 				"casting_value": 0
 			},
@@ -428,7 +399,6 @@
 				"phase": "",
 				"magic_phase": true,
 				"command_ability": false,
-				"dead": false,
 				"description": "",
 				"casting_value": 0
 			}
@@ -436,6 +406,7 @@
 	},
 	"tree_revenants": {
 		"user_id": 10,
+		"dead": false,
 		"phases": [
 			{
 				"unit_name": "",
@@ -443,7 +414,6 @@
 				"phase": "",
 				"magic_phase": true,
 				"command_ability": false,
-				"dead": false,
 				"description": "",
 				"casting_value": 0
 			},
@@ -453,7 +423,6 @@
 				"phase": "",
 				"magic_phase": true,
 				"command_ability": false,
-				"dead": false,
 				"description": "",
 				"casting_value": 0
 			},
@@ -463,7 +432,6 @@
 				"phase": "",
 				"magic_phase": true,
 				"command_ability": false,
-				"dead": false,
 				"description": "",
 				"casting_value": 0
 			}
@@ -471,6 +439,7 @@
 	},
 	"spite_revenants": {
 		"user_id": 11,
+		"dead": false,
 		"phases": [
 			{
 				"unit_name": "",
@@ -478,7 +447,6 @@
 				"phase": "",
 				"magic_phase": true,
 				"command_ability": false,
-				"dead": false,
 				"description": "",
 				"casting_value": 0
 			},
@@ -488,7 +456,6 @@
 				"phase": "",
 				"magic_phase": true,
 				"command_ability": false,
-				"dead": false,
 				"description": "",
 				"casting_value": 0
 			},
@@ -498,7 +465,6 @@
 				"phase": "",
 				"magic_phase": true,
 				"command_ability": false,
-				"dead": false,
 				"description": "",
 				"casting_value": 0
 			}
@@ -506,6 +472,7 @@
 	},
 	"daemonettes": {
 		"user_id": 12,
+		"dead": false,
 		"phases": [
 			{
 				"unit_name": "",
@@ -513,7 +480,6 @@
 				"phase": "",
 				"magic_phase": true,
 				"command_ability": false,
-				"dead": false,
 				"description": "",
 				"casting_value": 0
 			},
@@ -523,7 +489,6 @@
 				"phase": "",
 				"magic_phase": true,
 				"command_ability": false,
-				"dead": false,
 				"description": "",
 				"casting_value": 0
 			},
@@ -533,7 +498,6 @@
 				"phase": "",
 				"magic_phase": true,
 				"command_ability": false,
-				"dead": false,
 				"description": "",
 				"casting_value": 0
 			}
@@ -541,6 +505,7 @@
 	},
 	"keeper": {
 		"user_id": 13,
+		"dead": false,
 		"phases": [
 			{
 				"unit_name": "",
@@ -548,7 +513,6 @@
 				"phase": "",
 				"magic_phase": true,
 				"command_ability": false,
-				"dead": false,
 				"description": "",
 				"casting_value": 0
 			},
@@ -558,7 +522,6 @@
 				"phase": "",
 				"magic_phase": true,
 				"command_ability": false,
-				"dead": false,
 				"description": "",
 				"casting_value": 0
 			},
@@ -568,7 +531,6 @@
 				"phase": "",
 				"magic_phase": true,
 				"command_ability": false,
-				"dead": false,
 				"description": "",
 				"casting_value": 0
 			}
@@ -576,6 +538,7 @@
 	},
 	"seekers": {
 		"user_id": 14,
+		"dead": false,
 		"phases": [
 			{
 				"unit_name": "",
@@ -583,7 +546,6 @@
 				"phase": "",
 				"magic_phase": true,
 				"command_ability": false,
-				"dead": false,
 				"description": "",
 				"casting_value": 0
 			},
@@ -593,7 +555,6 @@
 				"phase": "",
 				"magic_phase": true,
 				"command_ability": false,
-				"dead": false,
 				"description": "",
 				"casting_value": 0
 			},
@@ -603,7 +564,6 @@
 				"phase": "",
 				"magic_phase": true,
 				"command_ability": false,
-				"dead": false,
 				"description": "",
 				"casting_value": 0
 			}
@@ -611,6 +571,7 @@
 	},
 	"daemon_prince": {
 		"user_id": 15,
+		"dead": false,
 		"phases": [
 			{
 				"unit_name": "",
@@ -618,7 +579,6 @@
 				"phase": "",
 				"magic_phase": true,
 				"command_ability": false,
-				"dead": false,
 				"description": "",
 				"casting_value": 0
 			},
@@ -628,7 +588,6 @@
 				"phase": "",
 				"magic_phase": true,
 				"command_ability": false,
-				"dead": false,
 				"description": "",
 				"casting_value": 0
 			},
@@ -638,7 +597,6 @@
 				"phase": "",
 				"magic_phase": true,
 				"command_ability": false,
-				"dead": false,
 				"description": "",
 				"casting_value": 0
 			}
@@ -646,6 +604,7 @@
 	},
 	"fiends": {
 		"user_id": 16,
+		"dead": false,
 		"phases": [
 			{
 				"unit_name": "",
@@ -653,7 +612,6 @@
 				"phase": "",
 				"magic_phase": true,
 				"command_ability": false,
-				"dead": false,
 				"description": "",
 				"casting_value": 0
 			},
@@ -663,7 +621,6 @@
 				"phase": "",
 				"magic_phase": true,
 				"command_ability": false,
-				"dead": false,
 				"description": "",
 				"casting_value": 0
 			},
@@ -673,7 +630,6 @@
 				"phase": "",
 				"magic_phase": true,
 				"command_ability": false,
-				"dead": false,
 				"description": "",
 				"casting_value": 0
 			}
@@ -681,6 +637,7 @@
 	},
 	"harp_chick": {
 		"user_id": 17,
+		"dead": false,
 		"phases": [
 			{
 				"unit_name": "",
@@ -688,7 +645,6 @@
 				"phase": "",
 				"magic_phase": true,
 				"command_ability": false,
-				"dead": false,
 				"description": "",
 				"casting_value": 0
 			},
@@ -698,7 +654,6 @@
 				"phase": "",
 				"magic_phase": true,
 				"command_ability": false,
-				"dead": false,
 				"description": "",
 				"casting_value": 0
 			},
@@ -708,7 +663,6 @@
 				"phase": "",
 				"magic_phase": true,
 				"command_ability": false,
-				"dead": false,
 				"description": "",
 				"casting_value": 0
 			}

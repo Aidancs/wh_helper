@@ -8,7 +8,7 @@
 </ion-header>
 
 <ion-content class="bg" padding text-center>
-  <div margin-top *ngFor="let unit of units">
+  <div margin-top *ngFor="let unit of unitsArray">
     <ion-card color="secondary" [hidden]="unit.dead">
       <ion-card-content>
         <img src="assets/imgs/{{ unit.image }}" />
@@ -17,26 +17,23 @@
             {{ unit.name }}
           </div>
         </ion-card-title>
-        <ion-card-content [hidden]="!stats">
+        <ion-card-content>
           <ion-card color="light">
             <ion-card-content>
-              Move: {{ unit.stats.move }}
+              Move: {{ unit.move }}
             </ion-card-content>
             <ion-card-content>
-              Save: {{ unit.stats.save }}
+              Save: {{ unit.save }}
             </ion-card-content>
             <ion-card-content>
-              Bravery: {{ unit.stats.bravery }}
+              Bravery: {{ unit.bravery }}
             </ion-card-content>
             <ion-card-content>
-              Wounds: {{ unit.stats.wounds }}
+              Wounds: {{ unit.wounds }}
             </ion-card-content>
           </ion-card>
         </ion-card-content>
         <ion-list>
-          <button ion-button (click)="openStats(unit)">
-            Stats
-          </button>
           <button ion-button [hidden]="!unit.command_ability_check" (click)="itemTapped(unit, 'command_abilities')">
             Command Abilities
           </button>
