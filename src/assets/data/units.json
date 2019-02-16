@@ -183,7 +183,28 @@
 		"command_ability_check": false,
 		"missile_weapon_check": true,
 		"magic_check": false,
-		"fly": false
+		"fly": false,
+		"abilities": [
+			{
+				"name": "Groundshaking Stomp",
+				"phase": "combat",
+				"description": "At the start of the combat phase, the Treelord stomps the ground; roll a dice for each enemy unit within 3\" of this model. On a roll of 4 or more, that unit is knocked off their feet by the impact and must subtract 1 from all hit rolls in that combat phase as they regain their footing."
+			},
+			{
+				"name": "Impale",
+				"phase": "combat",
+				"description": "If the Treelords Massive Impaling Talons inflict a wound on an enemy model, roll a dice. If the result exceeds the number of wounds the enemy model has remaining, it is slain."
+			},
+			{
+				"name": "Spirit Paths",
+				"phase": "movement",
+				"description": "If a Treelord is within 3\" of a Sylvaneth Wyldwood at the start of your movement phase, he can travel along the spirit paths. If he does so, remove the Treelord from the battlefield, and then set him up within 3\" of a different Sylvaneth Wyldwood, more than 9\" from any enemy models. This is his move for the movement phase."
+			}
+		],
+		"command_ability": {},
+		"magic": [{}],
+		"melee_weapons": [{}],
+		"missile_weapons": [{}]
 	},
 	"treelord": {
 		"id": 4,
@@ -214,7 +235,11 @@
 				"phase": "movement",
 				"description": "If a Treelord is within 3\" of a Sylvaneth Wyldwood at the start of your movement phase, he can travel along the spirit paths. If he does so, remove the Treelord from the battlefield, and then set him up within 3\" of a different Sylvaneth Wyldwood, more than 9\" from any enemy models. This is his move for the movement phase."
 			}
-		]
+		],
+		"command_ability": {},
+		"magic": [{}],
+		"melee_weapons": [{}],
+		"missile_weapons": [{}]
 	},
 	"drycha": {
 		"id": 5,
@@ -228,7 +253,12 @@
 		"command_ability_check": false,
 		"missile_weapon_check": true,
 		"magic_check": true,
-		"fly": false
+		"fly": false,
+		"abilities": [{}],
+		"command_ability": {},
+		"magic": [{}],
+		"melee_weapons": [{}],
+		"missile_weapons": [{}]
 	},
 	"branchwraith": {
 		"id": 6,
@@ -242,7 +272,12 @@
 		"command_ability_check": false,
 		"missile_weapon_check": false,
 		"magic_check": true,
-		"fly": false
+		"fly": false,
+		"abilities": [{}],
+		"command_ability": {},
+		"magic": [{}],
+		"melee_weapons": [{}],
+		"missile_weapons": [{}]
 	},
 	"branchwych": {
 		"id": 7,
@@ -256,7 +291,13 @@
 		"command_ability_check": false,
 		"missile_weapon_check": false,
 		"magic_check": true,
-		"fly": false
+		"fly": false,
+		"abilities": [{}],
+		"command_ability": {},
+		"magic": [{}],
+		"melee_weapons": [{}],
+		"missile_weapons": [{}]
+
 	},
 	"hunters": {
 		"id": 8,
@@ -270,7 +311,12 @@
 		"command_ability_check": false,
 		"missile_weapon_check": false,
 		"magic_check": false,
-		"fly": false
+		"fly": false,
+		"abilities": [{}],
+		"command_ability": {},
+		"magic": [{}],
+		"melee_weapons": [{}],
+		"missile_weapons": [{}]
 	},
 	"dryads": {
 		"id": 9,
@@ -284,7 +330,12 @@
 		"command_ability_check": false,
 		"missile_weapon_check": false,
 		"magic_check": false,
-		"fly": false
+		"fly": false,
+		"abilities": [{}],
+		"command_ability": {},
+		"magic": [{}],
+		"melee_weapons": [{}],
+		"missile_weapons": [{}]
 	},
 	"tree_revenants": {
 		"id": 10,
@@ -298,7 +349,12 @@
 		"command_ability_check": false,
 		"missile_weapon_check": false,
 		"magic_check": false,
-		"fly": false
+		"fly": false,
+		"abilities": [{}],
+		"command_ability": {},
+		"magic": [{}],
+		"melee_weapons": [{}],
+		"missile_weapons": [{}]
 	},
 	"spite_revenants": {
 		"id": 11,
@@ -312,7 +368,12 @@
 		"command_ability_check": false,
 		"missile_weapon_check": false,
 		"magic_check": false,
-		"fly": false
+		"fly": false,
+		"abilities": [{}],
+		"command_ability": {},
+		"magic": [{}],
+		"melee_weapons": [{}],
+		"missile_weapons": [{}]
 	},
 	"daemonettes": {
 		"id": 12,
@@ -326,7 +387,12 @@
 		"command_ability_check": false,
 		"missile_weapon_check": false,
 		"magic_check": false,
-		"fly": false
+		"fly": false,
+		"abilities": [{}],
+		"command_ability": {},
+		"magic": [{}],
+		"melee_weapons": [{}],
+		"missile_weapons": [{}]
 	},
 	"keeper": {
 		"id": 13,
@@ -340,7 +406,12 @@
 		"command_ability_check": false,
 		"missile_weapon_check": false,
 		"magic_check": false,
-		"fly": false
+		"fly": false,
+		"abilities": [{}],
+		"command_ability": {},
+		"magic": [{}],
+		"melee_weapons": [{}],
+		"missile_weapons": [{}]
 	},
 	"seekers": {
 		"id": 14,
@@ -354,7 +425,12 @@
 		"command_ability_check": false,
 		"missile_weapon_check": false,
 		"magic_check": false,
-		"fly": false
+		"fly": false,
+		"abilities": [{}],
+		"command_ability": {},
+		"magic": [{}],
+		"melee_weapons": [{}],
+		"missile_weapons": [{}]
 	},
 	"daemon_prince": {
 		"id": 15,
@@ -368,7 +444,12 @@
 		"command_ability_check": false,
 		"missile_weapon_check": false,
 		"magic_check": false,
-		"fly": false
+		"fly": false,
+		"abilities": [{}],
+		"command_ability": {},
+		"magic": [{}],
+		"melee_weapons": [{}],
+		"missile_weapons": [{}]
 	},
 	"fiends": {
 		"id": 16,
@@ -382,7 +463,12 @@
 		"command_ability_check": false,
 		"missile_weapon_check": false,
 		"magic_check": false,
-		"fly": false
+		"fly": false,
+		"abilities": [{}],
+		"command_ability": {},
+		"magic": [{}],
+		"melee_weapons": [{}],
+		"missile_weapons": [{}]
 	},
 	"harp_chick": {
 		"id": 17,
@@ -396,6 +482,11 @@
 		"command_ability_check": false,
 		"missile_weapon_check": false,
 		"magic_check": false,
-		"fly": false
+		"fly": false,
+		"abilities": [{}],
+		"command_ability": {},
+		"magic": [{}],
+		"melee_weapons": [{}],
+		"missile_weapons": [{}]
 	}
 }
