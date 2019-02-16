@@ -3,7 +3,6 @@ import { ModalController, NavController } from 'ionic-angular';
 
 import { PhaseModalPage } from '../../modals/phase-modal/phase-modal';
 import { PhasesService } from '../../services/phases.service';
-import { UnitsService } from '../../services/units.service';
 
 @Component({
 	selector: 'page-phases',
@@ -21,19 +20,15 @@ export class PhasesPage {
 	battleshock_phase_list = [];
 	phaseList = [];
 	phaseArray = [];
-	units = [];
+	dryads: any;
 
 	constructor(
 		private modalCtrl: ModalController,
 		public navCtrl: NavController,
 		private phasesSvc: PhasesService,
-		private unitsSvc: UnitsService,
 	) { }
 
 	ngOnInit() {
-		this.unitsSvc.getUnitsJSon().subscribe(result => {
-			this.units = result;
-		});
 		this.phasesSvc.getPhasesJSon().subscribe(result => {
 			this.phaseList = result;
 
@@ -43,6 +38,7 @@ export class PhasesPage {
 				for (let i = 0; i < this.phaseArray.length; ++i) {
 					if (this.phaseArray[i].phase === 'Hero') {
 						this.hero_phase_list.push(this.phaseArray[i]);
+
 					} else if (this.phaseArray[i].phase === 'Movement') {
 						this.movement_phase_list.push(this.phaseArray[i]);
 					} else if (this.phaseArray[i].phase === 'Shooting') {
@@ -63,8 +59,6 @@ export class PhasesPage {
 	}
 
 	phaseTapped(phase) {
-		console.log(phase, 'phase')
-		console.log(this.units, 'this.units')
 		let list = [];
 
 		if (phase === 'Hero Phase') {
@@ -87,7 +81,7 @@ export class PhasesPage {
 		);
 		modal.onDidDismiss((refresh) => {
 			if (refresh) {
-				console.log('inside onDidDismiss')
+				console.log('inside phases onDidDismiss')
 			}
 		});
 		modal.present();

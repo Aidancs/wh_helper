@@ -11,11 +11,6 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
 // services
-import { AbilitiesService } from '../services/abilities.service';
-import { CommandAbilitiesService } from '../services/command-abilities.service';
-import { MagicService } from '../services/magic.service';
-import { MeleeWeaponsService } from '../services/melee-weapons.service';
-import { MissleWeaponsService } from '../services/missle-weapons.service';
 import { PhasesService } from '../services/phases.service';
 import { UnitsService } from '../services/units.service';
 
@@ -46,11 +41,6 @@ import { UnitModalPage } from '../modals/unit-modal/unit-modal';
 	providers: [
 		StatusBar,
 		SplashScreen,
-		AbilitiesService,
-		CommandAbilitiesService,
-		MagicService,
-		MeleeWeaponsService,
-		MissleWeaponsService,
 		PhasesService,
 		UnitsService,
 		{ provide: ErrorHandler, useClass: IonicErrorHandler }

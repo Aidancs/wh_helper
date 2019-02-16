@@ -38,7 +38,6 @@ export class UnitsPage {
 			for (const key of Object.keys(result)) {
 				this.unitsArray.push(result[key]);
 			}
-			console.log(this.unitsArray, 'unitsarray')
 		});
 	}
 
@@ -53,7 +52,7 @@ export class UnitsPage {
 		);
 		modal.onDidDismiss((refresh) => {
 			if (refresh) {
-				console.log('inside onDidDismiss')
+				console.log('inside units.ts onDidDismiss')
 			}
 		});
 		modal.present();
@@ -66,6 +65,5 @@ export class UnitsPage {
 	dead(unit) {
 		this.unit = unit;
 		this.unit.dead = true;
-		this.unitsSvc.update(this.unit.id, this.unit);
 	}
 }

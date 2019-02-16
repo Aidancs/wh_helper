@@ -22,23 +22,21 @@
       </ion-card>
     </div>
   </div>
-  <div [hidden]="!command_abilities">
-    <div *ngFor="let command_ability of unit.command_ability">
-      <ion-card>
-        <ion-card-content>
-          Name: {{ command_ability.name }}
-        </ion-card-content>
-        <ion-card-content>
-          Phase: {{ command_ability.phase }}
-        </ion-card-content>
-        <ion-card-content>
-          Description: {{ command_ability.description }}
-        </ion-card-content>
-      </ion-card>
-    </div>
+  <div [hidden]="!command_abilities" *ngIf="data">
+    <ion-card>
+      <ion-card-content>
+        Name: {{ data.name }}
+      </ion-card-content>
+      <ion-card-content>
+        Phase: {{ data.phase }}
+      </ion-card-content>
+      <ion-card-content>
+        Description: {{ data.description }}
+      </ion-card-content>
+    </ion-card>
   </div>
   <div [hidden]="!magic">
-    <div *ngFor="let spell of unit.magic">
+    <div *ngFor="let spell of unitModalArray">
       <ion-card>
         <ion-card-content>
           Name: {{ spell.name }}
@@ -56,7 +54,7 @@
     </div>
   </div>
   <div [hidden]="!melee_weapons">
-    <div *ngFor="let weapon of unit.melee_weapon">
+    <div *ngFor="let weapon of unitModalArray">
       <ion-card>
         <ion-card-content>
           Name: {{ weapon.name }}
@@ -83,7 +81,7 @@
     </div>
   </div>
   <div [hidden]="!missile_weapons">
-    <div *ngFor="let weapon of unit.missile_weapons">
+    <div *ngFor="let weapon of unitModalArray">
       <ion-card>
         <ion-card-content>
           Name: {{ weapon.name }}
