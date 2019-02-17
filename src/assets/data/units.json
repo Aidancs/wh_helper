@@ -89,6 +89,71 @@
 				"rend": "-2",
 				"damage": "D6"
 			}
+		],
+		"phases": [
+			{
+				"unit_name": "Alarielle the Everqueen",
+				"name": "Ghyran's Wrath",
+				"phase": "Hero",
+				"magic_phase": false,
+				"command_ability": true,
+				"description": "Alarielle can use this ability once per battle. When she does so, you can re-roll all failed wound rolls made for friendly Sylvaneth models until your next hero phase.",
+				"casting_value": 0
+			},
+			{
+				"unit_name": "Alarielle the Everqueen",
+				"name": "Talon of the Dwindling",
+				"phase": "Combat",
+				"magic_phase": false,
+				"command_ability": false,
+				"description": "At the end of the combat phase, roll two dice for each model that suffered wounds from the Talon of the Dwindling but was not slain. If the result exceeds the model’s Wounds characteristic, or if you roll two sixes, the model is slain.",
+				"casting_value": 0
+			},
+			{
+				"unit_name": "Alarielle the Everqueen",
+				"name": "Lifebloom",
+				"phase": "Hero",
+				"magic_phase": false,
+				"command_ability": false,
+				"description": "In each of your hero phases, Alarielle heals D3 wounds.",
+				"casting_value": 0
+			},
+			{
+				"unit_name": "Alarielle the Everqueen",
+				"name": "Sweeping Blows",
+				"phase": "Combat",
+				"magic_phase": false,
+				"command_ability": false,
+				"description": "When the Wardroth Beetle attacks with its Great Antlers, you can add 1 to the hit rolls if the target unit has five or more models.",
+				"casting_value": 0
+			},
+			{
+				"unit_name": "Alarielle the Everqueen",
+				"name": "Living Battering Ram",
+				"phase": "Charge",
+				"magic_phase": false,
+				"command_ability": false,
+				"description": "If this model ends a charge move within 1\" of a terrain feature, each other unit within or on that terrain feature suffers D3 mortal wounds.",
+				"casting_value": 0
+			},
+			{
+				"unit_name": "Alarielle the Everqueen",
+				"name": "Soul Amphorae",
+				"phase": "Hero",
+				"magic_phase": false,
+				"command_ability": false,
+				"description": "In your hero phase, you can heal D3 wounds allocated to each Sylvaneth model within 30\" of this model. Once per battle, in your hero phase, instead of using this ability to heal, you can summon 1 unit from the list below to the battlefield, and add it to your army. The summoned unit must be set up wholly within 9\" of this model and more than 9\" from any enemy units. That unit cannot move in the following movement phase. Choose a unit from the following list: 20 Dryads, 10 Tree-Revenants, 10 Spite-Revenants, 3 Kurnoth Hunters, 1 Branchwych, 1 Treelord",
+				"casting_value": 0
+			},
+			{
+				"unit_name": "Alarielle the Everqueen",
+				"name": "Metamorphosis",
+				"phase": "Hero",
+				"magic_phase": true,
+				"command_ability": false,
+				"description": "Metamorphosis has a casting value of 5. If successfully cast, pick an enemy unit within 16\" and roll a number of dice equal to the result of the casting roll (e.g. if the casting roll was 6, roll 6 dice). For each result of 4 or more, the unit suffers a mortal wound. If the last model in the unit is slain, you can set up a Sylvaneth Wyldwood in its place. None of the woods can be set up within 1\" of any other models or terrain features. ",
+				"casting_value": 5
+			}
 		]
 	},
 	"tla": {
@@ -169,6 +234,62 @@
 				"rend": "-1",
 				"damage": "D6"
 			}
+		],
+		"phases": [
+			{
+				"unit_name": "Treelord Ancient",
+				"name": "Heed the Spirit Song",
+				"phase": "Hero",
+				"magic_phase": false,
+				"command_ability": true,
+				"description": "The Treelord Ancient speaks to its kin through the spirit-song, warning them of approaching dangers. Until your next hero phase, you can re-roll save rolls of 1 for Sylvaneth units if they are within 10\" of the Treelord Ancient.",
+				"casting_value": 0
+			},
+			{
+				"unit_name": "Treelord Ancient",
+				"name": "Groundshaking Stomp",
+				"phase": "Combat",
+				"magic_phase": false,
+				"command_ability": false,
+				"description": "At the start of the combat phase, roll a dice for each enemy unit within 3\" of any models with this abuluty. On a roll of 4 or more, that unit is knocked off their feet by the impact and must subtract 1 from all their hit rolls in that combat phase as they regain their footing.",
+				"casting_value": 0
+			},
+			{
+				"unit_name": "Treelord Ancient",
+				"name": "Impale",
+				"phase": "Combat",
+				"magic_phase": false,
+				"command_ability": false,
+				"description": "If the Treelord Ancient’s Massive Impaling Talons inflict a wound on an enemy model, roll a dice. If the result exceeds the number of wounds the enemy model has remaining, it is slain.",
+				"casting_value": 0
+			},
+			{
+				"unit_name": "Treelord Ancient",
+				"name": "Spirit Paths",
+				"phase": "Movement",
+				"magic_phase": false,
+				"command_ability": false,
+				"description": "If a Treelord Ancient is within 3\" of a Sylvaneth Wyldwood at the start of your movement phase, he can travel along the spirit paths. If they do so, remove the Treelord Ancient from the battlefield, and then set him up within 3\" of a different Sylvaneth Wyldwood, more than 9\" from any enemy models. This is their move for the movement phase",
+				"casting_value": 0
+			},
+			{
+				"unit_name": "Treelord Ancient",
+				"name": "Silent Communion",
+				"phase": "Hero",
+				"magic_phase": false,
+				"command_ability": false,
+				"description": "In your hero phase, you can pick 1 friendly Treelord Ancient and roll a dice. On a 4+, you can set up 1 Sylvaneth Wyldwood terrain feature wholly within 24\" of that Treelord Ancient, and more than 3\" from any other models or terrain features.",
+				"casting_value": 0
+			},
+			{
+				"unit_name": "Treelord Ancient",
+				"name": "Awakening the Wood",
+				"phase": "Hero",
+				"magic_phase": true,
+				"command_ability": false,
+				"description": "Awakening the Wood has a casting value of 6. If successfully cast, pick a Sylvaneth Wyldwood that is within 24\" of the caster. Each enemy unit within 3\" of this Sylvaneth Wyldwood suffers D3 mortal wounds.",
+				"casting_value": 6
+			}
 		]
 	},
 	"durthu": {
@@ -204,7 +325,72 @@
 		"command_ability": {},
 		"magic": [{}],
 		"melee_weapons": [{}],
-		"missile_weapons": [{}]
+		"missile_weapons": [{}],
+		"phases": [
+			{
+				"unit_name": "Spirit of Durthu",
+				"name": "Groundshaking Stomp",
+				"phase": "Combat",
+				"magic_phase": false,
+				"command_ability": false,
+				"description": "At the start of the combat phase, roll a dice for each enemy unit within 3\" of any models with this abuluty. On a roll of 4 or more, that unit is knocked off their feet by the impact and must subtract 1 from all their hit rolls in that combat phase as they regain their footing.",
+				"casting_value": 0
+			},
+			{
+				"unit_name": "Spirit of Durthu",
+				"name": "Impale",
+				"phase": "Combat",
+				"magic_phase": false,
+				"command_ability": false,
+				"description": "If the Spirit of Durthu’s Massive Impaling Talons inflict a wound on an enemy model, roll a dice. If the result exceeds the number of wounds the enemy model has remaining, it is slain.",
+				"casting_value": 0
+			},
+			{
+				"unit_name": "Spirit of Durthu",
+				"name": "Spirit Paths",
+				"phase": "Movement",
+				"magic_phase": false,
+				"command_ability": false,
+				"description": "If a Spirit of Durthu is within 3\" of a Sylvaneth Wyldwood at the start of your movement phase, he can travel along the spirit paths. If they do so, remove the Spirit of Durthu from the battlefield, and then set him up within 3\" of a different Sylvaneth Wyldwood, more than 9\" from any enemy models. This is their move for the movement phase",
+				"casting_value": 0
+			},
+			{
+				"unit_name": "Spirit of Durthu",
+				"name": "Guardian Sword",
+				"phase": "Combat",
+				"magic_phase": false,
+				"command_ability": false,
+				"description": "Make and extra D3 attacks with the Guardian Sword if he is within 3\" of a Sylvaneth Wyldwood when he attacks in the combat phase.",
+				"casting_value": 0
+			},
+			{
+				"unit_name": "Spirit of Durthu",
+				"name": "Champions of the Everqueen's Will",
+				"phase": "Bravery",
+				"magic_phase": false,
+				"command_ability": false,
+				"description": "Spirit of Durthu instil courage in the Everqueen's children. All friendly Sylvaneth units that are within 8\" of any Spirits of Durthu in the battleshock phase add 1 to their bravery",
+				"casting_value": 0
+			},
+			{
+				"unit_name": "Spirit of Durthu",
+				"name": "Verdant Blast",
+				"phase": "Shooting",
+				"magic_phase": false,
+				"command_ability": false,
+				"description": "When a Spirit of Durthu attacks with a Verdant Blast, you can declare that he will channel his life force to intensify its power. Add 2 to the weapon's Attacks for the rest of the turn. If the Spirit of Durthu uses this Ability, he suffers D3 mortal wounds at the end of the shooting phase.",
+				"casting_value": 0
+			},
+			{
+				"unit_name": "Spirit of Durthu",
+				"name": "Solemn Guardian",
+				"phase": "Shooting/Combat",
+				"magic_phase": false,
+				"command_ability": false,
+				"description": "If an attack that targets a friendly Sylvaneth Hero within 6\" of a Spirit of Durthu causes a wound, roll a dice. On a result of 4 or more the wound is inflicted on the Spirit of Durthu instead(You can make a save roll as normal).",
+				"casting_value": 0
+			}
+		]
 	},
 	"treelord": {
 		"id": 4,
@@ -239,7 +425,36 @@
 		"command_ability": {},
 		"magic": [{}],
 		"melee_weapons": [{}],
-		"missile_weapons": [{}]
+		"missile_weapons": [{}],
+		"phases": [
+			{
+				"unit_name": "Treelord",
+				"name": "Groundshaking Stomp",
+				"phase": "Combat",
+				"magic_phase": false,
+				"command_ability": false,
+				"description": "At the start of the combat phase, the Treelord stomps the ground; roll a dice for each enemy unit within 3\" of this model. On a roll of 4 or more, that unit is knocked off their feet by the impact and must subtract 1 from all hit rolls in that combat phase as they regain their footing.",
+				"casting_value": 0
+			},
+			{
+				"unit_name": "Treelord",
+				"name": "Impale",
+				"phase": "Combat",
+				"magic_phase": false,
+				"command_ability": false,
+				"description": "If the Treelord’s Massive Impaling Talons inflict a wound on an enemy model, roll a dice. If the result exceeds the number of wounds the enemy model has remaining, it is slain.",
+				"casting_value": 0
+			},
+			{
+				"unit_name": "Treelord",
+				"name": "Spirit Paths",
+				"phase": "Movement",
+				"magic_phase": false,
+				"command_ability": false,
+				"description": "If a Treelord is within 3\" of a Sylvaneth Wyldwood at the start of your movement phase, he can travel along the spirit paths. If he does so, remove the Spirit of Durthu from the battlefield, and then set him up within 3\" of a different Sylvaneth Wyldwood, more than 9\" from any enemy models. This is his move for the movement phase",
+				"casting_value": 0
+			}
+		]
 	},
 	"drycha": {
 		"id": 5,
@@ -258,7 +473,54 @@
 		"command_ability": {},
 		"magic": [{}],
 		"melee_weapons": [{}],
-		"missile_weapons": [{}]
+		"missile_weapons": [{}],
+		"phases": [
+			{
+				"unit_name": "Drycha",
+				"name": "",
+				"phase": "",
+				"magic_phase": false,
+				"command_ability": false,
+				"description": "",
+				"casting_value": 0
+			},
+			{
+				"unit_name": "",
+				"name": "",
+				"phase": "",
+				"magic_phase": false,
+				"command_ability": false,
+				"description": "",
+				"casting_value": 0
+			},
+			{
+				"unit_name": "",
+				"name": "",
+				"phase": "",
+				"magic_phase": false,
+				"command_ability": false,
+				"description": "",
+				"casting_value": 0
+			},
+			{
+				"unit_name": "",
+				"name": "",
+				"phase": "",
+				"magic_phase": false,
+				"command_ability": false,
+				"description": "",
+				"casting_value": 0
+			},
+			{
+				"unit_name": "",
+				"name": "",
+				"phase": "",
+				"magic_phase": false,
+				"command_ability": false,
+				"description": "",
+				"casting_value": 0
+			}
+		]
 	},
 	"branchwraith": {
 		"id": 6,
@@ -277,7 +539,27 @@
 		"command_ability": {},
 		"magic": [{}],
 		"melee_weapons": [{}],
-		"missile_weapons": [{}]
+		"missile_weapons": [{}],
+		"phases": [
+			{
+				"unit_name": "",
+				"name": "",
+				"phase": "",
+				"magic_phase": false,
+				"command_ability": false,
+				"description": "",
+				"casting_value": 0
+			},
+			{
+				"unit_name": "",
+				"name": "",
+				"phase": "",
+				"magic_phase": false,
+				"command_ability": false,
+				"description": "",
+				"casting_value": 0
+			}
+		]
 	},
 	"branchwych": {
 		"id": 7,
@@ -296,7 +578,27 @@
 		"command_ability": {},
 		"magic": [{}],
 		"melee_weapons": [{}],
-		"missile_weapons": [{}]
+		"missile_weapons": [{}],
+		"phases": [
+			{
+				"unit_name": "",
+				"name": "",
+				"phase": "",
+				"magic_phase": false,
+				"command_ability": false,
+				"description": "",
+				"casting_value": 0
+			},
+			{
+				"unit_name": "",
+				"name": "",
+				"phase": "",
+				"magic_phase": false,
+				"command_ability": false,
+				"description": "",
+				"casting_value": 0
+			}
+		]
 
 	},
 	"hunters": {
@@ -316,7 +618,27 @@
 		"command_ability": {},
 		"magic": [{}],
 		"melee_weapons": [{}],
-		"missile_weapons": [{}]
+		"missile_weapons": [{}],
+		"phases": [
+			{
+				"unit_name": "",
+				"name": "",
+				"phase": "",
+				"magic_phase": false,
+				"command_ability": false,
+				"description": "",
+				"casting_value": 0
+			},
+			{
+				"unit_name": "",
+				"name": "",
+				"phase": "",
+				"magic_phase": false,
+				"command_ability": false,
+				"description": "",
+				"casting_value": 0
+			}
+		]
 	},
 	"dryads": {
 		"id": 9,
@@ -335,7 +657,27 @@
 		"command_ability": {},
 		"magic": [{}],
 		"melee_weapons": [{}],
-		"missile_weapons": [{}]
+		"missile_weapons": [{}],
+		"phases": [
+			{
+				"unit_name": "",
+				"name": "",
+				"phase": "",
+				"magic_phase": false,
+				"command_ability": false,
+				"description": "",
+				"casting_value": 0
+			},
+			{
+				"unit_name": "",
+				"name": "",
+				"phase": "",
+				"magic_phase": false,
+				"command_ability": false,
+				"description": "",
+				"casting_value": 0
+			}
+		]
 	},
 	"tree_revenants": {
 		"id": 10,
@@ -354,7 +696,27 @@
 		"command_ability": {},
 		"magic": [{}],
 		"melee_weapons": [{}],
-		"missile_weapons": [{}]
+		"missile_weapons": [{}],
+		"phases": [
+			{
+				"unit_name": "",
+				"name": "",
+				"phase": "",
+				"magic_phase": false,
+				"command_ability": false,
+				"description": "",
+				"casting_value": 0
+			},
+			{
+				"unit_name": "",
+				"name": "",
+				"phase": "",
+				"magic_phase": false,
+				"command_ability": false,
+				"description": "",
+				"casting_value": 0
+			}
+		]
 	},
 	"spite_revenants": {
 		"id": 11,
@@ -373,7 +735,27 @@
 		"command_ability": {},
 		"magic": [{}],
 		"melee_weapons": [{}],
-		"missile_weapons": [{}]
+		"missile_weapons": [{}],
+		"phases": [
+			{
+				"unit_name": "",
+				"name": "",
+				"phase": "",
+				"magic_phase": false,
+				"command_ability": false,
+				"description": "",
+				"casting_value": 0
+			},
+			{
+				"unit_name": "",
+				"name": "",
+				"phase": "",
+				"magic_phase": false,
+				"command_ability": false,
+				"description": "",
+				"casting_value": 0
+			}
+		]
 	},
 	"daemonettes": {
 		"id": 12,
@@ -392,7 +774,27 @@
 		"command_ability": {},
 		"magic": [{}],
 		"melee_weapons": [{}],
-		"missile_weapons": [{}]
+		"missile_weapons": [{}],
+		"phases": [
+			{
+				"unit_name": "",
+				"name": "",
+				"phase": "",
+				"magic_phase": false,
+				"command_ability": false,
+				"description": "",
+				"casting_value": 0
+			},
+			{
+				"unit_name": "",
+				"name": "",
+				"phase": "",
+				"magic_phase": false,
+				"command_ability": false,
+				"description": "",
+				"casting_value": 0
+			}
+		]
 	},
 	"keeper": {
 		"id": 13,
@@ -411,7 +813,27 @@
 		"command_ability": {},
 		"magic": [{}],
 		"melee_weapons": [{}],
-		"missile_weapons": [{}]
+		"missile_weapons": [{}],
+		"phases": [
+			{
+				"unit_name": "",
+				"name": "",
+				"phase": "",
+				"magic_phase": false,
+				"command_ability": false,
+				"description": "",
+				"casting_value": 0
+			},
+			{
+				"unit_name": "",
+				"name": "",
+				"phase": "",
+				"magic_phase": false,
+				"command_ability": false,
+				"description": "",
+				"casting_value": 0
+			}
+		]
 	},
 	"seekers": {
 		"id": 14,
@@ -430,7 +852,27 @@
 		"command_ability": {},
 		"magic": [{}],
 		"melee_weapons": [{}],
-		"missile_weapons": [{}]
+		"missile_weapons": [{}],
+		"phases": [
+			{
+				"unit_name": "",
+				"name": "",
+				"phase": "",
+				"magic_phase": false,
+				"command_ability": false,
+				"description": "",
+				"casting_value": 0
+			},
+			{
+				"unit_name": "",
+				"name": "",
+				"phase": "",
+				"magic_phase": false,
+				"command_ability": false,
+				"description": "",
+				"casting_value": 0
+			}
+		]
 	},
 	"daemon_prince": {
 		"id": 15,
@@ -449,7 +891,27 @@
 		"command_ability": {},
 		"magic": [{}],
 		"melee_weapons": [{}],
-		"missile_weapons": [{}]
+		"missile_weapons": [{}],
+		"phases": [
+			{
+				"unit_name": "",
+				"name": "",
+				"phase": "",
+				"magic_phase": false,
+				"command_ability": false,
+				"description": "",
+				"casting_value": 0
+			},
+			{
+				"unit_name": "",
+				"name": "",
+				"phase": "",
+				"magic_phase": false,
+				"command_ability": false,
+				"description": "",
+				"casting_value": 0
+			}
+		]
 	},
 	"fiends": {
 		"id": 16,
@@ -468,7 +930,27 @@
 		"command_ability": {},
 		"magic": [{}],
 		"melee_weapons": [{}],
-		"missile_weapons": [{}]
+		"missile_weapons": [{}],
+		"phases": [
+			{
+				"unit_name": "",
+				"name": "",
+				"phase": "",
+				"magic_phase": false,
+				"command_ability": false,
+				"description": "",
+				"casting_value": 0
+			},
+			{
+				"unit_name": "",
+				"name": "",
+				"phase": "",
+				"magic_phase": false,
+				"command_ability": false,
+				"description": "",
+				"casting_value": 0
+			}
+		]
 	},
 	"harp_chick": {
 		"id": 17,
@@ -487,6 +969,26 @@
 		"command_ability": {},
 		"magic": [{}],
 		"melee_weapons": [{}],
-		"missile_weapons": [{}]
+		"missile_weapons": [{}],
+		"phases": [
+			{
+				"unit_name": "",
+				"name": "",
+				"phase": "",
+				"magic_phase": false,
+				"command_ability": false,
+				"description": "",
+				"casting_value": 0
+			},
+			{
+				"unit_name": "",
+				"name": "",
+				"phase": "",
+				"magic_phase": false,
+				"command_ability": false,
+				"description": "",
+				"casting_value": 0
+			}
+		]
 	}
 }

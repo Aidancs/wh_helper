@@ -11,7 +11,6 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
 // services
-import { PhasesService } from '../services/phases.service';
 import { UnitsService } from '../services/units.service';
 
 import { PhaseModalPage } from '../modals/phase-modal/phase-modal';
@@ -41,7 +40,6 @@ import { UnitModalPage } from '../modals/unit-modal/unit-modal';
 	providers: [
 		StatusBar,
 		SplashScreen,
-		PhasesService,
 		UnitsService,
 		{ provide: ErrorHandler, useClass: IonicErrorHandler }
 	]
