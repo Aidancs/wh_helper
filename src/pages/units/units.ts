@@ -63,7 +63,10 @@ export class UnitsPage {
 	}
 
 	dead(unit) {
+		console.log(unit, 'unit');
+
 		this.unit = unit;
 		this.unit.dead = true;
+		this.unitsSvc.update(this.unit.id, this.unit);
 	}
 }
