@@ -283,18 +283,14 @@
 				"damage": "D6"
 			}
 		],
-		"command_trait": [
-			{
-				"name": "",
-				"description": ""
-			}
-		],
-		"artefact": [
-			{
-				"name": "",
-				"description": ""
-			}
-		],
+		"command_trait": {
+			"name": "",
+			"description": ""
+		},
+		"artefact": {
+			"name": "",
+			"description": ""
+		},
 		"phases": [
 			{
 				"unit_name": "Treelord Ancient",
@@ -457,18 +453,14 @@
 				"damage": "D3"
 			}
 		],
-		"command_trait": [
-			{
-				"name": "Gnarled Warrior",
-				"description": "Ignore rend unless it is -2 or greater."
-			}
-		],
-		"artefact": [
-			{
-				"name": "Briarsheath",
-				"description": "Subtract 1 from all hit rolls made against the bearer."
-			}
-		],
+		"command_trait": {
+			"name": "Gnarled Warrior",
+			"description": "Ignore rend unless it is -2 or greater."
+		},
+		"artefact": {
+			"name": "Briarsheath",
+			"description": "Subtract 1 from all hit rolls made against the bearer."
+		},
 		"phases": [
 			{
 				"unit_name": "Spirit of Durthu",
@@ -620,18 +612,14 @@
 				"damage": "1"
 			}
 		],
-		"command_trait": [
-			{
-				"name": "",
-				"description": ""
-			}
-		],
-		"artefact": [
-			{
-				"name": "",
-				"description": ""
-			}
-		],
+		"command_trait": {
+			"name": "",
+			"description": ""
+		},
+		"artefact": {
+			"name": "",
+			"description": ""
+		},
 		"phases": [
 			{
 				"unit_name": "Treelord",
@@ -750,18 +738,14 @@
 				"damage": "See Ability"
 			}
 		],
-		"command_trait": [
-			{
-				"name": "",
-				"description": ""
-			}
-		],
-		"artefact": [
-			{
-				"name": "",
-				"description": ""
-			}
-		],
+		"command_trait": {
+			"name": "",
+			"description": ""
+		},
+		"artefact": {
+			"name": "",
+			"description": ""
+		},
 		"phases": [
 			{
 				"unit_name": "Drycha",
@@ -775,7 +759,7 @@
 			{
 				"unit_name": "Drycha",
 				"name": "Primal Terror",
-				"phase": "Hero",
+				"phase": "hero",
 				"magic_phase": true,
 				"command_ability": false,
 				"description": "Roll a dice for each enemy unit w/n 10\" of the caster, adding 2 to the result. For each point by which the total exceeds the highest bravery in that unit, the unit suffers a mortal wound.",
@@ -865,18 +849,14 @@
 		"missile_weapons": [
 			{}
 		],
-		"command_trait": [
-			{
-				"name": "",
-				"description": ""
-			}
-		],
-		"artefact": [
-			{
-				"name": "",
-				"description": ""
-			}
-		],
+		"command_trait": {
+			"name": "",
+			"description": ""
+		},
+		"artefact": {
+			"name": "",
+			"description": ""
+		},
 		"phases": [
 			{
 				"unit_name": "Kurnoth Hunters",
@@ -971,18 +951,14 @@
 		"missile_weapons": [
 			{}
 		],
-		"command_trait": [
-			{
-				"name": "",
-				"description": ""
-			}
-		],
-		"artefact": [
-			{
-				"name": "",
-				"description": ""
-			}
-		],
+		"command_trait": {
+			"name": "",
+			"description": ""
+		},
+		"artefact": {
+			"name": "",
+			"description": ""
+		},
 		"phases": [
 			{
 				"unit_name": "Dryads",
@@ -1072,18 +1048,14 @@
 		"missile_weapons": [
 			{}
 		],
-		"command_trait": [
-			{
-				"name": "",
-				"description": ""
-			}
-		],
-		"artefact": [
-			{
-				"name": "",
-				"description": ""
-			}
-		],
+		"command_trait": {
+			"name": "",
+			"description": ""
+		},
+		"artefact": {
+			"name": "",
+			"description": ""
+		},
 		"phases": [
 			{
 				"unit_name": "Spite Revenants",

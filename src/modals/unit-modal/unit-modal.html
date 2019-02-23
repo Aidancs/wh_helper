@@ -107,16 +107,24 @@
       </ion-card>
     </div>
   </div>
-  <div [hidden]="!command_trait">
+  <div [hidden]="!command_trait" *ngIf="data">
     <ion-card>
       <ion-card-content>
-        Name: {{ unitModalArray[0].name}}
+        Name: {{ data.name}}
       </ion-card-content>
       <ion-card-content>
-        Description: {{ unitModalArray[0].description }}
+        Description: {{ data.description }}
       </ion-card-content>
-
     </ion-card>
-
+  </div>
+  <div [hidden]="!artefact" *ngIf="data">
+    <ion-card>
+      <ion-card-content>
+        Name: {{ data.name}}
+      </ion-card-content>
+      <ion-card-content>
+        Description: {{ data.description }}
+      </ion-card-content>
+    </ion-card>
   </div>
 </ion-content>
