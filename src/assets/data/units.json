@@ -9,15 +9,17 @@
 		"image": "alarielle.JPG",
 		"taken_wounds": 0,
 		"dead": false,
+		"artefact_check": false,
 		"command_ability_check": true,
-		"missile_weapon_check": true,
+		"command_trait_check": false,
 		"magic_check": true,
+		"missile_weapon_check": true,
 		"fly": true,
 		"abilities": [
 			{
-				"name": "Talon of the Dwindling",
-				"phase": "combat",
-				"description": "At the end of the combat phase, roll two dice for each model that suffered wounds from the Talon of the Dwindling but was not slain. If the result exceeds the model’s Wounds characteristic, or if you roll two sixes, the model is slain."
+				"name": "Soul Amphorae",
+				"phase": "hero",
+				"description": "In your hero phase, you can heal D3 wounds allocated to each Sylvaneth model within 30\" of this model. Once per battle, in your hero phase, instead of using this ability to heal, you can summon 1 unit from the list below to the battlefield, and add it to your army. The summoned unit must be set up wholly within 9\" of this model and more than 9\" from any enemy units. That unit cannot move in the following movement phase. Choose a unit from the following list: 20 Dryads, 10 Tree-Revenants, 10 Spite-Revenants, 3 Kurnoth Hunters, 1 Branchwych, 1 Treelord."
 			},
 			{
 				"name": "Lifebloom",
@@ -25,19 +27,19 @@
 				"description": "In each of your hero phases, Alarielle heals D3 wounds."
 			},
 			{
-				"name": "Sweeping Blows",
-				"phase": "combat",
-				"description": " When the Wardroth Beetle attacks with its Great Antlers, you can add 1 to the hit rolls if the target unit has five or more models."
-			},
-			{
 				"name": "Living Battering Ram",
 				"phase": "charge",
 				"description": "If this model ends a charge move within 1\" of a terrain feature, each other unit within or on that terrain feature suffers D3 mortal wounds."
 			},
 			{
-				"name": "Soul Amphorae",
-				"phase": "hero",
-				"description": "In your hero phase, you can heal D3 wounds allocated to each Sylvaneth model within 30\" of this model. Once per battle, in your hero phase, instead of using this ability to heal, you can summon 1 unit from the list below to the battlefield, and add it to your army. The summoned unit must be set up wholly within 9\" of this model and more than 9\" from any enemy units. That unit cannot move in the following movement phase. Choose a unit from the following list: 20 Dryads, 10 Tree-Revenants, 10 Spite-Revenants, 3 Kurnoth Hunters, 1 Branchwych, 1 Treelord."
+				"name": "Talon of the Dwindling",
+				"phase": "combat",
+				"description": "At the end of the combat phase, roll two dice for each model that suffered wounds from the Talon of the Dwindling but was not slain. If the result exceeds the model’s Wounds characteristic, or if you roll two sixes, the model is slain."
+			},
+			{
+				"name": "Sweeping Blows",
+				"phase": "combat",
+				"description": " When the Wardroth Beetle attacks with its Great Antlers, you can add 1 to the hit rolls if the target unit has five or more models."
 			}
 		],
 		"command_ability": {
@@ -50,13 +52,19 @@
 				"name": "Metamorphosis",
 				"phase": "hero",
 				"description": "Metamorphosis has a casting value of 5. If successfully cast, pick an enemy unit within 16\" and roll a number of dice equal to the result of the casting roll (e.g. if the casting roll was 6, roll 6 dice). For each result of 4 or more, the unit suffers a mortal wound. If the last model in the unit is slain, you can set up a Sylvaneth Wyldwood in its place. None of the woods can be set up within 1\" of any other models or terrain features.",
-				"casting_value": 1
+				"casting_value": 5
 			},
 			{
-				"name": "Regrowth",
+				"name": "The Reaping",
 				"phase": "hero",
-				"description": "",
-				"casting_value": 1
+				"description": "All enemy units w/n 3\" suffer D3 mortal wounds.",
+				"casting_value": 6
+			},
+			{
+				"name": "Soulsnare Shackles",
+				"phase": "hero",
+				"description": "Set up first shackle wholly w/n 12\" of the caster, then set up the second and third models wholly w/n 6\" if the first. At the start of the movement phase roll a dice for each unit w/n 6\" of any soulsnare shackle model. On a 3+ halve the move characteristic of that unit until the end of that phase. On a 6 that unit also suffers D3 mortal wounds.",
+				"casting_value": 5
 			}
 		],
 		"melee_weapons": [
@@ -90,11 +98,19 @@
 				"damage": "D6"
 			}
 		],
+		"command_trait": {
+			"name": "",
+			"description": ""
+		},
+		"artefact": {
+			"name": "",
+			"description": ""
+		},
 		"phases": [
 			{
 				"unit_name": "Alarielle the Everqueen",
 				"name": "Ghyran's Wrath",
-				"phase": "Hero",
+				"phase": "hero",
 				"magic_phase": false,
 				"command_ability": true,
 				"description": "Alarielle can use this ability once per battle. When she does so, you can re-roll all failed wound rolls made for friendly Sylvaneth models until your next hero phase.",
@@ -102,44 +118,8 @@
 			},
 			{
 				"unit_name": "Alarielle the Everqueen",
-				"name": "Talon of the Dwindling",
-				"phase": "Combat",
-				"magic_phase": false,
-				"command_ability": false,
-				"description": "At the end of the combat phase, roll two dice for each model that suffered wounds from the Talon of the Dwindling but was not slain. If the result exceeds the model’s Wounds characteristic, or if you roll two sixes, the model is slain.",
-				"casting_value": 0
-			},
-			{
-				"unit_name": "Alarielle the Everqueen",
-				"name": "Lifebloom",
-				"phase": "Hero",
-				"magic_phase": false,
-				"command_ability": false,
-				"description": "In each of your hero phases, Alarielle heals D3 wounds.",
-				"casting_value": 0
-			},
-			{
-				"unit_name": "Alarielle the Everqueen",
-				"name": "Sweeping Blows",
-				"phase": "Combat",
-				"magic_phase": false,
-				"command_ability": false,
-				"description": "When the Wardroth Beetle attacks with its Great Antlers, you can add 1 to the hit rolls if the target unit has five or more models.",
-				"casting_value": 0
-			},
-			{
-				"unit_name": "Alarielle the Everqueen",
-				"name": "Living Battering Ram",
-				"phase": "Charge",
-				"magic_phase": false,
-				"command_ability": false,
-				"description": "If this model ends a charge move within 1\" of a terrain feature, each other unit within or on that terrain feature suffers D3 mortal wounds.",
-				"casting_value": 0
-			},
-			{
-				"unit_name": "Alarielle the Everqueen",
 				"name": "Soul Amphorae",
-				"phase": "Hero",
+				"phase": "hero",
 				"magic_phase": false,
 				"command_ability": false,
 				"description": "In your hero phase, you can heal D3 wounds allocated to each Sylvaneth model within 30\" of this model. Once per battle, in your hero phase, instead of using this ability to heal, you can summon 1 unit from the list below to the battlefield, and add it to your army. The summoned unit must be set up wholly within 9\" of this model and more than 9\" from any enemy units. That unit cannot move in the following movement phase. Choose a unit from the following list: 20 Dryads, 10 Tree-Revenants, 10 Spite-Revenants, 3 Kurnoth Hunters, 1 Branchwych, 1 Treelord",
@@ -148,11 +128,65 @@
 			{
 				"unit_name": "Alarielle the Everqueen",
 				"name": "Metamorphosis",
-				"phase": "Hero",
+				"phase": "hero",
 				"magic_phase": true,
 				"command_ability": false,
 				"description": "Metamorphosis has a casting value of 5. If successfully cast, pick an enemy unit within 16\" and roll a number of dice equal to the result of the casting roll (e.g. if the casting roll was 6, roll 6 dice). For each result of 4 or more, the unit suffers a mortal wound. If the last model in the unit is slain, you can set up a Sylvaneth Wyldwood in its place. None of the woods can be set up within 1\" of any other models or terrain features. ",
 				"casting_value": 5
+			},
+			{
+				"unit_name": "Alarielle the Everqueen",
+				"name": "The Reaping",
+				"phase": "hero",
+				"magic_phase": true,
+				"command_ability": false,
+				"description": "All enemy units w/n 3\" suffers D3 mortal wounds.",
+				"casting_value": 6
+			},
+			{
+				"unit_name": "Alarielle the Everqueen",
+				"name": "Soulsnare Shackles",
+				"phase": "hero",
+				"magic_phase": true,
+				"command_ability": false,
+				"description": "Set up first shackle wholly w/n 12\" of the caster, then set up the second and third models wholly w/n 6\" if the first. At the start of the movement phase roll a dice for each unit w/n 6\" of any soulsnare shackle model. On a 3+ halve the move characteristic of that unit until the end of that phase. On a 6 that unit also suffers D3 mortal wounds.",
+				"casting_value": 5
+			},
+			{
+				"unit_name": "Alarielle the Everqueen",
+				"name": "Living Battering Ram",
+				"phase": "charge",
+				"magic_phase": false,
+				"command_ability": false,
+				"description": "If this model ends a charge move within 1\" of a terrain feature, each other unit within or on that terrain feature suffers D3 mortal wounds.",
+				"casting_value": 0
+			},
+			{
+				"unit_name": "Alarielle the Everqueen",
+				"name": "Lifebloom",
+				"phase": "hero",
+				"magic_phase": false,
+				"command_ability": false,
+				"description": "In each of your hero phases, Alarielle heals D3 wounds.",
+				"casting_value": 0
+			},
+			{
+				"unit_name": "Alarielle the Everqueen",
+				"name": "Talon of the Dwindling",
+				"phase": "combat",
+				"magic_phase": false,
+				"command_ability": false,
+				"description": "At the end of the combat phase, roll two dice for each model that suffered wounds from the Talon of the Dwindling but was not slain. If the result exceeds the model’s Wounds characteristic, or if you roll two sixes, the model is slain.",
+				"casting_value": 0
+			},
+			{
+				"unit_name": "Alarielle the Everqueen",
+				"name": "Sweeping Blows",
+				"phase": "combat",
+				"magic_phase": false,
+				"command_ability": false,
+				"description": "When the Wardroth Beetle attacks with its Great Antlers, you can add 1 to the hit rolls if the target unit has five or more models.",
+				"casting_value": 0
 			}
 		]
 	},
@@ -165,11 +199,23 @@
 		"save": 3,
 		"image": "tla.jpg",
 		"dead": false,
+		"artefact_check": false,
 		"command_ability_check": true,
-		"missile_weapon_check": true,
+		"command_trait_check": false,
 		"magic_check": true,
+		"missile_weapon_check": true,
 		"fly": false,
 		"abilities": [
+			{
+				"name": "Silent Communion",
+				"phase": "hero",
+				"description": "In your hero phase, you can pick 1 friendly Treelord Ancient and roll a dice. On a 4+, you can set up 1 Sylvaneth Wyldwood terrain feature wholly within 24\" of that Treelord Ancient, and more than 3\" from any other models or terrain features."
+			},
+			{
+				"name": "Spirit Paths",
+				"phase": "movement",
+				"description": "If a Treelord Ancient is within 3\" of a Sylvaneth Wyldwood at the start of your movement phase, he can travel along the spirit paths. If he does so, remove the Spirit of Durthu from the battlefield, and then set him up within 3\" of a different Sylvaneth Wyldwood, more than 9\" from any enemy models. This is his move for the movement phase"
+			},
 			{
 				"name": "Groundshaking Stomp",
 				"phase": "combat",
@@ -179,16 +225,6 @@
 				"name": "Impale",
 				"phase": "combat",
 				"description": "If the Treelord Ancient’s Massive Impaling Talons inflict a wound on an enemy model, roll a dice. If the result exceeds the number of wounds the enemy model has remaining, it is slain.You can re-roll hit and wound rolls of 1 for Brokk Grungsson if those attacks are directed against a Hero or Monster.If the Spirit of Durthu’s Massive Impaling Talons inflict a wound on an enemy model, roll a dice. If the result exceeds the number of wounds the enemy model has remaining, it is slain."
-			},
-			{
-				"name": "Spirit Paths",
-				"phase": "movement",
-				"description": "If a Treelord Ancient is within 3\" of a Sylvaneth Wyldwood at the start of your movement phase, he can travel along the spirit paths. If he does so, remove the Spirit of Durthu from the battlefield, and then set him up within 3\" of a different Sylvaneth Wyldwood, more than 9\" from any enemy models. This is his move for the movement phase"
-			},
-			{
-				"name": "Silent Communion",
-				"phase": "hero",
-				"description": "In your hero phase, you can pick 1 friendly Treelord Ancient and roll a dice. On a 4+, you can set up 1 Sylvaneth Wyldwood terrain feature wholly within 24\" of that Treelord Ancient, and more than 3\" from any other models or terrain features."
 			}
 		],
 		"command_ability": {
@@ -202,6 +238,18 @@
 				"phase": "hero",
 				"description": "Awakening the Wood has a casting value of 6. If successfully cast, pick a Sylvaneth Wyldwood that is within 24\" of the caster. Each enemy unit within 3\" of this Sylvaneth Wyldwood suffers D3 mortal wounds.",
 				"casting_value": 6
+			},
+			{
+				"name": "Regrowth",
+				"phase": "hero",
+				"description": "Pick a unit w/n 18\" heal D3 wounds. If Sylvaneth heal D6.",
+				"casting_value": 5
+			},
+			{
+				"name": "Soulsnare Shackles",
+				"phase": "hero",
+				"description": "Set up first shackle wholly w/n 12\" of the caster, then set up the second and third models wholly w/n 6\" if the first. At the start of the movement phase roll a dice for each unit w/n 6\" of any soulsnare shackle model. On a 3+ halve the move characteristic of that unit until the end of that phase. On a 6 that unit also suffers D3 mortal wounds.",
+				"casting_value": 5
 			}
 		],
 		"melee_weapons": [
@@ -235,11 +283,23 @@
 				"damage": "D6"
 			}
 		],
+		"command_trait": [
+			{
+				"name": "",
+				"description": ""
+			}
+		],
+		"artefact": [
+			{
+				"name": "",
+				"description": ""
+			}
+		],
 		"phases": [
 			{
 				"unit_name": "Treelord Ancient",
 				"name": "Heed the Spirit Song",
-				"phase": "Hero",
+				"phase": "hero",
 				"magic_phase": false,
 				"command_ability": true,
 				"description": "The Treelord Ancient speaks to its kin through the spirit-song, warning them of approaching dangers. Until your next hero phase, you can re-roll save rolls of 1 for Sylvaneth units if they are within 10\" of the Treelord Ancient.",
@@ -247,35 +307,8 @@
 			},
 			{
 				"unit_name": "Treelord Ancient",
-				"name": "Groundshaking Stomp",
-				"phase": "Combat",
-				"magic_phase": false,
-				"command_ability": false,
-				"description": "At the start of the combat phase, roll a dice for each enemy unit within 3\" of any models with this abuluty. On a roll of 4 or more, that unit is knocked off their feet by the impact and must subtract 1 from all their hit rolls in that combat phase as they regain their footing.",
-				"casting_value": 0
-			},
-			{
-				"unit_name": "Treelord Ancient",
-				"name": "Impale",
-				"phase": "Combat",
-				"magic_phase": false,
-				"command_ability": false,
-				"description": "If the Treelord Ancient’s Massive Impaling Talons inflict a wound on an enemy model, roll a dice. If the result exceeds the number of wounds the enemy model has remaining, it is slain.",
-				"casting_value": 0
-			},
-			{
-				"unit_name": "Treelord Ancient",
-				"name": "Spirit Paths",
-				"phase": "Movement",
-				"magic_phase": false,
-				"command_ability": false,
-				"description": "If a Treelord Ancient is within 3\" of a Sylvaneth Wyldwood at the start of your movement phase, he can travel along the spirit paths. If they do so, remove the Treelord Ancient from the battlefield, and then set him up within 3\" of a different Sylvaneth Wyldwood, more than 9\" from any enemy models. This is their move for the movement phase",
-				"casting_value": 0
-			},
-			{
-				"unit_name": "Treelord Ancient",
 				"name": "Silent Communion",
-				"phase": "Hero",
+				"phase": "hero",
 				"magic_phase": false,
 				"command_ability": false,
 				"description": "In your hero phase, you can pick 1 friendly Treelord Ancient and roll a dice. On a 4+, you can set up 1 Sylvaneth Wyldwood terrain feature wholly within 24\" of that Treelord Ancient, and more than 3\" from any other models or terrain features.",
@@ -284,28 +317,95 @@
 			{
 				"unit_name": "Treelord Ancient",
 				"name": "Awakening the Wood",
-				"phase": "Hero",
+				"phase": "hero",
 				"magic_phase": true,
 				"command_ability": false,
 				"description": "Awakening the Wood has a casting value of 6. If successfully cast, pick a Sylvaneth Wyldwood that is within 24\" of the caster. Each enemy unit within 3\" of this Sylvaneth Wyldwood suffers D3 mortal wounds.",
 				"casting_value": 6
+			},
+			{
+				"unit_name": "Treelord Ancient",
+				"name": "Regrowth",
+				"phase": "hero",
+				"magic_phase": true,
+				"command_ability": false,
+				"description": "Pick a unit w/n 18\" heal D3 wounds. If Sylvaneth heal D6.",
+				"casting_value": 5
+			},
+			{
+				"unit_name": "Treelord Ancient",
+				"name": "Soulsnare Shackles",
+				"phase": "hero",
+				"magic_phase": true,
+				"command_ability": false,
+				"description": "Set up first shackle wholly w/n 12\" of the caster, then set up the second and third models wholly w/n 6\" if the first. At the start of the movement phase roll a dice for each unit w/n 6\" of any soulsnare shackle model. On a 3+ halve the move characteristic of that unit until the end of that phase. On a 6 that unit also suffers D3 mortal wounds.",
+				"casting_value": 5
+			},
+			{
+				"unit_name": "Treelord Ancient",
+				"name": "Spirit Paths",
+				"phase": "movement",
+				"magic_phase": false,
+				"command_ability": false,
+				"description": "If a Treelord Ancient is within 3\" of a Sylvaneth Wyldwood at the start of your movement phase, he can travel along the spirit paths. If they do so, remove the Treelord Ancient from the battlefield, and then set him up within 3\" of a different Sylvaneth Wyldwood, more than 9\" from any enemy models. This is their move for the movement phase",
+				"casting_value": 0
+			},
+			{
+				"unit_name": "Treelord Ancient",
+				"name": "Groundshaking Stomp",
+				"phase": "combat",
+				"magic_phase": false,
+				"command_ability": false,
+				"description": "At the start of the combat phase, roll a dice for each enemy unit within 3\" of any models with this abuluty. On a roll of 4 or more, that unit is knocked off their feet by the impact and must subtract 1 from all their hit rolls in that combat phase as they regain their footing.",
+				"casting_value": 0
+			},
+			{
+				"unit_name": "Treelord Ancient",
+				"name": "Impale",
+				"phase": "combat",
+				"magic_phase": false,
+				"command_ability": false,
+				"description": "If the Treelord Ancient’s Massive Impaling Talons inflict a wound on an enemy model, roll a dice. If the result exceeds the number of wounds the enemy model has remaining, it is slain.",
+				"casting_value": 0
 			}
 		]
 	},
 	"durthu": {
 		"id": 3,
 		"name": "Spirit of Durthu",
-		"move": 10,
-		"wounds": 10,
-		"bravery": 10,
-		"save": 10,
+		"move": 5,
+		"wounds": 12,
+		"bravery": 9,
+		"save": 3,
 		"image": "durthu.jpeg",
 		"dead": false,
+		"artefact_check": true,
 		"command_ability_check": false,
+		"command_trait_check": true,
 		"missile_weapon_check": true,
 		"magic_check": false,
 		"fly": false,
 		"abilities": [
+			{
+				"name": "Spirit Paths",
+				"phase": "movement",
+				"description": "If a Treelord is within 3\" of a Sylvaneth Wyldwood at the start of your movement phase, he can travel along the spirit paths. If he does so, remove the Treelord from the battlefield, and then set him up within 3\" of a different Sylvaneth Wyldwood, more than 9\" from any enemy models. This is his move for the movement phase."
+			},
+			{
+				"name": "Solemn Guardian",
+				"phase": "shooting/combat",
+				"description": "If an attack that targets a friendly Sylvaneth Hero w/n 6\" of a Spirit of Durthu causes a wound, roll a dice. On a 4+ the wound is inflicted on Durthu. (Roll save as normal)"
+			},
+			{
+				"name": "Verdant Blast",
+				"phase": "shooting",
+				"description": "Add 2 to the weapon's attack characteristic for the rest of the turn. Take D3 mortal wounds at the end of the Shooting Phase."
+			},
+			{
+				"name": "Guardian Sword",
+				"phase": "combat",
+				"description": "Extra D3 attacks with the Guardian Sword if he is w/n 3\" of a Wyldwood when he attacks in the combat phase"
+			},
 			{
 				"name": "Groundshaking Stomp",
 				"phase": "combat",
@@ -317,38 +417,63 @@
 				"description": "If the Treelords Massive Impaling Talons inflict a wound on an enemy model, roll a dice. If the result exceeds the number of wounds the enemy model has remaining, it is slain."
 			},
 			{
-				"name": "Spirit Paths",
-				"phase": "movement",
-				"description": "If a Treelord is within 3\" of a Sylvaneth Wyldwood at the start of your movement phase, he can travel along the spirit paths. If he does so, remove the Treelord from the battlefield, and then set him up within 3\" of a different Sylvaneth Wyldwood, more than 9\" from any enemy models. This is his move for the movement phase."
+				"name": "Champions of the Everqueen's Will",
+				"phase": "battleshock",
+				"description": "All friendly Sylvaneth units w/n 8\" of any Durthus in the battleshock phase add 1 to bravery."
 			}
 		],
 		"command_ability": {},
-		"magic": [{}],
-		"melee_weapons": [{}],
-		"missile_weapons": [{}],
+		"magic": [
+			{}
+		],
+		"melee_weapons": [
+			{
+				"name": "Guardian Sword",
+				"range": "3\"",
+				"attacks": 3,
+				"to_hit": 3,
+				"to_wound": 3,
+				"rend": "-2",
+				"damage": "6(0-2), D6(3-4), D6(5-7), D6(8-9), D3(10+)"
+			},
+			{
+				"name": "Massive Impaling Talons",
+				"range": "1\"",
+				"attacks": 1,
+				"to_hit": 3,
+				"to_wound": "2+(0-2), 2+(3-4), 3+(5-7), 3+(8-9), 4+(10+)",
+				"rend": "-2",
+				"damage": "1"
+			}
+		],
+		"missile_weapons": [
+			{
+				"name": "Verdant Blast",
+				"range": "15\"",
+				"attacks": "6(0-2), 5(3-4), 4(5-7), 3(8-9), 2(10+)",
+				"to_hit": 4,
+				"to_wound": 3,
+				"rend": "-1",
+				"damage": "D3"
+			}
+		],
+		"command_trait": [
+			{
+				"name": "Gnarled Warrior",
+				"description": "Ignore rend unless it is -2 or greater."
+			}
+		],
+		"artefact": [
+			{
+				"name": "Briarsheath",
+				"description": "Subtract 1 from all hit rolls made against the bearer."
+			}
+		],
 		"phases": [
 			{
 				"unit_name": "Spirit of Durthu",
-				"name": "Groundshaking Stomp",
-				"phase": "Combat",
-				"magic_phase": false,
-				"command_ability": false,
-				"description": "At the start of the combat phase, roll a dice for each enemy unit within 3\" of any models with this abuluty. On a roll of 4 or more, that unit is knocked off their feet by the impact and must subtract 1 from all their hit rolls in that combat phase as they regain their footing.",
-				"casting_value": 0
-			},
-			{
-				"unit_name": "Spirit of Durthu",
-				"name": "Impale",
-				"phase": "Combat",
-				"magic_phase": false,
-				"command_ability": false,
-				"description": "If the Spirit of Durthu’s Massive Impaling Talons inflict a wound on an enemy model, roll a dice. If the result exceeds the number of wounds the enemy model has remaining, it is slain.",
-				"casting_value": 0
-			},
-			{
-				"unit_name": "Spirit of Durthu",
 				"name": "Spirit Paths",
-				"phase": "Movement",
+				"phase": "movement",
 				"magic_phase": false,
 				"command_ability": false,
 				"description": "If a Spirit of Durthu is within 3\" of a Sylvaneth Wyldwood at the start of your movement phase, he can travel along the spirit paths. If they do so, remove the Spirit of Durthu from the battlefield, and then set him up within 3\" of a different Sylvaneth Wyldwood, more than 9\" from any enemy models. This is their move for the movement phase",
@@ -356,26 +481,35 @@
 			},
 			{
 				"unit_name": "Spirit of Durthu",
-				"name": "Guardian Sword",
-				"phase": "Combat",
+				"name": "Solemn Guardian",
+				"phase": "shooting/combat",
 				"magic_phase": false,
 				"command_ability": false,
-				"description": "Make and extra D3 attacks with the Guardian Sword if he is within 3\" of a Sylvaneth Wyldwood when he attacks in the combat phase.",
+				"description": "If an attack that targets a friendly Sylvaneth Hero within 6\" of a Spirit of Durthu causes a wound, roll a dice. On a result of 4 or more the wound is inflicted on the Spirit of Durthu instead(You can make a save roll as normal).",
 				"casting_value": 0
 			},
 			{
 				"unit_name": "Spirit of Durthu",
-				"name": "Champions of the Everqueen's Will",
-				"phase": "Bravery",
+				"name": "Gnarled Warrior",
+				"phase": "shooting/combat",
 				"magic_phase": false,
 				"command_ability": false,
-				"description": "Spirit of Durthu instil courage in the Everqueen's children. All friendly Sylvaneth units that are within 8\" of any Spirits of Durthu in the battleshock phase add 1 to their bravery",
+				"description": "Ignore rend unless it is -2 or higher.",
+				"casting_value": 0
+			},
+			{
+				"unit_name": "Spirit of Durthu",
+				"name": "Briarsheath",
+				"phase": "shooting/combat",
+				"magic_phase": false,
+				"command_ability": false,
+				"description": "Bearer is -1 to hit.",
 				"casting_value": 0
 			},
 			{
 				"unit_name": "Spirit of Durthu",
 				"name": "Verdant Blast",
-				"phase": "Shooting",
+				"phase": "shooting",
 				"magic_phase": false,
 				"command_ability": false,
 				"description": "When a Spirit of Durthu attacks with a Verdant Blast, you can declare that he will channel his life force to intensify its power. Add 2 to the weapon's Attacks for the rest of the turn. If the Spirit of Durthu uses this Ability, he suffers D3 mortal wounds at the end of the shooting phase.",
@@ -383,11 +517,38 @@
 			},
 			{
 				"unit_name": "Spirit of Durthu",
-				"name": "Solemn Guardian",
-				"phase": "Shooting/Combat",
+				"name": "Groundshaking Stomp",
+				"phase": "combat",
 				"magic_phase": false,
 				"command_ability": false,
-				"description": "If an attack that targets a friendly Sylvaneth Hero within 6\" of a Spirit of Durthu causes a wound, roll a dice. On a result of 4 or more the wound is inflicted on the Spirit of Durthu instead(You can make a save roll as normal).",
+				"description": "At the start of the combat phase, roll a dice for each enemy unit within 3\" of any models with this abuluty. On a roll of 4 or more, that unit is knocked off their feet by the impact and must subtract 1 from all their hit rolls in that combat phase as they regain their footing.",
+				"casting_value": 0
+			},
+			{
+				"unit_name": "Spirit of Durthu",
+				"name": "Guardian Sword",
+				"phase": "combat",
+				"magic_phase": false,
+				"command_ability": false,
+				"description": "Make and extra D3 attacks with the Guardian Sword if he is within 3\" of a Sylvaneth Wyldwood when he attacks in the combat phase.",
+				"casting_value": 0
+			},
+			{
+				"unit_name": "Spirit of Durthu",
+				"name": "Impale",
+				"phase": "combat",
+				"magic_phase": false,
+				"command_ability": false,
+				"description": "If the Spirit of Durthu’s Massive Impaling Talons inflict a wound on an enemy model, roll a dice. If the result exceeds the number of wounds the enemy model has remaining, it is slain.",
+				"casting_value": 0
+			},
+			{
+				"unit_name": "Spirit of Durthu",
+				"name": "Champions of the Everqueen's Will",
+				"phase": "battleshock",
+				"magic_phase": false,
+				"command_ability": false,
+				"description": "Spirit of Durthu instil courage in the Everqueen's children. All friendly Sylvaneth units that are within 8\" of any Spirits of Durthu in the battleshock phase add 1 to their bravery",
 				"casting_value": 0
 			}
 		]
@@ -401,11 +562,18 @@
 		"save": 3,
 		"image": "treelord.jpg",
 		"dead": false,
+		"artefact_check": false,
 		"command_ability_check": false,
+		"command_trait_check": false,
 		"missile_weapon_check": true,
 		"magic_check": false,
 		"fly": false,
 		"abilities": [
+			{
+				"name": "Spirit Paths",
+				"phase": "movement",
+				"description": "If a Treelord is within 3\" of a Sylvaneth Wyldwood at the start of your movement phase, he can travel along the spirit paths. If he does so, remove the Treelord from the battlefield, and then set him up within 3\" of a different Sylvaneth Wyldwood, more than 9\" from any enemy models. This is his move for the movement phase."
+			},
 			{
 				"name": "Groundshaking Stomp",
 				"phase": "combat",
@@ -415,22 +583,69 @@
 				"name": "Impale",
 				"phase": "combat",
 				"description": "If the Treelords Massive Impaling Talons inflict a wound on an enemy model, roll a dice. If the result exceeds the number of wounds the enemy model has remaining, it is slain."
-			},
-			{
-				"name": "Spirit Paths",
-				"phase": "movement",
-				"description": "If a Treelord is within 3\" of a Sylvaneth Wyldwood at the start of your movement phase, he can travel along the spirit paths. If he does so, remove the Treelord from the battlefield, and then set him up within 3\" of a different Sylvaneth Wyldwood, more than 9\" from any enemy models. This is his move for the movement phase."
 			}
 		],
 		"command_ability": {},
-		"magic": [{}],
-		"melee_weapons": [{}],
-		"missile_weapons": [{}],
+		"magic": [
+			{}
+		],
+		"melee_weapons": [
+			{
+				"name": "Massive Impaling Talons",
+				"range": "1\"",
+				"attacks": 1,
+				"to_hit": 3,
+				"to_wound": "2+(0-2), 2+(3-4), 3+(5-7), 3+(8-9), 4+(10+)",
+				"rend": "-2",
+				"damage": "1"
+			},
+			{
+				"name": "Sweeping Blows",
+				"range": "3\"",
+				"attacks": "3(0-2), 2(3-4), 2(5-7), 1(8-9), 1(10+)",
+				"to_hit": 3,
+				"to_wound": 3,
+				"rend": "-1",
+				"damage": "D6"
+			}
+		],
+		"missile_weapons": [
+			{
+				"name": "Strangleroots",
+				"range": "12\"",
+				"attacks": "5",
+				"to_hit": "2+(0-2), 3+(3-4), 4+(5-7), 5+(8-9), 6+(10+)",
+				"to_wound": 3,
+				"rend": "-1",
+				"damage": "1"
+			}
+		],
+		"command_trait": [
+			{
+				"name": "",
+				"description": ""
+			}
+		],
+		"artefact": [
+			{
+				"name": "",
+				"description": ""
+			}
+		],
 		"phases": [
 			{
 				"unit_name": "Treelord",
+				"name": "Spirit Paths",
+				"phase": "movement",
+				"magic_phase": false,
+				"command_ability": false,
+				"description": "If a Treelord is within 3\" of a Sylvaneth Wyldwood at the start of your movement phase, he can travel along the spirit paths. If he does so, remove the Spirit of Durthu from the battlefield, and then set him up within 3\" of a different Sylvaneth Wyldwood, more than 9\" from any enemy models. This is his move for the movement phase",
+				"casting_value": 0
+			},
+			{
+				"unit_name": "Treelord",
 				"name": "Groundshaking Stomp",
-				"phase": "Combat",
+				"phase": "combat",
 				"magic_phase": false,
 				"command_ability": false,
 				"description": "At the start of the combat phase, the Treelord stomps the ground; roll a dice for each enemy unit within 3\" of this model. On a roll of 4 or more, that unit is knocked off their feet by the impact and must subtract 1 from all hit rolls in that combat phase as they regain their footing.",
@@ -439,19 +654,10 @@
 			{
 				"unit_name": "Treelord",
 				"name": "Impale",
-				"phase": "Combat",
+				"phase": "combat",
 				"magic_phase": false,
 				"command_ability": false,
 				"description": "If the Treelord’s Massive Impaling Talons inflict a wound on an enemy model, roll a dice. If the result exceeds the number of wounds the enemy model has remaining, it is slain.",
-				"casting_value": 0
-			},
-			{
-				"unit_name": "Treelord",
-				"name": "Spirit Paths",
-				"phase": "Movement",
-				"magic_phase": false,
-				"command_ability": false,
-				"description": "If a Treelord is within 3\" of a Sylvaneth Wyldwood at the start of your movement phase, he can travel along the spirit paths. If he does so, remove the Spirit of Durthu from the battlefield, and then set him up within 3\" of a different Sylvaneth Wyldwood, more than 9\" from any enemy models. This is his move for the movement phase",
 				"casting_value": 0
 			}
 		]
@@ -459,183 +665,253 @@
 	"drycha": {
 		"id": 5,
 		"name": "Drycha",
-		"move": 10,
+		"move": 9,
 		"wounds": 10,
-		"bravery": 10,
-		"save": 10,
+		"bravery": 8,
+		"save": 3,
 		"image": "drycha.jpeg",
 		"dead": false,
+		"artefact_check": false,
 		"command_ability_check": false,
+		"command_trait_check": false,
 		"missile_weapon_check": true,
 		"magic_check": true,
 		"fly": false,
-		"abilities": [{}],
+		"abilities": [
+			{
+				"name": "Mercurial Aspect",
+				"phase": "hero",
+				"description": "At the start of each battle round, roll a dice. 1,2,3 Drycha is enraged. 4,5,6 Drycha is embittered."
+			},
+			{
+				"name": "Enraged",
+				"phase": "shooting/combat",
+				"description": "Double the number of attacks with Drycha's Slashing Talon's. Reroll 1's for Colony of Flitterfuries"
+			},
+			{
+				"name": "Embittered",
+				"phase": "shooting/combat",
+				"description": "Subtract 2 from Drycha's wound table. Reroll 1's for Squirmlings."
+			},
+			{
+				"name": "Colony of Flitterfuries",
+				"phase": "shooting",
+				"description": "Roll 10 dice for each enemy unit w/n 18\"(0-2), 15\"(3-4), 12\"(5-7), 9\"(8-9), 6\"(10+). For each roll of 6, that unit suffers a mortal wound."
+			},
+			{
+				"name": "Song of Spite",
+				"phase": "combat",
+				"description": "Reroll wound rolls of 1 for Spite Revenants while their unit is w/n 10\" of Drycha."
+			}
+		],
 		"command_ability": {},
-		"magic": [{}],
-		"melee_weapons": [{}],
-		"missile_weapons": [{}],
+		"magic": [
+			{
+				"name": "Primal Terror",
+				"phase": "hero",
+				"description": "Roll a dice for each enemy unit w/n 10\" of the caster, adding 2 to the result. For each point by which the total exceeds the highest bravery in that unit, the unit suffers a mortal wound.",
+				"casting_value": 6
+			},
+			{
+				"name": "Verdant Blessing",
+				"phase": "hero",
+				"description": "Set up a new Wyldwood anywhere w/n 18\" of the caster that is not w/n 1\" of any other model or terrain feature.",
+				"casting_value": 6
+			}
+		],
+		"melee_weapons": [
+			{
+				"name": "Slashing Talons",
+				"range": "2\"",
+				"attacks": "6(0-2), 5(3-4), 4(5-7), 3(8-9), 2(10+)",
+				"to_hit": 4,
+				"to_wound": 3,
+				"rend": "-1",
+				"damage": "2"
+			},
+			{
+				"name": "Thorned Slendervines",
+				"range": "2\"",
+				"attacks": "2D6",
+				"to_hit": 4,
+				"to_wound": 4,
+				"rend": "-",
+				"damage": "1"
+			}
+		],
+		"missile_weapons": [
+			{
+				"name": "Colony of Flitterfuries",
+				"range": "*",
+				"attacks": "See Ability",
+				"to_hit": "See Ability",
+				"to_wound": "See Ability",
+				"rend": "See Ability",
+				"damage": "See Ability"
+			}
+		],
+		"command_trait": [
+			{
+				"name": "",
+				"description": ""
+			}
+		],
+		"artefact": [
+			{
+				"name": "",
+				"description": ""
+			}
+		],
 		"phases": [
 			{
 				"unit_name": "Drycha",
-				"name": "",
-				"phase": "",
+				"name": "Mercurial Aspect",
+				"phase": "hero",
 				"magic_phase": false,
 				"command_ability": false,
-				"description": "",
+				"description": "At the start of each battle round, roll a dice. 1,2,3 Drycha is enraged. 4,5,6 Drycha is embittered.",
 				"casting_value": 0
 			},
 			{
-				"unit_name": "",
-				"name": "",
-				"phase": "",
-				"magic_phase": false,
+				"unit_name": "Drycha",
+				"name": "Primal Terror",
+				"phase": "Hero",
+				"magic_phase": true,
 				"command_ability": false,
-				"description": "",
+				"description": "Roll a dice for each enemy unit w/n 10\" of the caster, adding 2 to the result. For each point by which the total exceeds the highest bravery in that unit, the unit suffers a mortal wound.",
 				"casting_value": 0
 			},
 			{
-				"unit_name": "",
-				"name": "",
-				"phase": "",
+				"unit_name": "Drycha",
+				"name": "Verdant Blessing",
+				"phase": "hero",
+				"magic_phase": true,
+				"command_ability": false,
+				"description": "Set up a new Wyldwood anywhere w/n 18\" of the caster that is not w/n 1\" of any other model or terrain feature.",
+				"casting_value": 6
+			},
+			{
+				"unit_name": "Drycha",
+				"name": "Colony of Flitterfuries",
+				"phase": "shooting",
 				"magic_phase": false,
 				"command_ability": false,
-				"description": "",
+				"description": "Roll 10 dice for each enemy unit w/n 18\"(0-2), 15\"(3-4), 12\"(5-7), 9\"(8-9), 6\"(10+). For each roll of 6, that unit suffers a mortal wound.",
 				"casting_value": 0
 			},
 			{
-				"unit_name": "",
-				"name": "",
-				"phase": "",
+				"unit_name": "Drycha",
+				"name": "Song of Spite",
+				"phase": "combat",
 				"magic_phase": false,
 				"command_ability": false,
-				"description": "",
-				"casting_value": 0
-			},
-			{
-				"unit_name": "",
-				"name": "",
-				"phase": "",
-				"magic_phase": false,
-				"command_ability": false,
-				"description": "",
+				"description": "Reroll wound rolls of 1 for Spite Revenants while their unit is w/n 10\" of Drycha.",
 				"casting_value": 0
 			}
 		]
-	},
-	"branchwraith": {
-		"id": 6,
-		"name": "Branchwraith",
-		"move": 10,
-		"wounds": 10,
-		"bravery": 10,
-		"save": 10,
-		"image": "branchwraith.jpeg",
-		"dead": false,
-		"command_ability_check": false,
-		"missile_weapon_check": false,
-		"magic_check": true,
-		"fly": false,
-		"abilities": [{}],
-		"command_ability": {},
-		"magic": [{}],
-		"melee_weapons": [{}],
-		"missile_weapons": [{}],
-		"phases": [
-			{
-				"unit_name": "",
-				"name": "",
-				"phase": "",
-				"magic_phase": false,
-				"command_ability": false,
-				"description": "",
-				"casting_value": 0
-			},
-			{
-				"unit_name": "",
-				"name": "",
-				"phase": "",
-				"magic_phase": false,
-				"command_ability": false,
-				"description": "",
-				"casting_value": 0
-			}
-		]
-	},
-	"branchwych": {
-		"id": 7,
-		"name": "Branchwych",
-		"move": 10,
-		"wounds": 10,
-		"bravery": 10,
-		"save": 10,
-		"image": "branchwych.jpeg",
-		"dead": false,
-		"command_ability_check": false,
-		"missile_weapon_check": false,
-		"magic_check": true,
-		"fly": false,
-		"abilities": [{}],
-		"command_ability": {},
-		"magic": [{}],
-		"melee_weapons": [{}],
-		"missile_weapons": [{}],
-		"phases": [
-			{
-				"unit_name": "",
-				"name": "",
-				"phase": "",
-				"magic_phase": false,
-				"command_ability": false,
-				"description": "",
-				"casting_value": 0
-			},
-			{
-				"unit_name": "",
-				"name": "",
-				"phase": "",
-				"magic_phase": false,
-				"command_ability": false,
-				"description": "",
-				"casting_value": 0
-			}
-		]
-
 	},
 	"hunters": {
 		"id": 8,
 		"name": "Kurnoth Hunters",
-		"move": 10,
+		"move": 5,
 		"wounds": 5,
 		"bravery": 7,
 		"save": 4,
 		"image": "hunters.jpeg",
 		"dead": false,
+		"artefact_check": false,
 		"command_ability_check": false,
+		"command_trait_check": false,
 		"missile_weapon_check": false,
 		"magic_check": false,
 		"fly": false,
-		"abilities": [{}],
+		"abilities": [
+			{
+				"name": "Envoys of the Everqueen",
+				"phase": "hero",
+				"description": "If a friendly Sylvaneth hero uses a command ability, you can measure the range of that command ability from a friendly Kurnoth Hunters unit instead of the hero."
+			},
+			{
+				"name": "Tanglethorn Thicket",
+				"phase": "charge",
+				"description": "At the start of either players charge phase, Kurnoth Hunters can declare that they can't pile in more than 1\" but they can reroll failed save rolls."
+			},
+			{
+				"name": "Huntmaster",
+				"phase": "combat",
+				"description": "The leader of this unit is a Huntmaster. Add 1 to the result of any hit rolls fot a Huntmasters attack."
+			},
+			{
+				"name": "Trample Underfoot",
+				"phase": "combat",
+				"description": "At the end of the combat phase, pick an enemy unit and roll a dice for each Kurnoth Hunter from this unit that is w/n 1\" of it. For each result of 4+, the enemy unit suffers a mortal wound."
+			}
+		],
 		"command_ability": {},
-		"magic": [{}],
-		"melee_weapons": [{}],
-		"missile_weapons": [{}],
+		"magic": [
+			{}
+		],
+		"melee_weapons": [
+			{
+				"name": "Kurnoth Scythe",
+				"range": "2\"",
+				"attacks": 3,
+				"to_hit": 3,
+				"to_wound": 3,
+				"rend": "-2",
+				"damage": "D3"
+			}
+		],
+		"missile_weapons": [
+			{}
+		],
+		"command_trait": [
+			{
+				"name": "",
+				"description": ""
+			}
+		],
+		"artefact": [
+			{
+				"name": "",
+				"description": ""
+			}
+		],
 		"phases": [
 			{
-				"unit_name": "",
-				"name": "",
-				"phase": "",
-				"magic_phase": false,
+				"unit_name": "Kurnoth Hunters",
+				"name": "Envoys of the Everqueen",
+				"phase": "hero",
 				"command_ability": false,
-				"description": "",
+				"magic_phase": false,
+				"description": "If a friendly Sylvaneth hero uses a command ability, you can measure the range of that command ability from a friendly Kurnoth Hunters unit instead of the hero.",
 				"casting_value": 0
 			},
 			{
-				"unit_name": "",
-				"name": "",
-				"phase": "",
+				"unit_name": "Kurnoth Hunters",
+				"name": "Tanglethorn Thicket",
+				"phase": "charge",
 				"magic_phase": false,
 				"command_ability": false,
-				"description": "",
+				"description": "At the start of either players charge phase, Kurnoth Hunters can declare that they can't pile in more than 1\" but they can reroll failed save rolls.",
+				"casting_value": 0
+			},
+			{
+				"unit_name": "Kurnoth Hunters",
+				"name": "huntmaster",
+				"phase": "combat",
+				"magic_phase": false,
+				"command_ability": false,
+				"description": "The leader of this unit is a Huntmaster. Add 1 to the result of any hit rolls fot a Huntmasters attack.",
+				"casting_value": 0
+			},
+			{
+				"unit_name": "Kurnoth Hunters",
+				"name": "Trample Underfoot",
+				"phase": "combat",
+				"magic_phase": false,
+				"command_ability": false,
+				"description": "At the end of the combat phase, pick an enemy unit and roll a dice for each Kurnoth Hunter from this unit that is w/n 1\" of it. For each result of 4+, the enemy unit suffers a mortal wound.",
 				"casting_value": 0
 			}
 		]
@@ -643,77 +919,105 @@
 	"dryads": {
 		"id": 9,
 		"name": "Dryads",
-		"move": 10,
-		"wounds": 10,
-		"bravery": 10,
-		"save": 10,
+		"move": 7,
+		"wounds": 1,
+		"bravery": 6,
+		"save": 5,
 		"image": "dryads.jpeg",
 		"dead": false,
+		"artefact_check": false,
 		"command_ability_check": false,
+		"command_trait_check": false,
 		"missile_weapon_check": false,
 		"magic_check": false,
 		"fly": false,
-		"abilities": [{}],
-		"command_ability": {},
-		"magic": [{}],
-		"melee_weapons": [{}],
-		"missile_weapons": [{}],
-		"phases": [
+		"abilities": [
 			{
-				"unit_name": "",
-				"name": "",
-				"phase": "",
-				"magic_phase": false,
-				"command_ability": false,
-				"description": "",
-				"casting_value": 0
+				"name": "Blessings of the Forest",
+				"phase": "shooting/combat",
+				"description": "Subtract 1 from hit rolls made against this unit if it is w/n 3\" of a Wyldwood."
 			},
 			{
-				"unit_name": "",
-				"name": "",
-				"phase": "",
-				"magic_phase": false,
-				"command_ability": false,
-				"description": "",
-				"casting_value": 0
+				"name": "Impenatrable Thicket",
+				"phase": "shooting/combat",
+				"description": "You can add 1 to save rolls for this unit if it includes at least 12 models."
+			},
+			{
+				"name": "Branch Nymph",
+				"phase": "combat",
+				"description": "The leader of this unit is a Branch Nymph, she makes 3 attacks rather than 2."
+			},
+			{
+				"name": "Enrapturing Song",
+				"phase": "combat",
+				"description": "In your own combat phase, you can enrapture one enemy unit that is w/n 3\" of this unit. You can add 1 to the hit rolls made for these Dryads against the enraptured unit in that combat phase."
 			}
-		]
-	},
-	"tree_revenants": {
-		"id": 10,
-		"name": "Tree Revenants",
-		"move": 10,
-		"wounds": 10,
-		"bravery": 10,
-		"save": 10,
-		"image": "tree_revenants.jpeg",
-		"dead": false,
-		"command_ability_check": false,
-		"missile_weapon_check": false,
-		"magic_check": false,
-		"fly": false,
-		"abilities": [{}],
+		],
 		"command_ability": {},
-		"magic": [{}],
-		"melee_weapons": [{}],
-		"missile_weapons": [{}],
+		"magic": [
+			{}
+		],
+		"melee_weapons": [
+			{
+				"name": "Wracking Talons",
+				"range": "2\"",
+				"attacks": 2,
+				"to_hit": 4,
+				"to_wound": 4,
+				"rend": "-",
+				"damage": "1"
+			}
+		],
+		"missile_weapons": [
+			{}
+		],
+		"command_trait": [
+			{
+				"name": "",
+				"description": ""
+			}
+		],
+		"artefact": [
+			{
+				"name": "",
+				"description": ""
+			}
+		],
 		"phases": [
 			{
-				"unit_name": "",
-				"name": "",
-				"phase": "",
+				"unit_name": "Dryads",
+				"name": "Impenatrable Thicket",
+				"phase": "shooting/combat",
 				"magic_phase": false,
 				"command_ability": false,
-				"description": "",
+				"description": "You can add 1 to save rolls for this unit if it includes at least 12 models.",
 				"casting_value": 0
 			},
 			{
-				"unit_name": "",
-				"name": "",
-				"phase": "",
+				"unit_name": "Dryads",
+				"name": "Blessings of the Forest",
+				"phase": "shooting/combat",
 				"magic_phase": false,
 				"command_ability": false,
-				"description": "",
+				"description": "Subtract 1 from hit rolls made against this unit if it is w/n 3\" of a Wyldwood.",
+				"casting_value": 0
+			},
+			{
+				"unit_name": "Dryads",
+				"name": "Enrapturing Song",
+				"phase": "combat",
+				"magic_phase": false,
+				"command_ability": false,
+				"description": "In your own combat phase, you can enrapture one enemy unit that is w/n 3\" of this unit. You can add 1 to the hit rolls made for these Dryads against the enraptured unit in that combat phase.",
+				"casting_value": 0
+			},
+			{
+				"unit_name": "Dryads",
+				"name": "Branch Nymph",
+				"phase": "combat",
+				"magic_phase": false,
+				"command_ability": false,
+				"description": "The leader of this unit is a Branch Nymph, she makes 3 attacks rather than 2.",
 				"casting_value": 0
 			}
 		]
@@ -721,272 +1025,91 @@
 	"spite_revenants": {
 		"id": 11,
 		"name": "Spite Revenants",
-		"move": 10,
-		"wounds": 10,
-		"bravery": 10,
-		"save": 10,
+		"move": 5,
+		"wounds": 1,
+		"bravery": 6,
+		"save": 5,
 		"image": "spite_revenants.jpeg",
 		"dead": false,
+		"artefact_check": false,
 		"command_ability_check": false,
+		"command_trait_check": false,
 		"missile_weapon_check": false,
 		"magic_check": false,
 		"fly": false,
-		"abilities": [{}],
-		"command_ability": {},
-		"magic": [{}],
-		"melee_weapons": [{}],
-		"missile_weapons": [{}],
-		"phases": [
+		"abilities": [
 			{
-				"unit_name": "",
-				"name": "",
-				"phase": "",
-				"magic_phase": false,
-				"command_ability": false,
-				"description": "",
-				"casting_value": 0
+				"name": "Shadestalker",
+				"phase": "combat",
+				"description": "The leader of this unit is a Shadestalker, she makes 4 attacks rather than 3."
 			},
 			{
-				"unit_name": "",
-				"name": "",
-				"phase": "",
-				"magic_phase": false,
-				"command_ability": false,
-				"description": "",
-				"casting_value": 0
+				"name": "Unbridled Malice",
+				"phase": "combat",
+				"description": "Enemy units w/n 3\" of any Spite Revenants must subtract 1 from their bravery."
+			},
+			{
+				"name": "Whispers in the dark",
+				"phase": "battleshock",
+				"description": "Scenery w/n 8\" of any Spite Revenants is haunted. You opponents must roll 2 dice when taking battleshock tests for any of their units that are w/n 3\" of such a terrain feature, and use the highest dice result."
 			}
-		]
-	},
-	"daemonettes": {
-		"id": 12,
-		"name": "Daemonettes",
-		"move": 10,
-		"wounds": 10,
-		"bravery": 10,
-		"save": 10,
-		"image": "daemonettes.jpeg",
-		"dead": false,
-		"command_ability_check": false,
-		"missile_weapon_check": false,
-		"magic_check": false,
-		"fly": false,
-		"abilities": [{}],
+		],
 		"command_ability": {},
-		"magic": [{}],
-		"melee_weapons": [{}],
-		"missile_weapons": [{}],
-		"phases": [
+		"magic": [
+			{}
+		],
+		"melee_weapons": [
 			{
-				"unit_name": "",
-				"name": "",
-				"phase": "",
-				"magic_phase": false,
-				"command_ability": false,
-				"description": "",
-				"casting_value": 0
-			},
-			{
-				"unit_name": "",
-				"name": "",
-				"phase": "",
-				"magic_phase": false,
-				"command_ability": false,
-				"description": "",
-				"casting_value": 0
+				"name": "Cruel Talons and Fangs",
+				"range": "1\"",
+				"attacks": 3,
+				"to_hit": 4,
+				"to_wound": 4,
+				"rend": "-",
+				"damage": "1"
 			}
-		]
-	},
-	"keeper": {
-		"id": 13,
-		"name": "Keeper of Secrets",
-		"move": 10,
-		"wounds": 10,
-		"bravery": 10,
-		"save": 10,
-		"image": "keeper_of_secrets.jpeg",
-		"dead": true,
-		"command_ability_check": false,
-		"missile_weapon_check": false,
-		"magic_check": false,
-		"fly": false,
-		"abilities": [{}],
-		"command_ability": {},
-		"magic": [{}],
-		"melee_weapons": [{}],
-		"missile_weapons": [{}],
-		"phases": [
+		],
+		"missile_weapons": [
+			{}
+		],
+		"command_trait": [
 			{
-				"unit_name": "",
 				"name": "",
-				"phase": "",
-				"magic_phase": false,
-				"command_ability": false,
-				"description": "",
-				"casting_value": 0
-			},
-			{
-				"unit_name": "",
-				"name": "",
-				"phase": "",
-				"magic_phase": false,
-				"command_ability": false,
-				"description": "",
-				"casting_value": 0
+				"description": ""
 			}
-		]
-	},
-	"seekers": {
-		"id": 14,
-		"name": "Seekers",
-		"move": 10,
-		"wounds": 10,
-		"bravery": 10,
-		"save": 10,
-		"image": "seekers.jpeg",
-		"dead": true,
-		"command_ability_check": false,
-		"missile_weapon_check": false,
-		"magic_check": false,
-		"fly": false,
-		"abilities": [{}],
-		"command_ability": {},
-		"magic": [{}],
-		"melee_weapons": [{}],
-		"missile_weapons": [{}],
-		"phases": [
+		],
+		"artefact": [
 			{
-				"unit_name": "",
 				"name": "",
-				"phase": "",
-				"magic_phase": false,
-				"command_ability": false,
-				"description": "",
-				"casting_value": 0
-			},
-			{
-				"unit_name": "",
-				"name": "",
-				"phase": "",
-				"magic_phase": false,
-				"command_ability": false,
-				"description": "",
-				"casting_value": 0
+				"description": ""
 			}
-		]
-	},
-	"daemon_prince": {
-		"id": 15,
-		"name": "Daemon Prince",
-		"move": 10,
-		"wounds": 10,
-		"bravery": 10,
-		"save": 10,
-		"image": "daemon_prince.jpeg",
-		"dead": true,
-		"command_ability_check": false,
-		"missile_weapon_check": false,
-		"magic_check": false,
-		"fly": false,
-		"abilities": [{}],
-		"command_ability": {},
-		"magic": [{}],
-		"melee_weapons": [{}],
-		"missile_weapons": [{}],
+		],
 		"phases": [
 			{
-				"unit_name": "",
-				"name": "",
-				"phase": "",
+				"unit_name": "Spite Revenants",
+				"name": "Shadestalker",
+				"phase": "combat",
 				"magic_phase": false,
 				"command_ability": false,
-				"description": "",
+				"description": "The leader of this unit is a Shadestalker, she makes 4 attacks rather than 3.",
 				"casting_value": 0
 			},
 			{
-				"unit_name": "",
-				"name": "",
-				"phase": "",
+				"unit_name": "Spite Revenants",
+				"name": "Unbridled Malice",
+				"phase": "combat",
 				"magic_phase": false,
 				"command_ability": false,
-				"description": "",
-				"casting_value": 0
-			}
-		]
-	},
-	"fiends": {
-		"id": 16,
-		"name": "Fiends",
-		"move": 10,
-		"wounds": 10,
-		"bravery": 10,
-		"save": 10,
-		"image": "fiends.jpeg",
-		"dead": true,
-		"command_ability_check": false,
-		"missile_weapon_check": false,
-		"magic_check": false,
-		"fly": false,
-		"abilities": [{}],
-		"command_ability": {},
-		"magic": [{}],
-		"melee_weapons": [{}],
-		"missile_weapons": [{}],
-		"phases": [
-			{
-				"unit_name": "",
-				"name": "",
-				"phase": "",
-				"magic_phase": false,
-				"command_ability": false,
-				"description": "",
+				"description": "Enemy units w/n 3\" of any Spite Revenants must subtract 1 from their bravery.",
 				"casting_value": 0
 			},
 			{
-				"unit_name": "",
-				"name": "",
-				"phase": "",
+				"unit_name": "Spite Revenants",
+				"name": "Whispers in the dark",
+				"phase": "battleshock",
 				"magic_phase": false,
 				"command_ability": false,
-				"description": "",
-				"casting_value": 0
-			}
-		]
-	},
-	"harp_chick": {
-		"id": 17,
-		"name": "Infernal Enrapturess",
-		"move": 10,
-		"wounds": 10,
-		"bravery": 10,
-		"save": 10,
-		"image": "infernal_enrapturess.jpeg",
-		"dead": true,
-		"command_ability_check": false,
-		"missile_weapon_check": false,
-		"magic_check": false,
-		"fly": false,
-		"abilities": [{}],
-		"command_ability": {},
-		"magic": [{}],
-		"melee_weapons": [{}],
-		"missile_weapons": [{}],
-		"phases": [
-			{
-				"unit_name": "",
-				"name": "",
-				"phase": "",
-				"magic_phase": false,
-				"command_ability": false,
-				"description": "",
-				"casting_value": 0
-			},
-			{
-				"unit_name": "",
-				"name": "",
-				"phase": "",
-				"magic_phase": false,
-				"command_ability": false,
-				"description": "",
+				"description": "Scenery w/n 8\" of any Spite Revenants is haunted. You opponents must roll 2 dice when taking battleshock tests for any of their units that are w/n 3\" of such a terrain feature, and use the highest dice result.",
 				"casting_value": 0
 			}
 		]

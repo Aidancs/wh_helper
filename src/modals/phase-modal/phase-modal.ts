@@ -18,7 +18,6 @@ export class PhaseModalPage {
 
   ngOnInit() {
     this.phases = this.navParams.get('phase');
-    console.log(this.phases, 'phases')
   }
 
   closeModal() {

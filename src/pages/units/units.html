@@ -11,7 +11,7 @@
   <div margin-top *ngFor="let unit of unitsArray">
     <ion-card color="secondary" [hidden]="unit.dead">
       <ion-card-content>
-        <img src="assets/imgs/{{ unit.image }}" />
+        <!-- <img src="assets/imgs/{{ unit.image }}" /> -->
         <ion-card-title>
           <div>
             {{ unit.name }}
@@ -44,10 +44,16 @@
             Magic
           </button>
           <button ion-button [hidden]="!unit.missile_weapon_check" (click)="itemTapped(unit, 'missile_weapons')">
-            missile Weapons
+            Missile Weapons
           </button>
           <button ion-button (click)="itemTapped(unit, 'melee_weapons')">
             Melee Weapons
+          </button>
+          <button ion-button [hidden]="!unit.command_trait_check" (click)="itemTapped(unit, 'command_trait')">
+            Command Trait
+          </button>
+          <button ion-button [hidden]="!unit.artefact_check" (click)="itemTapped(unit, 'artefact')">
+            Artefact
           </button>
           <ion-item-sliding>
             <ion-item color="dark">

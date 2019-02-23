@@ -23,7 +23,7 @@ export class UnitsPage {
 	bravery: number;
 	totalWounds: number;
 
-	images = ['alarielle.jpg', 'tla.jpg', 'durthu.jpeg', 'treelord.jpg', 'drycha.jpeg', 'hunters.jpeg', 'branchwraith.jpeg', 'branchwych.jpeg', 'dryads.jpeg', 'tree_revenants.jpeg', 'spite_revenants.jpeg'];
+	images = [];
 
 	constructor(
 		public modalCtrl: ModalController,
@@ -63,8 +63,6 @@ export class UnitsPage {
 	}
 
 	dead(unit) {
-		console.log(unit, 'unit');
-
 		this.unit = unit;
 		this.unit.dead = true;
 		this.unitsSvc.update(this.unit.id, this.unit);

@@ -1,0 +1,467 @@
+{
+	"branchwraith": {
+		"id": 6,
+		"name": "Branchwraith",
+		"move": 10,
+		"wounds": 10,
+		"bravery": 10,
+		"save": 10,
+		"image": "branchwraith.jpeg",
+		"dead": false,
+		"artefact_check": false,
+		"command_ability_check": false,
+		"command_trait_check": false,
+		"missile_weapon_check": false,
+		"magic_check": true,
+		"fly": false,
+		"abilities": [
+			{}
+		],
+		"command_ability": {},
+		"magic": [
+			{}
+		],
+		"melee_weapons": [
+			{}
+		],
+		"missile_weapons": [
+			{}
+		],
+		"command_trait": [
+			{
+				"name": "",
+				"description": ""
+			}
+		],
+		"artefact": [
+			{
+				"name": "",
+				"description": ""
+			}
+		],
+		"phases": [
+			{
+				"unit_name": "",
+				"name": "",
+				"phase": "",
+				"magic_phase": false,
+				"command_ability": false,
+				"description": "",
+				"casting_value": 0
+			},
+			{
+				"unit_name": "",
+				"name": "",
+				"phase": "",
+				"magic_phase": false,
+				"command_ability": false,
+				"description": "",
+				"casting_value": 0
+			}
+		]
+	},
+	"branchwych": {
+		"id": 7,
+		"name": "Branchwych",
+		"move": 10,
+		"wounds": 10,
+		"bravery": 10,
+		"save": 10,
+		"image": "branchwych.jpeg",
+		"dead": false,
+		"artefact_check": false,
+		"command_ability_check": false,
+		"command_trait_check": false,
+		"missile_weapon_check": false,
+		"magic_check": true,
+		"fly": false,
+		"abilities": [
+			{}
+		],
+		"command_ability": {},
+		"magic": [
+			{}
+		],
+		"melee_weapons": [
+			{}
+		],
+		"missile_weapons": [
+			{}
+		],
+		"command_trait": [
+			{
+				"name": "",
+				"description": ""
+			}
+		],
+		"artefact": [
+			{
+				"name": "",
+				"description": ""
+			}
+		],
+		"phases": [
+			{
+				"unit_name": "",
+				"name": "",
+				"phase": "",
+				"magic_phase": false,
+				"command_ability": false,
+				"description": "",
+				"casting_value": 0
+			},
+			{
+				"unit_name": "",
+				"name": "",
+				"phase": "",
+				"magic_phase": false,
+				"command_ability": false,
+				"description": "",
+				"casting_value": 0
+			}
+		]
+	},
+	"tree_revenants": {
+		"id": 10,
+		"name": "Tree Revenants",
+		"move": 10,
+		"wounds": 10,
+		"bravery": 10,
+		"save": 10,
+		"image": "tree_revenants.jpeg",
+		"dead": false,
+		"artefact_check": false,
+		"command_ability_check": false,
+		"command_trait_check": false,
+		"missile_weapon_check": false,
+		"magic_check": false,
+		"fly": false,
+		"abilities": [
+			{}
+		],
+		"command_ability": {},
+		"magic": [
+			{}
+		],
+		"melee_weapons": [
+			{}
+		],
+		"missile_weapons": [
+			{}
+		],
+		"command_trait": [
+			{
+				"name": "",
+				"description": ""
+			}
+		],
+		"artefact": [
+			{
+				"name": "",
+				"description": ""
+			}
+		],
+		"phases": [
+			{
+				"unit_name": "",
+				"name": "",
+				"phase": "",
+				"magic_phase": false,
+				"command_ability": false,
+				"description": "",
+				"casting_value": 0
+			},
+			{
+				"unit_name": "",
+				"name": "",
+				"phase": "",
+				"magic_phase": false,
+				"command_ability": false,
+				"description": "",
+				"casting_value": 0
+			}
+		]
+	},
+	"daemonettes": {
+		"id": 12,
+		"name": "Daemonettes",
+		"move": 10,
+		"wounds": 10,
+		"bravery": 10,
+		"save": 10,
+		"image": "daemonettes.jpeg",
+		"dead": false,
+		"command_ability_check": false,
+		"missile_weapon_check": false,
+		"magic_check": false,
+		"fly": false,
+		"abilities": [
+			{}
+		],
+		"command_ability": {},
+		"magic": [
+			{}
+		],
+		"melee_weapons": [
+			{}
+		],
+		"missile_weapons": [
+			{}
+		],
+		"phases": [
+			{
+				"unit_name": "",
+				"name": "",
+				"phase": "",
+				"magic_phase": false,
+				"command_ability": false,
+				"description": "",
+				"casting_value": 0
+			},
+			{
+				"unit_name": "",
+				"name": "",
+				"phase": "",
+				"magic_phase": false,
+				"command_ability": false,
+				"description": "",
+				"casting_value": 0
+			}
+		]
+	},
+	"keeper": {
+		"id": 13,
+		"name": "Keeper of Secrets",
+		"move": 10,
+		"wounds": 10,
+		"bravery": 10,
+		"save": 10,
+		"image": "keeper_of_secrets.jpeg",
+		"dead": true,
+		"command_ability_check": false,
+		"missile_weapon_check": false,
+		"magic_check": false,
+		"fly": false,
+		"abilities": [
+			{}
+		],
+		"command_ability": {},
+		"magic": [
+			{}
+		],
+		"melee_weapons": [
+			{}
+		],
+		"missile_weapons": [
+			{}
+		],
+		"phases": [
+			{
+				"unit_name": "",
+				"name": "",
+				"phase": "",
+				"magic_phase": false,
+				"command_ability": false,
+				"description": "",
+				"casting_value": 0
+			},
+			{
+				"unit_name": "",
+				"name": "",
+				"phase": "",
+				"magic_phase": false,
+				"command_ability": false,
+				"description": "",
+				"casting_value": 0
+			}
+		]
+	},
+	"seekers": {
+		"id": 14,
+		"name": "Seekers",
+		"move": 10,
+		"wounds": 10,
+		"bravery": 10,
+		"save": 10,
+		"image": "seekers.jpeg",
+		"dead": true,
+		"command_ability_check": false,
+		"missile_weapon_check": false,
+		"magic_check": false,
+		"fly": false,
+		"abilities": [
+			{}
+		],
+		"command_ability": {},
+		"magic": [
+			{}
+		],
+		"melee_weapons": [
+			{}
+		],
+		"missile_weapons": [
+			{}
+		],
+		"phases": [
+			{
+				"unit_name": "",
+				"name": "",
+				"phase": "",
+				"magic_phase": false,
+				"command_ability": false,
+				"description": "",
+				"casting_value": 0
+			},
+			{
+				"unit_name": "",
+				"name": "",
+				"phase": "",
+				"magic_phase": false,
+				"command_ability": false,
+				"description": "",
+				"casting_value": 0
+			}
+		]
+	},
+	"daemon_prince": {
+		"id": 15,
+		"name": "Daemon Prince",
+		"move": 10,
+		"wounds": 10,
+		"bravery": 10,
+		"save": 10,
+		"image": "daemon_prince.jpeg",
+		"dead": true,
+		"command_ability_check": false,
+		"missile_weapon_check": false,
+		"magic_check": false,
+		"fly": false,
+		"abilities": [
+			{}
+		],
+		"command_ability": {},
+		"magic": [
+			{}
+		],
+		"melee_weapons": [
+			{}
+		],
+		"missile_weapons": [
+			{}
+		],
+		"phases": [
+			{
+				"unit_name": "",
+				"name": "",
+				"phase": "",
+				"magic_phase": false,
+				"command_ability": false,
+				"description": "",
+				"casting_value": 0
+			},
+			{
+				"unit_name": "",
+				"name": "",
+				"phase": "",
+				"magic_phase": false,
+				"command_ability": false,
+				"description": "",
+				"casting_value": 0
+			}
+		]
+	},
+	"fiends": {
+		"id": 16,
+		"name": "Fiends",
+		"move": 10,
+		"wounds": 10,
+		"bravery": 10,
+		"save": 10,
+		"image": "fiends.jpeg",
+		"dead": true,
+		"command_ability_check": false,
+		"missile_weapon_check": false,
+		"magic_check": false,
+		"fly": false,
+		"abilities": [
+			{}
+		],
+		"command_ability": {},
+		"magic": [
+			{}
+		],
+		"melee_weapons": [
+			{}
+		],
+		"missile_weapons": [
+			{}
+		],
+		"phases": [
+			{
+				"unit_name": "",
+				"name": "",
+				"phase": "",
+				"magic_phase": false,
+				"command_ability": false,
+				"description": "",
+				"casting_value": 0
+			},
+			{
+				"unit_name": "",
+				"name": "",
+				"phase": "",
+				"magic_phase": false,
+				"command_ability": false,
+				"description": "",
+				"casting_value": 0
+			}
+		]
+	},
+	"harp_chick": {
+		"id": 17,
+		"name": "Infernal Enrapturess",
+		"move": 10,
+		"wounds": 10,
+		"bravery": 10,
+		"save": 10,
+		"image": "infernal_enrapturess.jpeg",
+		"dead": true,
+		"command_ability_check": false,
+		"missile_weapon_check": false,
+		"magic_check": false,
+		"fly": false,
+		"abilities": [
+			{}
+		],
+		"command_ability": {},
+		"magic": [
+			{}
+		],
+		"melee_weapons": [
+			{}
+		],
+		"missile_weapons": [
+			{}
+		],
+		"phases": [
+			{
+				"unit_name": "",
+				"name": "",
+				"phase": "",
+				"magic_phase": false,
+				"command_ability": false,
+				"description": "",
+				"casting_value": 0
+			},
+			{
+				"unit_name": "",
+				"name": "",
+				"phase": "",
+				"magic_phase": false,
+				"command_ability": false,
+				"description": "",
+				"casting_value": 0
+			}
+		]
+	}
+}

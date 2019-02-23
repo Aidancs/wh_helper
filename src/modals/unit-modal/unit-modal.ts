@@ -16,6 +16,8 @@ export class UnitModalPage {
 	magic: boolean = false;
 	melee_weapons: boolean = false;
 	missile_weapons: boolean = false;
+	command_trait: boolean = false;
+	artefact: boolean = false;
 
 	constructor(
 		public navCtrl: NavController,
@@ -57,6 +59,15 @@ export class UnitModalPage {
 			for (let i = 0; i < this.unit.missile_weapons.length; ++i) {
 				this.unitModalArray.push(this.unit.missile_weapons[i]);
 			}
+		}
+		else if (this.type === 'command_trait') {
+			this.command_trait = true;
+
+			this.unitModalArray.push(this.unit.command_trait);
+		}
+		else if (this.type === 'artefact') {
+			this.artefact = true;
+			this.unitModalArray.push(this.unit.artefact);
 		}
 	}
 

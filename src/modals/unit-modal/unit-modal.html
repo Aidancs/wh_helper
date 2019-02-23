@@ -107,4 +107,16 @@
       </ion-card>
     </div>
   </div>
+  <div [hidden]="!command_trait">
+    <ion-card>
+      <ion-card-content>
+        Name: {{ unitModalArray[0].name}}
+      </ion-card-content>
+      <ion-card-content>
+        Description: {{ unitModalArray[0].description }}
+      </ion-card-content>
+
+    </ion-card>
+
+  </div>
 </ion-content>
