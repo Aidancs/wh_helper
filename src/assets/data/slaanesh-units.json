@@ -1,465 +1,941 @@
 {
-	"branchwraith": {
-		"id": 6,
-		"name": "Branchwraith",
-		"move": 10,
-		"wounds": 10,
-		"bravery": 10,
-		"save": 10,
-		"image": "branchwraith.jpeg",
-		"dead": false,
-		"artefact_check": false,
-		"command_ability_check": false,
-		"command_trait_check": false,
-		"missile_weapon_check": false,
-		"magic_check": true,
-		"fly": false,
-		"abilities": [
-			{}
-		],
-		"command_ability": {},
-		"magic": [
-			{}
-		],
-		"melee_weapons": [
-			{}
-		],
-		"missile_weapons": [
-			{}
-		],
-		"command_trait": [
-			{
-				"name": "",
-				"description": ""
-			}
-		],
-		"artefact": [
-			{
-				"name": "",
-				"description": ""
-			}
-		],
-		"phases": [
-			{
-				"unit_name": "",
-				"name": "",
-				"phase": "",
-				"magic_phase": false,
-				"command_ability": false,
-				"description": "",
-				"casting_value": 0
-			},
-			{
-				"unit_name": "",
-				"name": "",
-				"phase": "",
-				"magic_phase": false,
-				"command_ability": false,
-				"description": "",
-				"casting_value": 0
-			}
-		]
-	},
-	"branchwych": {
-		"id": 7,
-		"name": "Branchwych",
-		"move": 10,
-		"wounds": 10,
-		"bravery": 10,
-		"save": 10,
-		"image": "branchwych.jpeg",
-		"dead": false,
-		"artefact_check": false,
-		"command_ability_check": false,
-		"command_trait_check": false,
-		"missile_weapon_check": false,
-		"magic_check": true,
-		"fly": false,
-		"abilities": [
-			{}
-		],
-		"command_ability": {},
-		"magic": [
-			{}
-		],
-		"melee_weapons": [
-			{}
-		],
-		"missile_weapons": [
-			{}
-		],
-		"command_trait": [
-			{
-				"name": "",
-				"description": ""
-			}
-		],
-		"artefact": [
-			{
-				"name": "",
-				"description": ""
-			}
-		],
-		"phases": [
-			{
-				"unit_name": "",
-				"name": "",
-				"phase": "",
-				"magic_phase": false,
-				"command_ability": false,
-				"description": "",
-				"casting_value": 0
-			},
-			{
-				"unit_name": "",
-				"name": "",
-				"phase": "",
-				"magic_phase": false,
-				"command_ability": false,
-				"description": "",
-				"casting_value": 0
-			}
-		]
-	},
-	"tree_revenants": {
-		"id": 10,
-		"name": "Tree Revenants",
-		"move": 10,
-		"wounds": 10,
-		"bravery": 10,
-		"save": 10,
-		"image": "tree_revenants.jpeg",
-		"dead": false,
-		"artefact_check": false,
-		"command_ability_check": false,
-		"command_trait_check": false,
-		"missile_weapon_check": false,
-		"magic_check": false,
-		"fly": false,
-		"abilities": [
-			{}
-		],
-		"command_ability": {},
-		"magic": [
-			{}
-		],
-		"melee_weapons": [
-			{}
-		],
-		"missile_weapons": [
-			{}
-		],
-		"command_trait": [
-			{
-				"name": "",
-				"description": ""
-			}
-		],
-		"artefact": [
-			{
-				"name": "",
-				"description": ""
-			}
-		],
-		"phases": [
-			{
-				"unit_name": "",
-				"name": "",
-				"phase": "",
-				"magic_phase": false,
-				"command_ability": false,
-				"description": "",
-				"casting_value": 0
-			},
-			{
-				"unit_name": "",
-				"name": "",
-				"phase": "",
-				"magic_phase": false,
-				"command_ability": false,
-				"description": "",
-				"casting_value": 0
-			}
-		]
-	},
-	"daemonettes": {
-		"id": 12,
-		"name": "Daemonettes",
-		"move": 10,
-		"wounds": 10,
-		"bravery": 10,
-		"save": 10,
-		"image": "daemonettes.jpeg",
-		"dead": false,
-		"command_ability_check": false,
-		"missile_weapon_check": false,
-		"magic_check": false,
-		"fly": false,
-		"abilities": [
-			{}
-		],
-		"command_ability": {},
-		"magic": [
-			{}
-		],
-		"melee_weapons": [
-			{}
-		],
-		"missile_weapons": [
-			{}
-		],
-		"phases": [
-			{
-				"unit_name": "",
-				"name": "",
-				"phase": "",
-				"magic_phase": false,
-				"command_ability": false,
-				"description": "",
-				"casting_value": 0
-			},
-			{
-				"unit_name": "",
-				"name": "",
-				"phase": "",
-				"magic_phase": false,
-				"command_ability": false,
-				"description": "",
-				"casting_value": 0
-			}
-		]
-	},
 	"keeper": {
-		"id": 13,
+		"id": 1,
 		"name": "Keeper of Secrets",
-		"move": 10,
+		"move": "14\"(0-2), 12\"(3-4), 10\"(5-6), 8\"(7-8), 6\"(9+)",
 		"wounds": 10,
 		"bravery": 10,
-		"save": 10,
-		"image": "keeper_of_secrets.jpeg",
-		"dead": true,
-		"command_ability_check": false,
+		"save": 4,
+		"image": "",
+		"dead": false,
+		"artefact_check": true,
+		"command_ability_check": true,
+		"command_trait_check": true,
 		"missile_weapon_check": false,
+		"magic_check": true,
+		"fly": false,
+		"abilities": [
+			{
+				"name": "Delicate Precision",
+				"phase": "combat",
+				"description": "Reroll wound rolls of 1"
+			}
+		],
+		"command_ability": {
+			"name": "Excess of Violence",
+			"phase": "hero",
+			"description": "Select a Slaanesh Daemon unit within 12.\" In your next combat phase, that unit can be selected to pile in and attack twice, instead of only once."
+		},
+		"magic": [
+			{
+				"name": "Cacophonic Choir",
+				"phase": "hero",
+				"description": "If successfully cast, roll 2 dice; each enemy unit within 6\" of the caster suffers D3 mortal wounds if their bravery is less than the total rolled.",
+				"casting_value": 6
+			},
+			{
+				"name": "Soulsnare Shackles",
+				"phase": "hero",
+				"description": "Set up first shackle wholly w/n 12\" of the caster, then set up the second and third models wholly w/n 6\" if the first. At the start of the movement phase roll a dice for each unit w/n 6\" of any soulsnare shackle model. On a 3+ halve the move characteristic of that unit until the end of that phase. On a 6 that unit also suffers D3 mortal wounds.",
+				"casting_value": 5
+			},
+			{
+				"name": "Arcane Bolt",
+				"phase": "hero",
+				"description": "Pick an enemy unit within 18\" of the caster that is visible to them. That unit suffers 1 mw, if the casting roll is 10+, that unit suffers D3 mw's",
+				"casting_value": 5
+			},
+			{
+				"name": "Mystic Shield",
+				"phase": "hero",
+				"description": "Pick a friendly unit within 18\" of the caster that is visible to them. Reroll save rolls of 1 until your next hero phase",
+				"casting_value": 6
+			}
+		],
+		"melee_weapons": [
+			{
+				"name": "Razor Sharp Claws",
+				"range": "2\"",
+				"attacks": "6(0-2), 5(3-4), 4(5-6), 3(7-8), 2(9+)",
+				"to_hit": 3,
+				"to_wound": 3,
+				"rend": "-1",
+				"damage": "2"
+			},
+			{
+				"name": "Elegant Greatblade",
+				"range": "2\"",
+				"attacks": "2",
+				"to_hit": 3,
+				"to_wound": "2+(0-2), 3+(3-4), 3+(5-6), 4+(7-8), 4+(9+)",
+				"rend": "-2",
+				"damage": "D3"
+			}
+		],
+		"missile_weapons": [
+			{}
+		],
+		"command_trait": [
+			{
+				"name": "Lord of War",
+				"description": "Choose a friendly CHAOS unit within 3\" and roll a dice. On a 4+ that unit gains +1 to hit until the next hero phase"
+			}
+		],
+		"artefact": {
+			"name": "Ghyrstrike",
+			"description": "+1 to hit, +1 to wound a melee weapon."
+		},
+		"phases": [
+			{
+				"unit_name": "Keeper of Secrets",
+				"name": "Excess of Violence",
+				"phase": "hero",
+				"magic_phase": false,
+				"command_ability": true,
+				"description": "Select a Slaanesh Daemon unit within 12.\" In your next combat phase, that unit can be selected to pile in and attack twice, instead of only once.",
+				"casting_value": 0
+			},
+			{
+				"unit_name": "Keeper of Secrets",
+				"name": "Soulsnare Shackles",
+				"phase": "hero",
+				"magic_phase": true,
+				"command_ability": false,
+				"description": "Set up first shackle wholly w/n 12\" of the caster, then set up the second and third models wholly w/n 6\" if the first. At the start of the movement phase roll a dice for each unit w/n 6\" of any soulsnare shackle model. On a 3+ halve the move characteristic of that unit until the end of that phase. On a 6 that unit also suffers D3 mortal wounds.",
+				"casting_value": 5
+			},
+			{
+				"unit_name": "Keeper of Secrets",
+				"name": "Cacophonic Choir",
+				"phase": "hero",
+				"magic_phase": true,
+				"command_ability": false,
+				"description": "If successfully cast, roll 2 dice; each enemy unit within 6\" of the caster suffers D3 mortal wounds if their bravery is less than the total rolled.",
+				"casting_value": 6
+			},
+			{
+				"unit_name": "Keeper of Secrets",
+				"name": "Arcane Bolt",
+				"phase": "hero",
+				"magic_phase": true,
+				"command_ability": false,
+				"description": "Pick an enemy unit within 18\" of the caster that is visible to them. That unit suffers 1 mw, if the casting roll is 10+, that unit suffers D3 mw's",
+				"casting_value": 5
+			},
+			{
+				"unit_name": "Keeper of Secrets",
+				"name": "Mystic Shield",
+				"phase": "hero",
+				"magic_phase": false,
+				"command_ability": false,
+				"description": "Pick a friendly unit within 18\" of the caster that is visible to them. Reroll save rolls of 1 until your next hero phase",
+				"casting_value": 6
+			},
+			{
+				"unit_name": "Keeper of Secrets",
+				"name": "Lord of War",
+				"phase": "hero",
+				"magic_phase": false,
+				"command_ability": false,
+				"description": "Choose a friendly CHAOS unit within 3\" and roll a dice. On a 4+ that unit gains +1 to hit until the next hero phase",
+				"casting_value": 0
+			}
+		]
+	},
+	"rapturess": {
+		"id": 2,
+		"name": "Infernal Rapturess",
+		"move": 6,
+		"wounds": 5,
+		"bravery": 10,
+		"save": 5,
+		"image": "",
+		"dead": false,
+		"artefact_check": false,
+		"command_ability_check": false,
+		"command_trait_check": false,
+		"missile_weapon_check": true,
 		"magic_check": false,
 		"fly": false,
 		"abilities": [
-			{}
+			{
+				"name": "Deadly Grace",
+				"phase": "combat",
+				"description": "If the unmodified hit roll for an attack made with a Ravaging Claw is 6, that attack inflicts 2 hits on the target instead of 1. Make a wound and save roll for each hit."
+			},
+			{
+				"name": "Discordant Disruption",
+				"phase": "enemy_hero",
+				"description": "Re-roll successful casting rolls for enemy Wizards that are within 24\" of one or more models with this ability. In addition, if the re-rolled casting roll is a double, that Wizard suffers D3 mws after the effects of the spell (if any) have been carried out."
+			},
+			{
+				"name": "Harmonic Alignment",
+				"phase": "hero",
+				"description": "At the start of your hero phase, each friendly Infernal Rapturess that is part of a Slaanesh army and on the battlefield generates 1 Depravity point for her army."
+			}
 		],
 		"command_ability": {},
 		"magic": [
 			{}
 		],
 		"melee_weapons": [
-			{}
+			{
+				"name": "Ravaging Claw",
+				"range": "1\"",
+				"attacks": "3",
+				"to_hit": 3,
+				"to_wound": 4,
+				"rend": "-1",
+				"damage": "1"
+			}
 		],
 		"missile_weapons": [
-			{}
+			{
+				"name": "Heartstring Lyre:Cacophonous Choir",
+				"range": "18",
+				"attacks": "6",
+				"to_hit": "3",
+				"to_wound": "4",
+				"rend": "-1",
+				"damage": "1"
+			},
+			{
+				"name": "Heartstring Lyre:Euphonic Blast",
+				"range": "24",
+				"attacks": "1",
+				"to_hit": "2",
+				"to_wound": "3",
+				"rend": "-3",
+				"damage": "D3"
+			}
 		],
+		"command_trait": {
+			"name": "",
+			"description": ""
+		},
+		"artefact": {
+			"name": "",
+			"description": ""
+		},
 		"phases": [
 			{
-				"unit_name": "",
-				"name": "",
-				"phase": "",
+				"unit_name": "Infernal Rapturess",
+				"name": "Deadly Grace",
+				"phase": "combat",
 				"magic_phase": false,
 				"command_ability": false,
-				"description": "",
+				"description": "If the unmodified hit roll for an attack made with a Ravaging Claw is 6, that attack inflicts 2 hits on the target instead of 1. Make a wound and save roll for each hit.",
 				"casting_value": 0
 			},
 			{
-				"unit_name": "",
-				"name": "",
-				"phase": "",
+				"unit_name": "Infernal Rapturess",
+				"name": "Discordant Disruption",
+				"phase": "enemy_hero",
 				"magic_phase": false,
 				"command_ability": false,
-				"description": "",
-				"casting_value": 0
-			}
-		]
-	},
-	"seekers": {
-		"id": 14,
-		"name": "Seekers",
-		"move": 10,
-		"wounds": 10,
-		"bravery": 10,
-		"save": 10,
-		"image": "seekers.jpeg",
-		"dead": true,
-		"command_ability_check": false,
-		"missile_weapon_check": false,
-		"magic_check": false,
-		"fly": false,
-		"abilities": [
-			{}
-		],
-		"command_ability": {},
-		"magic": [
-			{}
-		],
-		"melee_weapons": [
-			{}
-		],
-		"missile_weapons": [
-			{}
-		],
-		"phases": [
-			{
-				"unit_name": "",
-				"name": "",
-				"phase": "",
-				"magic_phase": false,
-				"command_ability": false,
-				"description": "",
+				"description": "Re-roll successful casting rolls for enemy Wizards that are within 24\" of one or more models with this ability. In addition, if the re-rolled casting roll is a double, that Wizard suffers D3 mws after the effects of the spell (if any) have been carried out.",
 				"casting_value": 0
 			},
 			{
-				"unit_name": "",
-				"name": "",
-				"phase": "",
+				"unit_name": "Infernal Rapturess",
+				"name": "Harmonic Alignment",
+				"phase": "hero",
 				"magic_phase": false,
 				"command_ability": false,
-				"description": "",
-				"casting_value": 0
+				"description": "At the start of your hero phase, each friendly Infernal Rapturess that is part of a Slaanesh army and on the battlefield generates 1 Depravity point for her army.",
+				"casting_value": 6
 			}
 		]
 	},
-	"daemon_prince": {
-		"id": 15,
+	"prince": {
+		"id": 3,
 		"name": "Daemon Prince",
-		"move": 10,
-		"wounds": 10,
+		"move": 12,
+		"wounds": 8,
 		"bravery": 10,
-		"save": 10,
-		"image": "daemon_prince.jpeg",
-		"dead": true,
+		"save": 4,
+		"image": "",
+		"dead": false,
+		"artefact_check": false,
 		"command_ability_check": false,
+		"command_trait_check": false,
 		"missile_weapon_check": false,
 		"magic_check": false,
-		"fly": false,
+		"fly": true,
 		"abilities": [
-			{}
+			{
+				"name": "Slaanesh Daemon",
+				"phase": "combat",
+				"description": "When your opponent selects a unit within 3\" of the Daemon Prince to pile in and attack in the combat phase, you can immediately select the Daemon Prince to pile in and attack before the enemy unit, even though it is not your turn to do so. This model can only so this if it has not already attacked in this phase."
+			}
 		],
 		"command_ability": {},
 		"magic": [
 			{}
 		],
 		"melee_weapons": [
-			{}
+			{
+				"name": "Hellforged Sword",
+				"range": "2\"",
+				"attacks": "4",
+				"to_hit": 3,
+				"to_wound": 3,
+				"rend": "-1",
+				"damage": "D3"
+			},
+			{
+				"name": "Malefic Talons",
+				"range": "1\"",
+				"attacks": "3",
+				"to_hit": 4,
+				"to_wound": 3,
+				"rend": "",
+				"damage": "2"
+			}
 		],
 		"missile_weapons": [
 			{}
 		],
+		"command_trait": {
+			"name": "",
+			"description": ""
+		},
+		"artefact": {
+			"name": "",
+			"description": ""
+		},
 		"phases": [
 			{
-				"unit_name": "",
-				"name": "",
-				"phase": "",
+				"unit_name": "Daemon Prince",
+				"name": "Slaanesh Daemon",
+				"phase": "enemy_combat",
 				"magic_phase": false,
 				"command_ability": false,
+				"description": "When your opponent selects a unit within 3\" of the Daemon Prince to pile in and attack in the combat phase, you can immediately select the Daemon Prince to pile in and attack before the enemy unit, even though it is not your turn to do so. This model can only so this if it has not already attacked in this phase.",
+				"casting_value": 0
+			}
+		]
+	},
+	"herald_on_exalted_seeker_chariot": {
+		"id": 4,
+		"name": "Herald of Slaanesh on Exalted Seeker Chariot",
+		"move": "12",
+		"wounds": 9,
+		"bravery": 10,
+		"save": 5,
+		"image": "",
+		"dead": false,
+		"artefact_check": false,
+		"command_ability_check": false,
+		"command_trait_check": false,
+		"missile_weapon_check": false,
+		"magic_check": false,
+		"fly": false,
+		"abilities": [
+			{
+				"name": "Swirling Shapes and Unholy Hues",
+				"phase": "enemy_battleshock",
+				"description": "Your opponent must add 1 to the result of any battleshock tests made for units within 3\" of any Chariot that charged that turn."
+			},
+			{
+				"name": "Exalted Excess of Blades",
+				"phase": "charge",
+				"description": "After this model makes a charge move, roll a dice for each enemy model within 1.\" On a roll of 4 or more, that model's unit suffers D3 mws."
+			},
+			{
+				"name": "Deadly Grace",
+				"phase": "combat",
+				"description": "Each time you make a hit roll of 6 or more for this model's Flensing Whips or Piercing Claws, it can immediately make one extra attack using the same weapon."
+			},
+			{
+				"name": "Disturbing Beauty",
+				"phase": "enemy_combat",
+				"description": "Your opponent must subtract 1 from all hit rolls made for Heroes when they target this model."
+			}
+		],
+		"command_ability": {
+			"name": "",
+			"phase": "",
+			"description": ""
+		},
+		"magic": [
+			{
+				"name": "",
+				"phase": "",
 				"description": "",
+				"casting_value": 0
+			}
+		],
+		"melee_weapons": [
+			{
+				"name": "Heralds Flensing Whips",
+				"range": "2\"",
+				"attacks": "6",
+				"to_hit": 3,
+				"to_wound": 3,
+				"rend": "",
+				"damage": "1"
+			},
+			{
+				"name": "Daemonettes Piercing Claws",
+				"range": "1\"",
+				"attacks": "6",
+				"to_hit": 4,
+				"to_wound": 4,
+				"rend": "-1",
+				"damage": "1"
+			},
+			{
+				"name": "Steeds Poison Tongues",
+				"range": "1\"",
+				"attacks": "8",
+				"to_hit": 4,
+				"to_wound": 4,
+				"rend": "",
+				"damage": "1"
+			}
+		],
+		"missile_weapons": [
+			{}
+		],
+		"command_trait": [
+			{
+				"name": "",
+				"description": ""
+			}
+		],
+		"artefact": {
+			"name": "",
+			"description": ""
+		},
+		"phases": [
+			{
+				"unit_name": "Herald of Slaanesh on Exalted Seeker Chariot",
+				"name": "Swirling Shapes and Unholy Hues",
+				"phase": "enemy_battleshock",
+				"magic_phase": false,
+				"command_ability": false,
+				"description": "Your opponent must add 1 to the result of any battleshock tests made for units within 3\" of any Chariot that charged that turn.",
 				"casting_value": 0
 			},
 			{
-				"unit_name": "",
-				"name": "",
-				"phase": "",
+				"unit_name": "Herald of Slaanesh on Exalted Seeker Chariot",
+				"name": "Exalted Excess of Blades",
+				"phase": "charge",
 				"magic_phase": false,
 				"command_ability": false,
+				"description": "After this model makes a charge move, roll a dice for each enemy model within 1.\" On a roll of 4 or more, that model's unit suffers D3 mws.",
+				"casting_value": 0
+			},
+			{
+				"unit_name": "Herald of Slaanesh on Exalted Seeker Chariot",
+				"name": "Deadly Grace",
+				"phase": "combat",
+				"magic_phase": false,
+				"command_ability": false,
+				"description": "Each time you make a hit roll of 6 or more for this model's Flensing Whips or Piercing Claws, it can immediately make one extra attack using the same weapon.",
+				"casting_value": 0
+			},
+			{
+				"unit_name": "Herald of Slaanesh on Exalted Seeker Chariot",
+				"name": "Disturbing Beauty",
+				"phase": "enemy_combat",
+				"magic_phase": false,
+				"command_ability": false,
+				"description": "Your opponent must subtract 1 from all hit rolls made for Heroes when they target this model.",
+				"casting_value": 0
+			}
+		]
+	},
+	"herald_of_slaanesh": {
+		"id": 5,
+		"name": "Herald of Slaanesh",
+		"move": "12",
+		"wounds": 5,
+		"bravery": 10,
+		"save": 5,
+		"image": "",
+		"dead": false,
+		"artefact_check": false,
+		"command_ability_check": false,
+		"command_trait_check": false,
+		"missile_weapon_check": false,
+		"magic_check": false,
+		"fly": false,
+		"abilities": [
+			{
+				"name": "Deadly Grace",
+				"phase": "combat",
+				"description": "If the unmodified hit roll for an attack made with a Ravaging Claw is 6, that attack inflicts 2 hits on the target instead of 1. Make a wound and save roll for each hit."
+			},
+			{
+				"name": "Quicksilver Dodge",
+				"phase": "enemy_combat",
+				"description": "You can re-roll failed save rolls for a Herald of Slaanesh in the combat phase"
+			}
+		],
+		"command_ability": {
+			"name": "",
+			"phase": "",
+			"description": ""
+		},
+		"magic": [
+			{
+				"name": "",
+				"phase": "",
 				"description": "",
+				"casting_value": 0
+			}
+		],
+		"melee_weapons": [
+			{
+				"name": "Ravaging Claws",
+				"range": "1\"",
+				"attacks": "6",
+				"to_hit": 3,
+				"to_wound": 4,
+				"rend": "-1",
+				"damage": "1"
+			},
+			{
+				"name": "Steed's Poisoned Tongue",
+				"range": "1\"",
+				"attacks": "2",
+				"to_hit": 4,
+				"to_wound": 4,
+				"rend": "",
+				"damage": "1"
+			}
+		],
+		"missile_weapons": [
+			{}
+		],
+		"command_trait": [
+			{
+				"name": "",
+				"description": ""
+			}
+		],
+		"artefact": {
+			"name": "",
+			"description": ""
+		},
+		"phases": [
+			{
+				"unit_name": "Herald of Slaanesh",
+				"name": "Deadly Grace",
+				"phase": "combat",
+				"magic_phase": false,
+				"command_ability": false,
+				"description": "If the unmodified hit roll for an attack made with a Ravaging Claw is 6, that attack inflicts 2 hits on the target instead of 1. Make a wound and save roll for each hit.",
+				"casting_value": 0
+			},
+			{
+				"unit_name": "Herald of Slaanesh",
+				"name": "Quicksilver Dodge",
+				"phase": "enemy_combat",
+				"magic_phase": false,
+				"command_ability": false,
+				"description": "You can re-roll failed save rolls for a Herald of Slaanesh in the combat phase",
 				"casting_value": 0
 			}
 		]
 	},
 	"fiends": {
-		"id": 16,
+		"id": 6,
 		"name": "Fiends",
-		"move": 10,
-		"wounds": 10,
+		"move": "12",
+		"wounds": 4,
 		"bravery": 10,
-		"save": 10,
-		"image": "fiends.jpeg",
-		"dead": true,
+		"save": 5,
+		"image": "",
+		"dead": false,
+		"artefact_check": false,
 		"command_ability_check": false,
+		"command_trait_check": false,
 		"missile_weapon_check": false,
 		"magic_check": false,
 		"fly": false,
 		"abilities": [
-			{}
+			{
+				"name": "Blissbringer",
+				"phase": "combat",
+				"description": "Leader can re-roll wound rolls of 1 made with the Deadly Pincers in the combat phase"
+			},
+			{
+				"name": "Crushing Grip",
+				"phase": "combat",
+				"description": "If the unmodified wound roll for an attack made with Deadly Pincers is 6, that attack has a dmg of D3 instead of 1."
+			},
+			{
+				"name": "Deadly Venom",
+				"phase": "combat",
+				"description": "An attack made with a Barbed Stinger has dmg of 1 (1 wound enemy), D3 (2-3 wound enemy), or D6 (4+ wound enemy)"
+			},
+			{
+				"name": "Disruptive Song",
+				"phase": "enemy_hero",
+				"description": "Subtract 1 from casting rolls for enemy Wizards while they are within 12\" of one or more models with this ability."
+			},
+			{
+				"name": "Locus of Grace",
+				"phase": "combat",
+				"description": "You can re-roll hit rolls of 1 for attacks made by this unit while this unit is wholly within 12\" of a friendly Daemon Slaanesh Hero."
+			},
+			{
+				"name": "Sporific Musk",
+				"phase": "enemy_combat",
+				"description": "Subtract 1 from hit rolls for attacks made with melee weapons that target this unit. In addition while this unit has 4 or more models, subtract 1 from wound rolls for attacks made with melee weapons that target this unit."
+			}
 		],
-		"command_ability": {},
+		"command_ability": {
+			"name": "",
+			"phase": "",
+			"description": ""
+		},
 		"magic": [
-			{}
+			{
+				"name": "",
+				"phase": "",
+				"description": "",
+				"casting_value": 0
+			}
 		],
 		"melee_weapons": [
-			{}
+			{
+				"name": "Deadly Pincers",
+				"range": "1\"",
+				"attacks": "4",
+				"to_hit": 3,
+				"to_wound": 3,
+				"rend": "-1",
+				"damage": "1"
+			},
+			{
+				"name": "Barbed Stinger",
+				"range": "2\"",
+				"attacks": "1",
+				"to_hit": 3,
+				"to_wound": 3,
+				"rend": "-1",
+				"damage": "1 (1 wound enemy), D3 (2-3 wound enemy), or D6 (4+ wound enemy)"
+			}
 		],
 		"missile_weapons": [
 			{}
 		],
+		"command_trait": [
+			{
+				"name": "",
+				"description": ""
+			}
+		],
+		"artefact": {
+			"name": "",
+			"description": ""
+		},
 		"phases": [
 			{
-				"unit_name": "",
-				"name": "",
-				"phase": "",
+				"unit_name": "Fiends",
+				"name": "Blissbringer",
+				"phase": "combat",
 				"magic_phase": false,
 				"command_ability": false,
-				"description": "",
+				"description": "Leader can re-roll wound rolls of 1 made with the Deadly Pincers in the combat phase",
 				"casting_value": 0
 			},
 			{
-				"unit_name": "",
-				"name": "",
-				"phase": "",
+				"unit_name": "Fiends",
+				"name": "Crushing Grip",
+				"phase": "combat",
 				"magic_phase": false,
 				"command_ability": false,
-				"description": "",
+				"description": "If the unmodified wound roll for an attack made with Deadly Pincers is 6, that attack has a dmg of D3 instead of 1.",
+				"casting_value": 0
+			},
+			{
+				"unit_name": "Fiends",
+				"name": "Deadly Venom",
+				"phase": "combat",
+				"magic_phase": false,
+				"command_ability": false,
+				"description": "An attack made with a Barbed Stinger has dmg of 1 (1 wound enemy), D3 (2-3 wound enemy), or D6 (4+ wound enemy)",
+				"casting_value": 0
+			},
+			{
+				"unit_name": "Fiends",
+				"name": "Disruptive Song",
+				"phase": "enemy_hero",
+				"magic_phase": false,
+				"command_ability": false,
+				"description": "Subtract 1 from casting rolls for enemy Wizards while they are within 12\" of one or more models with this ability.",
+				"casting_value": 0
+			},
+			{
+				"unit_name": "Fiends",
+				"name": "Locus of Grace",
+				"phase": "combat",
+				"magic_phase": false,
+				"command_ability": false,
+				"description": "You can re-roll hit rolls of 1 for attacks made by this unit while this unit is wholly within 12\" of a friendly Daemon Slaanesh Hero.",
+				"casting_value": 0
+			},
+			{
+				"unit_name": "Fiends",
+				"name": "Sporific Musk",
+				"phase": "enemy_combat",
+				"magic_phase": false,
+				"command_ability": false,
+				"description": "Subtract 1 from hit rolls for attacks made with melee weapons that target this unit. In addition while this unit has 4 or more models, subtract 1 from wound rolls for attacks made with melee weapons that target this unit.",
 				"casting_value": 0
 			}
 		]
 	},
-	"harp_chick": {
-		"id": 17,
-		"name": "Infernal Enrapturess",
-		"move": 10,
-		"wounds": 10,
+	"daemonettes": {
+		"id": 6,
+		"name": "Daemonettes",
+		"move": "6",
+		"wounds": 1,
 		"bravery": 10,
-		"save": 10,
-		"image": "infernal_enrapturess.jpeg",
-		"dead": true,
+		"save": 5,
+		"image": "",
+		"dead": false,
+		"artefact_check": false,
 		"command_ability_check": false,
+		"command_trait_check": false,
 		"missile_weapon_check": false,
 		"magic_check": false,
 		"fly": false,
 		"abilities": [
-			{}
+			{
+				"name": "Alluress",
+				"phase": "combat",
+				"description": "Add 1 to the attacks characteristic of an Alluress's Piercing Claws"
+			},
+			{
+				"name": "Standard Bearers",
+				"phase": "combat",
+				"description": "You can re-roll hit rolls of 1 for attacks made by a unit that includes any standard bearers."
+			},
+			{
+				"name": "Icon Bearers",
+				"phase": "battleshock",
+				"description": "If the unmodified roll for a battleshock test for a unit that includes any icon bearers is 1, you can add D6 models to that unit, and no models from that unit will flee in that battleshock phase."
+			},
+			{
+				"name": "Hornblower",
+				"phase": "enemy_battleshock",
+				"description": "If the unmodified roll for a battleshock test for an enemy unit that is within 6\" of any friendly hornblowers is 1, that battleshock test must be re-rolled."
+			},
+			{
+				"name": "Sadisitic Killers",
+				"phase": "combat",
+				"description": "If the unmodified hit roll for an attack made with Piercing Claws is 6, that attack inflicts 2 hits on the target instead of 1. Make a wound and save roll for each hit. While this unit has 20 or more models, attacks inflicts 2 hits on an unmodified roll of 5 or 6, instead of only on a 6"
+			},
+			{
+				"name": "Lithe and Swift",
+				"phase": "charge",
+				"description": "This unit can run and still charge later in the same turn."
+			},
+			{
+				"name": "Locus of Excruciation",
+				"phase": "enemy_combat",
+				"description": "Re-roll unmodified hit rolls of 6 for attacks made with melee weapons that target this unit while this unit is wholly within 9\" of a friendly Daemon Slaanesh Hero"
+			}
 		],
-		"command_ability": {},
+		"command_ability": {
+			"name": "",
+			"phase": "",
+			"description": ""
+		},
 		"magic": [
-			{}
+			{
+				"name": "",
+				"phase": "",
+				"description": "",
+				"casting_value": 0
+			}
 		],
 		"melee_weapons": [
-			{}
+			{
+				"name": "Piercing Claws",
+				"range": "1\"",
+				"attacks": "2",
+				"to_hit": 4,
+				"to_wound": 4,
+				"rend": "-1",
+				"damage": "1"
+			}
 		],
 		"missile_weapons": [
 			{}
 		],
+		"command_trait": [
+			{
+				"name": "",
+				"description": ""
+			}
+		],
+		"artefact": {
+			"name": "",
+			"description": ""
+		},
 		"phases": [
 			{
-				"unit_name": "",
-				"name": "",
-				"phase": "",
+				"unit_name": "Daemonettes",
+				"name": "Alluress",
+				"phase": "combat",
 				"magic_phase": false,
 				"command_ability": false,
-				"description": "",
+				"description": "Add 1 to the attacks characteristic of an Alluress's Piercing Claws",
 				"casting_value": 0
 			},
 			{
-				"unit_name": "",
-				"name": "",
-				"phase": "",
+				"unit_name": "Daemonettes",
+				"name": "Standard Bearers",
+				"phase": "combat",
 				"magic_phase": false,
 				"command_ability": false,
+				"description": "You can re-roll hit rolls of 1 for attacks made by a unit that includes any standard bearers.",
+				"casting_value": 0
+			},
+			{
+				"unit_name": "Daemonettes",
+				"name": "Icon Bearers",
+				"phase": "battleshock",
+				"magic_phase": false,
+				"command_ability": false,
+				"description": "If the unmodified roll for a battleshock test for a unit that includes any icon bearers is 1, you can add D6 models to that unit, and no models from that unit will flee in that battleshock phase.",
+				"casting_value": 0
+			},
+			{
+				"unit_name": "Daemonettes",
+				"name": "Hornblower",
+				"phase": "enemy_battleshock",
+				"magic_phase": false,
+				"command_ability": false,
+				"description": "If the unmodified roll for a battleshock test for an enemy unit that is within 6\" of any friendly hornblowers is 1, that battleshock test must be re-rolled.",
+				"casting_value": 0
+			},
+			{
+				"unit_name": "Daemonettes",
+				"name": "Sadisitic Killers",
+				"phase": "combat",
+				"magic_phase": false,
+				"command_ability": false,
+				"description": "If the unmodified hit roll for an attack made with Piercing Claws is 6, that attack inflicts 2 hits on the target instead of 1. Make a wound and save roll for each hit. While this unit has 20 or more models, attacks inflicts 2 hits on an unmodified roll of 5 or 6, instead of only on a 6",
+				"casting_value": 0
+			},
+			{
+				"unit_name": "Daemonettes",
+				"name": "Lithe and Swift",
+				"phase": "charge",
+				"magic_phase": false,
+				"command_ability": false,
+				"description": "This unit can run and still charge later in the same turn.",
+				"casting_value": 0
+			},
+			{
+				"unit_name": "Daemonettes",
+				"name": "Locus of Excruciation",
+				"phase": "enemy_combat",
+				"magic_phase": false,
+				"command_ability": false,
+				"description": "Re-roll unmodified hit rolls of 6 for attacks made with melee weapons that target this unit while this unit is wholly within 9\" of a friendly Daemon Slaanesh Hero",
+				"casting_value": 0
+			}
+		]
+	},
+	"seekers": {
+		"id": 7,
+		"name": "Seekers of Slaanesh",
+		"move": "14",
+		"wounds": 2,
+		"bravery": 10,
+		"save": 5,
+		"image": "",
+		"dead": false,
+		"artefact_check": false,
+		"command_ability_check": false,
+		"command_trait_check": false,
+		"missile_weapon_check": false,
+		"magic_check": false,
+		"fly": false,
+		"abilities": [
+			{
+				"name": "Sadisitic Killers",
+				"phase": "combat",
+				"description": "If the unmodified hit roll for an attack made with Piercing Claws is 6, that attack inflicts 2 hits on the target instead of 1. Make a wound and save roll for each hit. While this unit has 20 or more models, attacks inflicts 2 hits on an unmodified roll of 5 or 6, instead of only on a 6"
+			},
+			{
+				"name": "Quicksilver Speed",
+				"phase": "movement",
+				"description": "You can roll 2D6 instead of D6 when you make a run roll for this unit. In addition, this unit can run and still charge later in the same turn."
+			}
+		],
+		"command_ability": {
+			"name": "",
+			"phase": "",
+			"description": ""
+		},
+		"magic": [
+			{
+				"name": "",
+				"phase": "",
 				"description": "",
+				"casting_value": 0
+			}
+		],
+		"melee_weapons": [
+			{
+				"name": "Piercing Claws",
+				"range": "1\"",
+				"attacks": "2",
+				"to_hit": 4,
+				"to_wound": 4,
+				"rend": "-1",
+				"damage": "1"
+			},
+			{
+				"name": "Poisoned Tongue",
+				"range": "1\"",
+				"attacks": "2",
+				"to_hit": 4,
+				"to_wound": 4,
+				"rend": "",
+				"damage": "1"
+			}
+		],
+		"missile_weapons": [
+			{}
+		],
+		"command_trait": [
+			{
+				"name": "",
+				"description": ""
+			}
+		],
+		"artefact": {
+			"name": "",
+			"description": ""
+		},
+		"phases": [
+			{
+				"unit_name": "Seekers of Slaanesh",
+				"name": "Sadisitic Killers",
+				"phase": "combat",
+				"magic_phase": false,
+				"command_ability": false,
+				"description": "If the unmodified hit roll for an attack made with Piercing Claws is 6, that attack inflicts 2 hits on the target instead of 1. Make a wound and save roll for each hit. While this unit has 20 or more models, attacks inflicts 2 hits on an unmodified roll of 5 or 6, instead of only on a 6",
+				"casting_value": 0
+			},
+			{
+				"unit_name": "Seekers of Slaanesh",
+				"name": "Quicksilver Speed",
+				"phase": "movement",
+				"magic_phase": false,
+				"command_ability": false,
+				"description": "You can roll 2D6 instead of D6 when you make a run roll for this unit. In addition, this unit can run and still charge later in the same turn.",
 				"casting_value": 0
 			}
 		]

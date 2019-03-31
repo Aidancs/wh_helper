@@ -10,7 +10,7 @@ import { UnitsService } from '../../services/units.service';
 })
 export class PhasesPage {
 
-	phases = ['Hero Phase', 'Movement Phase', 'Shooting Phase', 'Charge Phase', 'Combat Phase', 'Battleshock Phase'];
+	phases = ['Hero Phase', 'Movement Phase', 'Shooting Phase', 'Charge Phase', 'Combat Phase', 'Battleshock Phase', 'Enemy Hero', 'Enemy Combat', 'Enemy Battleshock'];
 
 	hero_phase_list = [];
 	movement_phase_list = [];
@@ -18,6 +18,9 @@ export class PhasesPage {
 	charge_phase_list = [];
 	combat_phase_list = [];
 	battleshock_phase_list = [];
+	enemy_hero_phase_list = [];
+	enemy_combat_phase_list = [];
+	enemy_battleshock_phase_list = [];
 	phaseList = [];
 	phaseArray = [];
 	dryads: any;
@@ -33,6 +36,7 @@ export class PhasesPage {
 			for (const key of Object.keys(result)) {
 				this.phaseArray.push(result[key].phases);
 			}
+			console.log(this.phaseArray, 'this.phaseArray');
 
 			for (let i = 0; i < this.phaseArray.length; ++i) {
 				for (let x = 0; x < this.phaseArray[i].length; ++x) {
@@ -51,6 +55,12 @@ export class PhasesPage {
 					} else if (this.phaseArray[i][x].phase === 'shooting/combat') {
 						this.shooting_phase_list.push(this.phaseArray[i][x]);
 						this.combat_phase_list.push(this.phaseArray[i][x]);
+					} else if (this.phaseArray[i][x].phase === 'enemy_hero') {
+						this.enemy_hero_phase_list.push(this.phaseArray[i][x]);
+					} else if (this.phaseArray[i][x].phase === 'enemy_combat') {
+						this.enemy_combat_phase_list.push(this.phaseArray[i][x]);
+					} else if (this.phaseArray[i][x].phase === 'enemy_battleshock') {
+						this.enemy_battleshock_phase_list.push(this.phaseArray[i][x]);
 					}
 				}
 			}
@@ -72,6 +82,12 @@ export class PhasesPage {
 			list = this.combat_phase_list;
 		} else if (phase === 'Battleshock Phase') {
 			list = this.battleshock_phase_list;
+		} else if (phase === 'Enemy Hero') {
+			list = this.enemy_hero_phase_list;
+		} else if (phase === 'Enemy Combat') {
+			list = this.enemy_combat_phase_list;
+		} else if (phase === 'Enemy Battleshock') {
+			list = this.enemy_battleshock_phase_list;
 		}
 
 		let modal = this.modalCtrl.create(PhaseModalPage, {

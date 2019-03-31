@@ -64,9 +64,9 @@ export class UnitModalPage {
 		}
 		else if (this.type === 'command_trait') {
 			this.command_trait = true;
-			console.log(this.unit.command_trait, 'sdlkfjalskjdfl');
 
-			this.data = this.unit.command_trait;
+			this.data = this.unit.command_trait[0];
+			console.log(this.data[0], 'sthis.data');
 		}
 		else if (this.type === 'artefact') {
 			this.artefact = true;
