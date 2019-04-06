@@ -36,7 +36,6 @@ export class PhasesPage {
 			for (const key of Object.keys(result)) {
 				this.phaseArray.push(result[key].phases);
 			}
-			console.log(this.phaseArray, 'this.phaseArray');
 
 			for (let i = 0; i < this.phaseArray.length; ++i) {
 				for (let x = 0; x < this.phaseArray[i].length; ++x) {

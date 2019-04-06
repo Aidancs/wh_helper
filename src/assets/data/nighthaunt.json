@@ -1,0 +1,486 @@
+{
+	"": {
+		"id": 1,
+		"name": "Lady Olynder",
+		"move": 6,
+		"wounds": 7,
+		"bravery": 10,
+		"save": 4,
+		"image": "",
+		"dead": false,
+		"artefact_check": false,
+		"command_ability_check": false,
+		"command_trait_check": false,
+		"missile_weapon_check": false,
+		"magic_check": true,
+		"fly": true,
+		"abilities": [
+			{
+				"name": "Frigthful Touch",
+				"phase": "hero",
+				"description": "If the unmodified hit roll for an attack made with the Banshee handmaiden' Spectral Claws is 6, that attack inflicts 1 mw and the attack sequence ends (do not make a wound or save roll)."
+			},
+			{
+				"name": "Grave-sands of Time",
+				"phase": "hero",
+				"description": "Once per battle, in your hero phase, you can choose either to inflict D6 mws on an enemy Hero within 6\" of this model, or heal D6 wounds that have been allocated to this model."
+			},
+			{
+				"name": "Lifting the Veil",
+				"phase": "hero",
+				"description": "At the start of your hero phase, pick an enemy unit within 12\" of this model that is visible to her and roll a dice. On a 1, nothing happens. On a 2+, that unit suffers a number of mws equal to the roll. In addition, if any enemy models are slain by this ability, immediately heal d3 wounds that have been allocated to this model."
+			},
+			{
+				"name": "Mortarch of Grief",
+				"phase": "enemy_battleshock",
+				"description": "Add 1 to enemy models that flee from enemy units that fail a battleshock test while they are within 12\" of this model."
+			},
+			{
+				"name": "Wall of the Damned",
+				"phase": "shooting",
+				"description": "At the start of the shooting phase, roll 2D6 for each enemy unit within 10\" of this model. If the roll for the unit is higher than its Bravery characteristic, it suffers D3 mws."
+			}
+		],
+		"command_ability": {},
+		"magic": [
+			{
+				"name": "Grief-Stricken",
+				"phase": "hero",
+				"description": "If successfully cast, pick an enemy unit that is within 18\" of the caster and visible to them. Until your next hero phase, subtract 1 from hit rolls for attacks made by that unit and add 1 to hit rolls for attacks made with melee weapons that target that unit.",
+				"casting_value": "7"
+			},
+			{
+				"name": "Lifestealer",
+				"phase": "hero",
+				"description": "If successfully cast, pick an enemy unit within 12\" of the caster that is visible to them. That unit suffers D3 mws. For each mw suffered by the enemy unit, you can heal 1 wound allocated to the caster.",
+				"casting_value": "7"
+			},
+			{
+				"name": "Arcane Bolt",
+				"phase": "hero",
+				"description": "Pick an enemy unit within 18\" of the caster that is visible to them. That unit suffers 1 mw, if the casting roll is 10+, that unit suffers D3 mw's",
+				"casting_value": 5
+			},
+			{
+				"name": "Mystic Shield",
+				"phase": "hero",
+				"description": "Pick a friendly unit within 18\" of the caster that is visible to them. Reroll save rolls of 1 until your next hero phase",
+				"casting_value": 6
+			}
+		],
+		"melee_weapons": [
+			{
+				"name": "Staff of Midnight",
+				"range": "2\"",
+				"attacks": 3,
+				"to_hit": 3,
+				"to_wound": 3,
+				"rend": "-2",
+				"damage": "D3"
+			},
+			{
+				"name": "Banshee Handmaidens' Spectral Claws",
+				"range": "1\"",
+				"attacks": 6,
+				"to_hit": 4,
+				"to_wound": 4,
+				"rend": "",
+				"damage": "1"
+			}
+		],
+		"missile_weapons": [
+			{}
+		],
+		"command_trait": {
+			"name": "",
+			"description": ""
+		},
+		"artefact": {
+			"name": "",
+			"description": ""
+		},
+		"phases": [
+			{
+				"unit_name": "Lady Olynder",
+				"name": "Frigthful Touch",
+				"phase": "hero",
+				"magic_phase": false,
+				"command_ability": false,
+				"description": "If the unmodified hit roll for an attack made with the Banshee handmaiden' Spectral Claws is 6, that attack inflicts 1 mw and the attack sequence ends (do not make a wound or save roll).",
+				"casting_value": 0
+			},
+			{
+				"unit_name": "Lady Olynder",
+				"name": "Grave-sands of Time",
+				"phase": "hero",
+				"magic_phase": false,
+				"command_ability": false,
+				"description": "Once per battle, in your hero phase, you can choose either to inflict D6 mws on an enemy Hero within 6\" of this model, or heal D6 wounds that have been allocated to this model.",
+				"casting_value": 0
+			},
+			{
+				"unit_name": "Lady Olynder",
+				"name": "Lifting the Veil",
+				"phase": "hero",
+				"magic_phase": false,
+				"command_ability": false,
+				"description": "At the start of your hero phase, pick an enemy unit within 12\" of this model that is visible to her and roll a dice. On a 1, nothing happens. On a 2+, that unit suffers a number of mws equal to the roll. In addition, if any enemy models are slain by this ability, immediately heal d3 wounds that have been allocated to this model.",
+				"casting_value": 0
+			},
+			{
+				"unit_name": "Lady Olynder",
+				"name": "Mortarch of Grief",
+				"phase": "enemy_battleshock",
+				"magic_phase": false,
+				"command_ability": false,
+				"description": "Add 1 to enemy models that flee from enemy units that fail a battleshock test while they are within 12\" of this model.",
+				"casting_value": 0
+			},
+			{
+				"unit_name": "Lady Olynder",
+				"name": "Wall of the Damned",
+				"phase": "shooting",
+				"magic_phase": false,
+				"command_ability": false,
+				"description": "At the start of the shooting phase, roll 2D6 for each enemy unit within 10\" of this model. If the roll for the unit is higher than its Bravery characteristic, it suffers D3 mws.",
+				"casting_value": 0
+			},
+			{
+				"unit_name": "Lady Olynder",
+				"name": "Grief-Stricken",
+				"phase": "hero",
+				"magic_phase": true,
+				"command_ability": false,
+				"description": "If successfully cast, pick an enemy unit that is within 18\" of the caster and visible to them. Until your next hero phase, subtract 1 from hit rolls for attacks made by that unit and add 1 to hit rolls for attacks made with melee weapons that target that unit.",
+				"casting_value": "7"
+			},
+			{
+				"unit_name": "Lady Olynder",
+				"name": "Lifestealer",
+				"phase": "hero",
+				"magic_phase": true,
+				"command_ability": false,
+				"description": "If successfully cast, pick an enemy unit within 12\" of the caster that is visible to them. That unit suffers D3 mws. For each mw suffered by the enemy unit, you can heal 1 wound allocated to the caster.",
+				"casting_value": "7"
+			}
+		]
+	},
+	"guardian": {
+		"id": 2,
+		"name": "Guardian of Souls",
+		"move": 6,
+		"wounds": 5,
+		"bravery": 10,
+		"save": 4,
+		"image": "",
+		"dead": false,
+		"artefact_check": true,
+		"command_ability_check": false,
+		"command_trait_check": true,
+		"missile_weapon_check": false,
+		"magic_check": true,
+		"fly": true,
+		"abilities": [
+			{
+				"name": "Nightmare Lantern",
+				"phase": "combat",
+				"description": "Add 1 to wound rolls for attacks made with melee weapons used by friendly Nighthaunt units that are wholly within 12\" of this model."
+			}
+		],
+		"command_ability": {},
+		"magic": [
+			{
+				"name": "Spectral Lure",
+				"phase": "hero",
+				"description": "If successfully cast. pick a friendly Summonable Nighthaunt unit wholly within 24\" of the caster. You can either heal D6 wounds that have been allocated to that unit or, if no wounds have been allocated to that unit, you can return a number of slain models to it that have a combined Wounds characteristic equal to or less than the roll of a D6.",
+				"casting_value": "6"
+			},
+			{
+				"name": "Spectral Tether",
+				"phase": "hero",
+				"description": "If successfully cast, pick a friendly Nighthaunt Hero within 12\" of the caster. Heal D3 wounds that have been allocated to that unit.",
+				"casting_value": "6"
+			},
+			{
+				"name": "Arcane Bolt",
+				"phase": "hero",
+				"description": "Pick an enemy unit within 18\" of the caster that is visible to them. That unit suffers 1 mw, if the casting roll is 10+, that unit suffers D3 mw's",
+				"casting_value": 5
+			},
+			{
+				"name": "Mystic Shield",
+				"phase": "hero",
+				"description": "Pick a friendly unit within 18\" of the caster that is visible to them. Reroll save rolls of 1 until your next hero phase",
+				"casting_value": 6
+			}
+		],
+		"melee_weapons": [
+			{
+				"name": "Chill Blade",
+				"range": "1\"",
+				"attacks": 3,
+				"to_hit": 3,
+				"to_wound": 3,
+				"rend": "-1",
+				"damage": "1"
+			}
+		],
+		"missile_weapons": [
+			{}
+		],
+		"command_trait": {
+			"name": "Ruler of the Spirit Hosts",
+			"description": "At the start of your hero phase, you can pick a friendly Summonable Nighthaunt unit within 9\" of this general and return D3 slain models to that unit. The returning models must be set up within 9\" of this general"
+		},
+		"artefact": {
+			"name": "Beacon of Nagashizzar",
+			"description": "If the bearer successfully casts Spectral Lure and it is not unbound, insted of healing or returning D6 you heal or return D6+3."
+		},
+		"phases": [
+			{
+				"unit_name": "Guardian of Souls",
+				"name": "Nightmare Lantern",
+				"phase": "combat",
+				"magic_phase": false,
+				"command_ability": false,
+				"description": "Add 1 to wound rolls for attacks made with melee weapons used by friendly Nighthaunt units that are wholly within 12\" of this model.",
+				"casting_value": 0
+			},
+			{
+				"unit_name": "Guardian of Souls",
+				"name": "Spectral Lure",
+				"phase": "hero",
+				"magic_phase": true,
+				"command_ability": false,
+				"description": "If successfully cast. pick a friendly Summonable Nighthaunt unit wholly within 24\" of the caster. You can either heal D6 wounds that have been allocated to that unit or, if no wounds have been allocated to that unit, you can return a number of slain models to it that have a combined Wounds characteristic equal to or less than the roll of a D6.",
+				"casting_value": "6"
+			},
+			{
+				"unit_name": "Guardian of Souls",
+				"name": "Spectral Tether",
+				"phase": "hero",
+				"magic_phase": true,
+				"command_ability": false,
+				"description": "If successfully cast, pick a friendly Nighthaunt Hero within 12\" of the caster. Heal D3 wounds that have been allocated to that unit.",
+				"casting_value": "6"
+			}
+		]
+	},
+	"reapers": {
+		"id": 3,
+		"name": "Grimghast Reapers",
+		"move": 8,
+		"wounds": 1,
+		"bravery": 10,
+		"save": 4,
+		"image": "",
+		"dead": false,
+		"artefact_check": false,
+		"command_ability_check": false,
+		"command_trait_check": false,
+		"missile_weapon_check": false,
+		"magic_check": false,
+		"fly": true,
+		"abilities": [
+			{
+				"name": "Reaped Like Corn",
+				"phase": "combat",
+				"description": "You can re-roll failed hit rolls for attacks made with this unit's Slasher Scythes if the target unit has 5 or more models."
+			},
+			{
+				"name": "For Whom the Bell Tolls",
+				"phase": "combat",
+				"description": "Allocate wounds by a Death Knell after allocating wounds inflicted by the Slasher Scythes. For each enemy model that is slain by wounds inflicted by a Death Knell, you can inflict 1 mw on an enemy unit within 3\" of the model armed with the Death Knell."
+			}
+		],
+		"command_ability": {},
+		"magic": [
+			{}
+		],
+		"melee_weapons": [
+			{
+				"name": "Slasher Scythes",
+				"range": "2\"",
+				"attacks": 2,
+				"to_hit": 4,
+				"to_wound": 3,
+				"rend": "-1",
+				"damage": "1"
+			},
+			{
+				"name": "Death Knell",
+				"range": "2\"",
+				"attacks": 1,
+				"to_hit": 3,
+				"to_wound": 3,
+				"rend": "-1",
+				"damage": "2"
+			}
+		],
+		"missile_weapons": [
+			{}
+		],
+		"command_trait": {
+			"name": "",
+			"description": ""
+		},
+		"artefact": {
+			"name": "",
+			"description": ""
+		},
+		"phases": [
+			{
+				"unit_name": "Grimghast Reapers",
+				"name": "Reaped Like Corn",
+				"phase": "combat",
+				"magic_phase": false,
+				"command_ability": false,
+				"description": "You can re-roll failed hit rolls for attacks made with this unit's Slasher Scythes if the target unit has 5 or more models.",
+				"casting_value": 0
+			},
+			{
+				"unit_name": "Grimghast Reapers",
+				"name": "For Whom the Bell Tolls",
+				"phase": "combat",
+				"magic_phase": false,
+				"command_ability": false,
+				"description": "Allocate wounds by a Death Knell after allocating wounds inflicted by the Slasher Scythes. For each enemy model that is slain by wounds inflicted by a Death Knell, you can inflict 1 mw on an enemy unit within 3\" of the model armed with the Death Knell.",
+				"casting_value": 0
+			}
+		]
+	},
+	"banshees": {
+		"id": 4,
+		"name": "Mymourn Banshees",
+		"move": 8,
+		"wounds": 1,
+		"bravery": 10,
+		"save": 4,
+		"image": "",
+		"dead": false,
+		"artefact_check": false,
+		"command_ability_check": false,
+		"command_trait_check": false,
+		"missile_weapon_check": false,
+		"magic_check": false,
+		"fly": true,
+		"abilities": [
+			{
+				"name": "Spell-eaters",
+				"phase": "enemy_hero",
+				"description": "Once in each enemy hero phase, if this unit is within 18\" of an enemy Wizard that successfully casts a spell, this unit can attempt to unbind the spell in the same manner as a Wizard. If it does so, add 1 to unbinding roll for every 4 models in this unit. In addition, if this unit unbinds an enemy spell, add 1 to the attacks characteristic of this unit's Chill Daggers until the next enemy hero phase. If within 6\" of an endless spell can attempt to unbind the endless spell, if it does it takes D3 mws, but add 1 to the attacks characteristic of this units Chill Daggers."
+			}
+		],
+		"command_ability": {},
+		"magic": [
+			{}
+		],
+		"melee_weapons": [
+			{
+				"name": "Chill Daggers",
+				"range": "1\"",
+				"attacks": 1,
+				"to_hit": 4,
+				"to_wound": 3,
+				"rend": "-2",
+				"damage": "D3"
+			}
+		],
+		"missile_weapons": [
+			{}
+		],
+		"command_trait": {
+			"name": "",
+			"description": ""
+		},
+		"artefact": {
+			"name": "",
+			"description": ""
+		},
+		"phases": [
+			{
+				"unit_name": "Mymourn Banshees",
+				"name": "Spell-eaters",
+				"phase": "enemy_hero",
+				"magic_phase": false,
+				"command_ability": false,
+				"description": "Once in each enemy hero phase, if this unit is within 18\" of an enemy Wizard that successfully casts a spell, this unit can attempt to unbind the spell in the same manner as a Wizard. If it does so, add 1 to unbinding roll for every 4 models in this unit. In addition, if this unit unbinds an enemy spell, add 1 to the attacks characteristic of this unit's Chill Daggers until the next enemy hero phase. If within 6\" of an endless spell can attempt to unbind the endless spell, if it does it takes D3 mws, but add 1 to the attacks characteristic of this units Chill Daggers.",
+				"casting_value": 0
+			}
+		]
+	},
+	"chainrasp": {
+		"id": 5,
+		"name": "Chainrasp Horde",
+		"move": 6,
+		"wounds": 1,
+		"bravery": 6,
+		"save": 5,
+		"image": "",
+		"dead": false,
+		"artefact_check": false,
+		"command_ability_check": false,
+		"command_trait_check": false,
+		"missile_weapon_check": false,
+		"magic_check": false,
+		"fly": true,
+		"abilities": [
+			{
+				"name": "Dreadwarden",
+				"phase": "battleshock",
+				"description": "The leader of this unit is a Dreadwarden. Add 1 to the attacks characteristic of a Dreadwarden's Malignant Weapon. In addition, a Chainrasp Horde has a bravery characteristic of 10 instead of 6 while it includes a dreadwarden."
+			},
+			{
+				"name": "Chilling Horde",
+				"phase": "combat",
+				"description": "You can re-roll wound rolls of 1 for this unit while it has more than 10 models"
+			}
+		],
+		"command_ability": {},
+		"magic": [
+			{}
+		],
+		"melee_weapons": [
+			{
+				"name": "Malignant Weapons",
+				"range": "1\"",
+				"attacks": 2,
+				"to_hit": 4,
+				"to_wound": 4,
+				"rend": "",
+				"damage": "1"
+			}
+		],
+		"missile_weapons": [
+			{}
+		],
+		"command_trait": {
+			"name": "",
+			"description": ""
+		},
+		"artefact": {
+			"name": "",
+			"description": ""
+		},
+		"phases": [
+			{
+				"unit_name": "Chainrasp Horde",
+				"name": "Dreadwarden",
+				"phase": "battleshock",
+				"magic_phase": false,
+				"command_ability": false,
+				"description": "The leader of this unit is a Dreadwarden. Add 1 to the attacks characteristic of a Dreadwarden's Malignant Weapon. In addition, a Chainrasp Horde has a bravery characteristic of 10 instead of 6 while it includes a dreadwarden.",
+				"casting_value": 0
+			},
+			{
+				"unit_name": "Chainrasp Horde",
+				"name": "Chilling Horde",
+				"phase": "combat",
+				"magic_phase": false,
+				"command_ability": false,
+				"description": "You can re-roll wound rolls of 1 for this unit while it has more than 10 models",
+				"casting_value": 0
+			}
+		]
+	}
+}

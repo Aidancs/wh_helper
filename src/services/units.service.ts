@@ -15,7 +15,8 @@ export class UnitsService extends BaseHttpService {
 
 	getUnitsJSon(): any {
 		// return this.http.get('assets/data/units.json')
-		return this.http.get('assets/data/slaanesh-units.json')
+		// return this.http.get('assets/data/slaanesh-units.json')
+		return this.http.get('assets/data/nighthaunt.json')
 			.map(res => res.json())
 			.pipe(tap(res => { this.units = res }));
 	}
