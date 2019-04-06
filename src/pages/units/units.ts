@@ -45,7 +45,7 @@ export class UnitsPage {
 		this.clicked = true;
 		this.unit = unit;
 		this.type = type;
-		console.log(this.unit, 'this.unit');
+
 		let modal = this.modalCtrl.create(UnitModalPage, {
 			unit: this.unit,
 			type: this.type,

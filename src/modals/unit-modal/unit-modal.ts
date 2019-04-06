@@ -39,7 +39,6 @@ export class UnitModalPage {
 		else if (this.type === 'command_abilities') {
 			this.command_abilities = true;
 			this.data = this.unit.command_ability;
-			console.log(this.unit.command_ability, 'this.unit.command_ability');
 
 		}
 		else if (this.type === 'magic') {
