@@ -65,7 +65,6 @@ export class UnitModalPage {
 			this.command_trait = true;
 
 			this.data = this.unit.command_trait[0];
-			console.log(this.data[0], 'sthis.data');
 		}
 		else if (this.type === 'artefact') {
 			this.artefact = true;

@@ -10,7 +10,7 @@ import { UnitsService } from '../../services/units.service';
 })
 export class PhasesPage {
 
-	phases = ['Hero Phase', 'Movement Phase', 'Shooting Phase', 'Charge Phase', 'Combat Phase', 'Battleshock Phase', 'Enemy Hero', 'Enemy Combat', 'Enemy Battleshock'];
+	phases = ['Hero Phase', 'Shooting Phase', 'Combat Phase', 'Battleshock Phase', 'Enemy Hero', 'Enemy Battleshock'];
 
 	hero_phase_list = [];
 	movement_phase_list = [];
