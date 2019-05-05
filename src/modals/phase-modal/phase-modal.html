@@ -8,27 +8,29 @@
 
 <ion-content class="bg" padding>
   <div *ngFor="let phase of phases" text-center>
-    <ion-card-content>
-      <ion-card color="light">
-        <ion-card-title>
-          {{ phase.unit_name }}
-        </ion-card-title>
-        <ion-card-title>
-          {{ phase.name }}
-        </ion-card-title>
-        <h2 *ngIf="phase.command_ability">
-          Command Ability
-        </h2>
-        <ion-card-title>
-          {{ phase.phase }}
-        </ion-card-title>
-        <ion-card-content>
-          {{ phase.description }}
-        </ion-card-content>
-        <ion-card-content *ngIf="phase.magic_phase">
-          Casting Value: {{ phase.casting_value }}
-        </ion-card-content>
-      </ion-card>
-    </ion-card-content>
+    <div *ngIf="phase.alive">
+      <ion-card-content>
+        <ion-card color="light">
+          <ion-card-title>
+            {{ phase.unit_name }}
+          </ion-card-title>
+          <ion-card-title>
+            {{ phase.name }}
+          </ion-card-title>
+          <h2 *ngIf="phase.command_ability">
+            Command Ability
+          </h2>
+          <ion-card-title>
+            {{ phase.phase }}
+          </ion-card-title>
+          <ion-card-content>
+            {{ phase.description }}
+          </ion-card-content>
+          <ion-card-content *ngIf="phase.magic_phase">
+            Casting Value: {{ phase.casting_value }}
+          </ion-card-content>
+        </ion-card>
+      </ion-card-content>
+    </div>
   </div>
 </ion-content>

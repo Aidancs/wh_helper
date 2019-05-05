@@ -17,7 +17,7 @@
             {{ unit.name }}
           </div>
         </ion-card-title>
-        <ion-card-content>
+        <!-- <ion-card-content>
           <ion-card color="light">
             <ion-card-content>
               Move: {{ unit.move }}
@@ -32,9 +32,9 @@
               Wounds: {{ unit.wounds }}
             </ion-card-content>
           </ion-card>
-        </ion-card-content>
+        </ion-card-content> -->
         <ion-list>
-          <button ion-button [hidden]="!unit.command_ability_check" (click)="itemTapped(unit, 'command_abilities')">
+          <!-- <button ion-button [hidden]="!unit.command_ability_check" (click)="itemTapped(unit, 'command_abilities')">
             Command Abilities
           </button>
           <button ion-button (click)="itemTapped(unit, 'abilities')">
@@ -54,8 +54,8 @@
           </button>
           <button ion-button [hidden]="!unit.artefact_check" (click)="itemTapped(unit, 'artefact')">
             Artefact
-          </button>
-          <!-- <ion-item-sliding>
+          </button> -->
+          <ion-item-sliding>
             <ion-item color="dark">
               <h2 text-center>Killed?</h2>
             </ion-item>
@@ -64,7 +64,7 @@
                 Remove
               </button>
             </ion-item-options>
-          </ion-item-sliding> -->
+          </ion-item-sliding>
         </ion-list>
       </ion-card-content>
     </ion-card>

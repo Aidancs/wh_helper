@@ -1,0 +1,272 @@
+{
+	"Nagash": {
+		"id": 1,
+		"name": "",
+		"move": ,
+		"wounds": ,
+		"bravery": ,
+		"save": ,
+		"image": "",
+		"dead": false,
+		"artefact_check": false,
+		"command_ability_check": false,
+		"command_trait_check": false,
+		"missile_weapon_check": false,
+		"magic_check": false,
+		"fly": false,
+		"abilities": [
+			{
+				"name": "",
+				"phase": "",
+				"description": ""
+			}
+		],
+		"command_ability": {},
+		"magic": [
+			{}
+		],
+		"melee_weapons": [
+			{
+				"name": "",
+				"range": "\"",
+				"attacks": ,
+				"to_hit": ,
+				"to_wound": ,
+				"rend": "",
+				"damage": ""
+			}
+		],
+		"missile_weapons": [
+			{}
+		],
+		"command_trait": {
+			"name": "",
+			"description": ""
+		},
+		"artefact": {
+			"name": "",
+			"description": ""
+		},
+		"phases": [
+			{
+				"unit_name": "",
+				"name": "",
+				"phase": "",
+				"magic_phase": false,
+				"command_ability": false,
+				"description": "",
+				"casting_value": 0
+			},
+			{
+				"unit_name": "",
+				"name": "",
+				"phase": "",
+				"magic_phase": false,
+				"command_ability": false,
+				"description": "",
+				"casting_value": 0
+			}
+		]
+	},
+	"": {
+		"id": 1,
+		"name": "",
+		"move": ,
+		"wounds": ,
+		"bravery": ,
+		"save": ,
+		"image": "",
+		"dead": false,
+		"artefact_check": false,
+		"command_ability_check": false,
+		"command_trait_check": false,
+		"missile_weapon_check": false,
+		"magic_check": false,
+		"fly": false,
+		"abilities": [
+			{
+				"name": "",
+				"phase": "",
+				"description": ""
+			}
+		],
+		"command_ability": {},
+		"magic": [
+			{}
+		],
+		"melee_weapons": [
+			{
+				"name": "",
+				"range": "\"",
+				"attacks": ,
+				"to_hit": ,
+				"to_wound": ,
+				"rend": "",
+				"damage": ""
+			}
+		],
+		"missile_weapons": [
+			{}
+		],
+		"command_trait": {
+			"name": "",
+			"description": ""
+		},
+		"artefact": {
+			"name": "",
+			"description": ""
+		},
+		"phases": [
+			{
+				"unit_name": "",
+				"name": "",
+				"phase": "",
+				"magic_phase": false,
+				"command_ability": false,
+				"description": "",
+				"casting_value": 0
+			},
+			{
+				"unit_name": "",
+				"name": "",
+				"phase": "",
+				"magic_phase": false,
+				"command_ability": false,
+				"description": "",
+				"casting_value": 0
+			}
+		]
+	},
+	"": {
+		"id": 1,
+		"name": "",
+		"move": ,
+		"wounds": ,
+		"bravery": ,
+		"save": ,
+		"image": "",
+		"dead": false,
+		"artefact_check": false,
+		"command_ability_check": false,
+		"command_trait_check": false,
+		"missile_weapon_check": false,
+		"magic_check": false,
+		"fly": false,
+		"abilities": [
+			{
+				"name": "",
+				"phase": "",
+				"description": ""
+			}
+		],
+		"command_ability": {},
+		"magic": [
+			{}
+		],
+		"melee_weapons": [
+			{
+				"name": "",
+				"range": "\"",
+				"attacks": ,
+				"to_hit": ,
+				"to_wound": ,
+				"rend": "",
+				"damage": ""
+			}
+		],
+		"missile_weapons": [
+			{}
+		],
+		"command_trait": {
+			"name": "",
+			"description": ""
+		},
+		"artefact": {
+			"name": "",
+			"description": ""
+		},
+		"phases": [
+			{
+				"unit_name": "Nagash",
+				"name": "The Staff of Power",
+				"phase": "hero",
+				"magic_phase": false,
+				"command_ability": false,
+				"description": "",
+				"casting_value": 0
+			},
+			{
+				"unit_name": "Nagash",
+				"name": "9 books of Nagash",
+				"phase": "hero",
+				"magic_phase": false,
+				"command_ability": false,
+				"description": "",
+				"casting_value": 0
+			},
+			{
+				"unit_name": "Nagash",
+				"name": "Deathly Invocation",
+				"phase": "hero",
+				"magic_phase": false,
+				"command_ability": false,
+				"description": "",
+				"casting_value": 0
+			},
+			{
+				"name": "Death Magic Incarnate",
+				"phase": "hero",
+				"unit_name": "Nagash",
+				"magic_phase": false,
+				"command_ability": false,
+				"description": "",
+				"casting_value": 0
+			},
+			{
+				"name": "Supreme Lord of Death",
+				"phase": "hero",
+				"unit_name": "Nagash",
+				"magic_phase": false,
+				"command_ability": false,
+				"description": "",
+				"casting_value": 0
+			},
+			{
+				"name": "Hand of Dust",
+				"phase": "hero",
+				"unit_name": "Nagash",
+				"magic_phase": false,
+				"command_ability": false,
+				"description": "",
+				"casting_value": 0
+			},
+			{
+				"unit_name": "",
+				"name": "",
+				"phase": "",
+				"magic_phase": false,
+				"command_ability": false,
+				"description": "",
+				"casting_value": 0
+			},
+			{
+				"unit_name": "",
+				"name": "",
+				"phase": "",
+				"magic_phase": false,
+				"command_ability": false,
+				"description": "",
+				"casting_value": 0
+			},
+			{
+				"unit_name": "",
+				"name": "",
+				"phase": "",
+				"magic_phase": false,
+				"command_ability": false,
+				"description": "",
+				"casting_value": 0
+			}
+		]
+	}
+}
