@@ -1,0 +1,233 @@
+{
+	"ehoc": {
+		"phases": [
+			{
+				"unit_name": "Exalted Hero of Chaos",
+				"alive": true,
+				"name": "Trail of Red Ruin",
+				"phase": "combat_phase",
+				"magic_phase": false,
+				"command_ability": false,
+				"description": "If EHOC charges, he can pile in and attack 2 times instead of only once. The 2nd pile in happens immediately after the first.",
+				"casting_value": 0
+			},
+			{
+				"unit_name": "Exalted Hero of Chaos",
+				"alive": true,
+				"name": "Glory-Hungry Bladesman",
+				"phase": "combat_phase",
+				"magic_phase": false,
+				"command_ability": false,
+				"description": "Add 1 to hit rolls for an EHOC if the target is a Hero or Monster",
+				"casting_value": 0
+			},
+			{
+				"unit_name": "Exalted Hero of Chaos",
+				"alive": true,
+				"name": "Thrice-damned Dagger",
+				"phase": "end_of_combat_phase",
+				"magic_phase": false,
+				"command_ability": false,
+				"description": "If EHOC charges, he can pile in and attack 2 times instead of only once. The 2nd pile in happens immediately after the first.",
+				"casting_value": 0
+			},
+			{
+				"unit_name": "Exalted Hero of Chaos",
+				"alive": true,
+				"name": "Chaos Runeshield",
+				"phase": "enemy_combat_phase",
+				"magic_phase": false,
+				"command_ability": false,
+				"description": "Roll a dice each time an EHOC with a chaos runeshield suffers a mw. On a 5+ that mw is negated.",
+				"casting_value": 0
+			}
+		]
+	},
+	"fiends": {
+		"phases": [
+			{
+				"unit_name": "Fiends",
+				"alive": true,
+				"name": "Blissbringer",
+				"phase": "combat_phase",
+				"magic_phase": false,
+				"command_ability": false,
+				"description": "1 model in this unit can be a Blissbringer. Add 1 to the Attacks characteristic of a Blissbringer’s Deadly Pincers.",
+				"casting_value": 0
+			},
+			{
+				"unit_name": "Fiends",
+				"alive": true,
+				"name": "Crushing Grip",
+				"phase": "combat_phase",
+				"magic_phase": false,
+				"command_ability": false,
+				"description": "If the unmodified wound roll for an attack made with Deadly Pincers is 6, that attack has a dmg of D3 instead of 1.",
+				"casting_value": 0
+			},
+			{
+				"unit_name": "Fiends",
+				"alive": true,
+				"name": "Deadly Venom",
+				"phase": "combat_phase",
+				"magic_phase": false,
+				"command_ability": false,
+				"description": "An attack made with a Barbed Stinger has dmg of 1 (1 wound enemy), D3 (2-3 wound enemy), or D6 (4+ wound enemy)",
+				"casting_value": 0
+			},
+			{
+				"unit_name": "Fiends",
+				"alive": true,
+				"name": "Disruptive Song",
+				"phase": "enemy_hero_phase",
+				"magic_phase": false,
+				"command_ability": false,
+				"description": "Subtract 1 from casting rolls for enemy Wizards while they are within 12\" of one or more models with this ability.",
+				"casting_value": 0
+			},
+			{
+				"unit_name": "Fiends",
+				"alive": true,
+				"name": "Sporific Musk",
+				"phase": "enemy_combat_phase",
+				"magic_phase": false,
+				"command_ability": false,
+				"description": "Subtract 1 from hit rolls for attacks made with melee weapons that target this unit. In addition while this unit has 4 or more models, subtract 1 from wound rolls for attacks made with melee weapons that target this unit.",
+				"casting_value": 0
+			}
+		]
+	},
+	"drycha": {
+		"phases": [
+			{
+				"unit_name": "Drycha",
+				"name": "Mercurial Aspect",
+				"phase": "hero_phase",
+				"magic_phase": false,
+				"command_ability": false,
+				"description": "At the start of each battle round, roll a dice. 1,2,3 Drycha is enraged. 4,5,6 Drycha is embittered.",
+				"casting_value": 0
+			},
+			{
+				"unit_name": "Drycha",
+				"name": "Primal Terror",
+				"phase": "hero_phase",
+				"magic_phase": true,
+				"command_ability": false,
+				"description": "Roll a dice for each enemy unit w/n 10\" of the caster, adding 2 to the result. For each point by which the total exceeds the highest bravery in that unit, the unit suffers a mortal wound.",
+				"casting_value": 0
+			},
+			{
+				"unit_name": "Drycha",
+				"name": "Colony of Flitterfuries",
+				"phase": "shooting_phase",
+				"magic_phase": false,
+				"command_ability": false,
+				"description": "Roll 10 dice for each enemy unit w/n 18\"(0-2), 15\"(3-4), 12\"(5-7), 9\"(8-9), 6\"(10+). For each roll of 6, that unit suffers a mortal wound.",
+				"casting_value": 0
+			}
+		]
+	},
+	"hunters": {
+		"phases": [
+			{
+				"unit_name": "Kurnoth Hunters",
+				"name": "Huntmaster",
+				"phase": "combat_phase",
+				"magic_phase": false,
+				"command_ability": false,
+				"description": "Add 1 to hit rolls for the huntmaster",
+				"casting_value": 0
+			},
+			{
+				"unit_name": "Kurnoth Hunters",
+				"name": "Envoys of the Everqueen",
+				"phase": "hero_phase",
+				"magic_phase": false,
+				"command_ability": false,
+				"description": "If a Sylvaneth hero uses a command ability, you can measure the range of that command ability from a friendly Kurnoth Hunters unit instead of the Hero.",
+				"casting_value": 0
+			},
+			{
+				"unit_name": "Kurnoth Hunters",
+				"name": "Trample Underfoot",
+				"phase": "end_of_combat_phase",
+				"magic_phase": false,
+				"command_ability": false,
+				"description": "At the end of the combat phase, pick an enemy unit and roll for each Kurnoth Hunter from this unit that is wholly w/n 1\" of it. For each result of 4+, the enemy unit suffers a mw.",
+				"casting_value": 0
+			}
+		]
+	},
+	"kurdoss": {
+		"phases": [
+			{
+				"unit_name": "Kurdoss Valetian",
+				"name": "Ethereal",
+				"phase": "enemy_combat_phase",
+				"magic_phase": false,
+				"command_ability": false,
+				"description": "Ignore modifiers (positive or negative) when making save rolls.",
+				"casting_value": 0
+			},
+			{
+				"unit_name": "Kurdoss Valetian",
+				"name": "Frightful Touch",
+				"phase": "combat_phase",
+				"magic_phase": false,
+				"command_ability": false,
+				"description": "If the unmodified hit roll for Spectral Claws is 6, that attack inflicts 1 mw and the attack sequence ends.",
+				"casting_value": 0
+			},
+			{
+				"unit_name": "Kurdoss Valetian",
+				"name": "If I Cannot Rule, None Shall Rule",
+				"phase": "enemy_hero_phase",
+				"magic_phase": false,
+				"command_ability": false,
+				"description": "At the start of the enemy hero phase, roll a dice. On a 5+ you steal the enemies command point.",
+				"casting_value": 0
+			},
+			{
+				"unit_name": "Kurdoss Valetian",
+				"name": "Soul-crushing Smite",
+				"phase": "combat_phase",
+				"magic_phase": false,
+				"command_ability": false,
+				"description": "If the unmodified wound roll for an attack made with sepulchral spectre is 6, the damage is D6 not D3",
+				"casting_value": 0
+			},
+			{
+				"unit_name": "Kurdoss Valetian",
+				"name": "Suffer No Rival",
+				"phase": "combat_phase",
+				"magic_phase": false,
+				"command_ability": false,
+				"description": "You can reroll failed hit rolls for attack made with the sepulchral spectre if the target is an enemy general",
+				"casting_value": 0
+			}
+		]
+	},
+	"chainrasp": {
+		"phases": [
+			{
+				"unit_name": "Chainrasp Horde",
+				"name": "Dreadwarden",
+				"phase": "battleshock_phase",
+				"magic_phase": false,
+				"command_ability": false,
+				"description": "The leader of this unit is a Dreadwarden. Add 1 to the attacks characteristic of a Dreadwarden's Malignant Weapon. In addition, a Chainrasp Horde has a bravery characteristic of 10 instead of 6 while it includes a dreadwarden.",
+				"casting_value": 0
+			},
+			{
+				"unit_name": "Chainrasp Horde",
+				"name": "Chilling Horde",
+				"phase": "combat_phase",
+				"magic_phase": false,
+				"command_ability": false,
+				"description": "You can re-roll wound rolls of 1 for this unit while it has more than 10 models",
+				"casting_value": 0
+			}
+		]
+	}
+}

@@ -10,7 +10,9 @@ import { UnitsService } from '../../services/units.service';
 })
 export class PhasesPage {
 
-	phases = ['Start of Hero Phase', 'Hero Phase', 'Magic Phase', 'Movement Phase', 'Shooting Phase', 'Charge Phase', 'Start of Combat Phase', 'Combat Phase', 'End of Combat Phase', 'Battleshock Phase', 'Defense Phase', 'Enemy Hero', 'Enemy Combat', 'Enemy Battleshock'];
+	// phases = ['Start of Hero Phase', 'Hero Phase', 'Magic Phase', 'Movement Phase', 'Shooting Phase', 'Charge Phase', 'Start of Combat Phase', 'Combat Phase', 'End of Combat Phase', 'Battleshock Phase', 'Defense Phase', 'Enemy Hero', 'Enemy Combat', 'Enemy Battleshock'];
+
+	phases = ['Hero Phase', 'Shooting Phase', 'Combat Phase', 'End of Combat Phase', 'Battleshock Phase', 'Enemy Hero', 'Enemy Combat'];
 
 	start_of_hero_phase_list = [];
 	hero_phase_list = [];
@@ -49,8 +51,6 @@ export class PhasesPage {
 			for (const key of Object.keys(result)) {
 				// console.log(result[key].alive, 'result[key].alive');
 				this.phaseArray.push(result[key].phases);
-				// if (result[key].alive) {
-				// }
 			}
 
 			for (let i = 0; i < this.phaseArray.length; ++i) {

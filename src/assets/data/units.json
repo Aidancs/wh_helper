@@ -767,29 +767,11 @@
 			},
 			{
 				"unit_name": "Drycha",
-				"name": "Verdant Blessing",
-				"phase": "hero",
-				"magic_phase": true,
-				"command_ability": false,
-				"description": "Set up a new Wyldwood anywhere w/n 18\" of the caster that is not w/n 1\" of any other model or terrain feature.",
-				"casting_value": 6
-			},
-			{
-				"unit_name": "Drycha",
 				"name": "Colony of Flitterfuries",
 				"phase": "shooting",
 				"magic_phase": false,
 				"command_ability": false,
 				"description": "Roll 10 dice for each enemy unit w/n 18\"(0-2), 15\"(3-4), 12\"(5-7), 9\"(8-9), 6\"(10+). For each roll of 6, that unit suffers a mortal wound.",
-				"casting_value": 0
-			},
-			{
-				"unit_name": "Drycha",
-				"name": "Song of Spite",
-				"phase": "combat",
-				"magic_phase": false,
-				"command_ability": false,
-				"description": "Reroll wound rolls of 1 for Spite Revenants while their unit is w/n 10\" of Drycha.",
 				"casting_value": 0
 			}
 		]
